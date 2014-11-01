@@ -55,7 +55,8 @@
     z-index: 120;
 }
 /* keywords of the footer */
-.silex-runtime .discret li{
+.silex-runtime .discret li,
+.silex-runtime .discret .heading2{
     color: black !important;
     font-size: 14px !important;
     float: left !important;
