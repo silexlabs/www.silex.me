@@ -71,5 +71,23 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-19608894-18', 'silex.me');
 ga('send', 'pageview');
+
+// track links
+$(function(){
+    $('a, [data-silex-href]').click(function(){
+        var text = $(this).text().trim();
+        var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
+        console.log("click", text, link);
+        trackLink(text, link);
+        return false;
+    });
+    function trackLink(text, url){
+        ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
+            function () {
+                document.location = url;
+            }
+        });
+    }
+});
 ////////////////////////////////////
 
