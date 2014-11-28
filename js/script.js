@@ -78,16 +78,21 @@ $(function(){
     $('a, [data-silex-href]').click(function(){
         var text = $(this).text().trim();
         var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
-        console.log("click", text, link);
-        trackLink(text, link);
-        return false;
+        var target = this.getAttribute('target') || this.getAttribute('data-silex-href');
+        trackLink(text, link, target);
+        if (!target || target === 'self') {
+            return false;
+        }
     });
-    function trackLink(text, url){
+    function trackLink(text, url, target){
         ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
             function () {
-                document.location = url;
+                if (!target || target === 'self') {
+                    document.location = url;
+                }
             }
         });
     }
 });
 ////////////////////////////////////
+

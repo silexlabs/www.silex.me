@@ -6,12 +6,12 @@
     function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
     indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
     length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-    '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+    '<sc'+'ript http://preprod.silex.me/api/1.0/dropbox/exec/get//sites-silex/www.silex.me/editable.htmlhttp://preprod.silex.me/api/1.0/dropbox/exec/get///sites-silex/www.silex.me/editable.htmlhttp://preprod.silex.me/api/1.0/dropbox/exec/get/sites-silex/www.silex.me/editable.htmlsrc="'+'http'+(l.protocol=='https:'?'s://ssl':
     '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
     '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
     valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-    </script><script>utmx('url','A/B');</script>
+    </script><script http:="" preprod.silex.me="" api="" 1.0="" dropbox="" exec="" get="" sites-silex="" www.silex.me="" editable.htmlhttp:="" editable.htmlsrc="http://www.google-analytics.com/ga_exp.js?utmxkey=92005694-1&amp;utmx=85602008.e-d_WzeERjeaXENT_qeeJQ%2492005694-1%3A1&amp;utmxx=85602008.e-d_WzeERjeaXENT_qeeJQ%2492005694-1%3A1417204205%3A15552000&amp;utmxtime=1417211704363" type="text/javascript" charset="utf-8"></script><script http:="" preprod.silex.me="" api="" 1.0="" dropbox="" exec="" get="" sites-silex="" www.silex.me="" editable.htmlhttp:="" editable.htmlsrc="http://www.google-analytics.com/ga_exp.js?utmxkey=92005694-1&amp;utmx=85602008.e-d_WzeERjeaXENT_qeeJQ$92005694-1:1&amp;utmxx=85602008.e-d_WzeERjeaXENT_qeeJQ$92005694-1:1417204205:15552000&amp;utmxtime=1417211266574" type="text/javascript" charset="utf-8"></script><script http:="" preprod.silex.me="" api="" 1.0="" dropbox="" exec="" get="" sites-silex="" www.silex.me="" editable.htmlsrc="http://www.google-analytics.com/ga_exp.js?utmxkey=92005694-1&amp;utmx=85602008.e-d_WzeERjeaXENT_qeeJQ$92005694-1:1&amp;utmxx=85602008.e-d_WzeERjeaXENT_qeeJQ$92005694-1:1417204205:15552000&amp;utmxtime=1417210796393" type="text/javascript" charset="utf-8"></script><script>utmx('url','A/B');</script>
     <!-- End of Google Analytics Content Experiment code -->
 
     <title>Design free websites with Silex</title>
@@ -252,19 +252,24 @@ $(function(){
     $('a, [data-silex-href]').click(function(){
         var text = $(this).text().trim();
         var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
-        console.log("click", text, link);
-        trackLink(text, link);
-        return false;
+        var target = this.getAttribute('target') || this.getAttribute('data-silex-href');
+        trackLink(text, link, target);
+        if (!target || target === 'self') {
+            return false;
+        }
     });
-    function trackLink(text, url){
+    function trackLink(text, url, target){
         ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
             function () {
-                document.location = url;
+                if (!target || target === 'self') {
+                    document.location = url;
+                }
             }
         });
     }
 });
 ////////////////////////////////////
+
 </script><meta name="publicationPath" content="/api/1.0/dropbox/exec/put/sites-silex/www.silex.me">
 
 <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" class="silex-custom-font"><style id="current-page-style">.silex{display:inherit; }</style></head><body style="cursor: auto; left: -3px; top: 4px; background-color: rgb(0, 74, 122);" class="back silex-runtime" data-twttr-rendered="true">
