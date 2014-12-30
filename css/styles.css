@@ -32,7 +32,14 @@
 
 }
 .text-element.very-big *{
-    font-size: 80px !important;
+    font-size: 80px;
+}
+.text-element.special-format .normal {
+    font-size: 55px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    line-height: 57px;
+    text-align: center;
 }
 .text-shadow{
     text-shadow: -1px 2px #ff0000;
@@ -124,10 +131,10 @@
 }
 
 .element-0{
-	cursor: auto; left: -3px; top: 4px; background-color: rgb(0, 74, 122);
+	cursor: auto; left: 0px; top: 0px; background-color: rgb(0, 74, 122);
 }
 .element-1{
-	width: 960px; height: 3222px; position: absolute; top: 5px; left: 55px; box-shadow: rgba(0, 0, 0, 0.498039) 1px 0px 10px 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; background-color: rgb(255, 255, 255);
+	width: 960px; height: 3222px; position: absolute; top: 0px; left: 55px; box-shadow: rgba(0, 0, 0, 0.498039) 1px 0px 10px 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; background-color: rgb(255, 255, 255);
 }
 .element-2{
 	position: absolute; height: 80px; width: 294px; top: 1162px; left: 21px; background-color: transparent;
@@ -184,7 +191,7 @@
 	position: absolute; height: 57px; width: 960px; top: 205px; left: 0px; background-color: transparent;
 }
 .element-20{
-	position: absolute; left: 0px; background-color: rgb(0, 155, 255); height: 42px; box-shadow: 0px 1px 3px black; top: -5px;
+	position: absolute; left: 0px; height: 42px; box-shadow: black 0px 1px 3px; top: -5px; background-color: rgb(0, 155, 255);
 }
 .element-21{
 	height: 50px; top: -5px; width: 926px; background-color: transparent; position: absolute; left: 0px;
@@ -208,167 +215,176 @@
 	height: 70px; width: 140px; left: 596px; background-color: transparent; top: 0px; position: absolute;
 }
 .element-28{
-	position: absolute; height: 224px; width: 371px; top: 80px; left: 29px;
+	position: absolute; height: 290px; width: 960px; top: 290px; left: 0px; background-image: url('../assets/nuages-01.png'); background-color: transparent; background-position: 0% 100%; background-repeat: no-repeat;
 }
 .element-29{
-	position: absolute; height: 383px; width: 313px; top: 50px; left: 400px;
-}
-.element-30{
-	position: absolute; height: 290px; width: 960px; top: 290px; left: 0px; background-color: transparent; background-image: url('../assets/nuages-01.png'); background-position: 0% 100%; background-repeat: no-repeat no-repeat;
-}
-.element-31{
 	position: absolute; height: 254px; width: 960px; top: 37px; left: 2px; background-position: 0% 0%;
 }
+.element-30{
+	height: 179px; width: 178px; top: 105px; left: 7px; position: absolute; box-sizing: content-box;
+}
+.element-31{
+	position: absolute; height: 50px; width: 135px; top: -25px; left: 100px; box-sizing: content-box; background-color: transparent;
+}
 .element-32{
-	height: 30px; width: 92px; top: 637px; left: 13px; position: absolute; background-color: transparent;
+	height: 123px; width: 960px; top: 160px; left: 0px; position: absolute; z-index: -1; box-sizing: content-box; background-color: rgb(0, 155, 255);
 }
 .element-33{
-	height: 30px; width: 98px; top: 637px; left: 263px; position: absolute; background-color: transparent;
+	height: 38px; width: 102px; top: 637px; left: 13px; position: absolute; background-color: transparent;
 }
 .element-34{
-	height: 30px; width: 132px; top: 637px; left: 374px; position: absolute; background-color: transparent;
+	height: 38px; width: 108px; top: 637px; left: 264px; position: absolute; background-color: transparent;
 }
 .element-35{
-	height: 30px; width: 119px; top: 637px; left: 509px; position: absolute; background-color: transparent;
+	height: 38px; width: 142px; top: 637px; left: 381px; position: absolute; background-color: transparent;
 }
 .element-36{
-	position: absolute; height: 180px; width: 294px; top: 1211px; left: 646px; background-color: transparent;
+	height: 38px; width: 129px; top: 637px; left: 521px; position: absolute; background-color: transparent;
 }
 .element-37{
-	position: absolute; height: 160px; width: 294px; top: 1424px; left: 20px; background-color: transparent;
+	position: absolute; height: 180px; width: 294px; top: 1211px; left: 646px; background-color: transparent;
 }
 .element-38{
-	position: absolute; height: 180px; width: 294px; top: 1425px; left: 647px; background-color: transparent;
+	position: absolute; height: 160px; width: 294px; top: 1424px; left: 20px; background-color: transparent;
 }
 .element-39{
-	position: absolute; height: 80px; width: 294px; top: 1580px; left: 332px; background-color: transparent;
+	position: absolute; height: 180px; width: 294px; top: 1425px; left: 647px; background-color: transparent;
 }
 .element-40{
-	position: absolute; height: 55px; width: 212px; top: 203px; left: 720px; background-color: transparent;
+	position: absolute; height: 80px; width: 294px; top: 1580px; left: 332px; background-color: transparent;
 }
 .element-41{
-	position: absolute; height: 29px; width: 102px; top: 246px; left: 770px;
-}
-.element-42{
 	position: absolute; height: 173px; width: 294px; top: 1626px; left: 334px; background-color: transparent;
 }
+.element-42{
+	position: absolute; height: 39px; width: 125px; top: 637px; left: 650px; background-color: transparent;
+}
 .element-43{
-	position: absolute; height: 50px; width: 212px; top: 90px; left: 720px; background-color: transparent;
+	height: 38px; width: 107px; top: 637px; left: 138px; position: absolute; background-color: transparent;
 }
 .element-44{
-	position: absolute; height: 31px; width: 115px; top: 637px; left: 634px; background-color: transparent;
+	position: absolute; height: 30px; width: 52px; top: 595px; left: 430px;
 }
 .element-45{
-	height: 30px; width: 97px; top: 637px; left: 138px; position: absolute; background-color: transparent;
+	position: absolute; height: 47px; width: 47px; top: 586px; left: 170px;
 }
 .element-46{
-	position: absolute; height: 85px; width: 212px; top: 135px; left: 720px;
+	position: absolute; height: 39px; width: 39px; top: 590px; left: 560px;
 }
 .element-47{
-	position: absolute; height: 30px; width: 52px; top: 602px; left: 414px;
+	position: absolute; height: 42px; width: 42px; top: 588px; left: 40px;
 }
 .element-48{
-	position: absolute; height: 47px; width: 47px; top: 591px; left: 163px;
+	position: absolute; height: 38px; width: 38px; top: 590px; left: 300px;
 }
 .element-49{
-	position: absolute; height: 39px; width: 39px; top: 597px; left: 549px;
+	position: absolute; height: 40px; width: 40px; top: 590px; left: 690px;
 }
 .element-50{
-	position: absolute; height: 42px; width: 42px; top: 593px; left: 38px;
-}
-.element-51{
-	position: absolute; height: 38px; width: 38px; top: 594px; left: 293px;
-}
-.element-52{
-	position: absolute; height: 40px; width: 40px; top: 596px; left: 671px;
-}
-.element-53{
 	position: absolute; height: 10px; width: 920px; left: 28px; background-color: transparent; border-width: 1px 0px 0px; border-style: solid; border-color: rgb(0, 155, 255); top: 2349px;
 }
-.element-54{
+.element-51{
 	position: absolute; height: 432px; width: 290px; top: 2427px; left: 341px; background-color: rgb(255, 255, 255);
 }
-.element-55{
+.element-52{
 	position: absolute; height: 432px; width: 290px; top: 2427px; left: 33px; background-color: rgb(255, 255, 255);
 }
-.element-56{
+.element-53{
 	position: absolute; width: 960px; top: 2881px; left: 0px; background-color: rgb(0, 60, 100); height: 360px; border-radius: 0px;
 }
-.element-57{
+.element-54{
 	position: absolute; height: 70px; width: 70px; top: 25px; left: 500px;
 }
-.element-58{
+.element-55{
 	position: absolute; height: 70px; width: 70px; top: 25px; left: 410px;
 }
-.element-59{
+.element-56{
 	position: absolute; height: 70px; width: 70px; top: 25px; left: 320px;
 }
-.element-60{
+.element-57{
 	position: absolute; height: 70px; width: 70px; top: 24px; left: 590px;
 }
-.element-61{
+.element-58{
 	position: absolute; height: 70px; width: 70px; top: 23px; left: 680px;
 }
-.element-62{
+.element-59{
 	position: absolute; height: 79px; width: 265px; top: 20px; left: 20px;
 }
-.element-63{
+.element-60{
 	position: absolute; width: 920px; top: 112px; left: 20px; background-color: transparent; height: 45px;
 }
-.element-64{
+.element-61{
 	position: absolute; height: 70px; width: 70px; top: 23px; left: 770px;
 }
-.element-65{
+.element-62{
 	position: absolute; height: 70px; width: 70px; top: 23px; left: 860px;
 }
-.element-66{
+.element-63{
 	position: absolute; height: 183px; width: 960px; top: 174px; left: 0px; background-color: rgb(0, 146, 241);
 }
-.element-67{
+.element-64{
 	position: absolute; top: 2227px; background-color: transparent; height: 124px; width: 960px; left: 26px;
 }
-.element-68{
+.element-65{
 	position: absolute; height: 415px; width: 960px; top: 1805px; left: 0px; background-color: rgb(0, 155, 255);
 }
-.element-69{
+.element-66{
 	position: absolute; height: 96px; width: 610px; top: -3px; left: 22px; background-color: transparent;
 }
-.element-70{
+.element-67{
 	position: absolute; height: 291px; width: 609px; top: 98px; left: 22px; background-color: transparent;
 }
-.element-71{
+.element-68{
 	position: absolute; height: 314px; width: 294px; top: 75px; left: 650px; background-color: transparent;
 }
-.element-72{
+.element-69{
 	position: absolute; height: 55px; width: 287px; top: 16px; left: 653px; background-color: transparent;
 }
-.element-73{
+.element-70{
 	position: absolute; height: 80px; width: 294px; top: 2360px; left: 27px; background-color: transparent;
 }
-.element-74{
+.element-71{
 	position: absolute; width: 294px; top: 2374px; left: 646px; background-color: transparent; height: 61px;
 }
-.element-75{
+.element-72{
 	position: absolute; top: 930px; background-color: transparent; height: 124px; width: 960px; left: 1px;
 }
-.element-76{
+.element-73{
 	height: 120px; width: 960px; top: 1045px; left: -1px; position: absolute; background-color: transparent;
 }
-.element-77{
+.element-74{
 	position: absolute; height: 13px; width: 920px; left: 19px; background-color: transparent; border-width: 1px 0px 0px; border-style: solid; border-color: rgb(0, 155, 255); top: 1163px;
 }
-.element-78{
+.element-75{
 	position: absolute; height: 432px; width: 290px; top: 2427px; left: 648px; background-color: transparent;
 }
-.element-79{
+.element-76{
 	position: absolute; width: 294px; top: 2362px; left: 338px; background-color: transparent; height: 80px;
 }
-.element-80{
-	position: absolute; height: 65px; width: 175px; top: 595px; left: 779px; background-color: transparent; background-position: 0% 0%;
-}
-.element-81{
+.element-77{
 	position: absolute; height: 148px; width: 294px; top: 1212px; left: 334px; background-color: transparent;
 }
-.element-82{
+.element-78{
 	position: absolute; height: 80px; width: 294px; top: 1160px; left: 647px; background-color: transparent;
+}
+.element-79{
+	position: absolute; height: 50px; width: 175px; top: 578px; left: 780px; box-sizing: content-box; background-color: transparent; background-position: 0% 0%;
+}
+.element-80{
+	position: absolute; height: 50px; width: 212px; top: 90px; left: 62px; background-color: transparent;
+}
+.element-81{
+	position: absolute; height: 85px; width: 212px; top: 135px; left: 63px;
+}
+.element-82{
+	position: absolute; height: 55px; width: 175px; top: 205px; left: 86px; border-width: 0px 0px 1px; border-style: solid; background-color: transparent; background-position: 0% 0%;
+}
+.element-83{
+	height: 390px; width: 590px; top: 50px; left: 320px; position: absolute; box-sizing: content-box; z-index: -1;
+}
+.element-84{
+	height: 300px; width: 550px; top: 70px; left: 340px; position: absolute; box-sizing: content-box; border-radius: 3px;
+}
+.element-85{
+	position: absolute; height: 39px; width: 162px; top: 637px; left: 783px; box-sizing: content-box; background-color: transparent;
 }
