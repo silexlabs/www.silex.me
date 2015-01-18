@@ -18,11 +18,7 @@ function newAnchorLink(link, pos){
         return false;
     });
 }
-/*
-window.onscroll = function(e){
-    if (typeof console !== "undefined") console.log(document.body.scrollTop)
-}
-*/
+
 ////////////////////////////////////
 // github issues
 var widgetScriptUrl = 'js/widgets.js';
