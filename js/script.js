@@ -12,13 +12,20 @@ $(function(){
 });
 function newAnchorLink(link, pos){
     $('a[href="#'+link+'"]').click(function(){
-        $('html, body').animate({
-            scrollTop: pos
-        }, 500);
+        silexScrollTo(pos);
         return false;
     });
+    // check the hash at start
+    if(window.location.hash && window.location.hash === '#' + link) {
+        console.log('xxxx', window.location.hash);
+        silexScrollTo(pos);
+    }
 }
-
+function silexScrollTo(pos) {
+    $('html, body').animate({
+            scrollTop: pos
+        }, 500);
+}
 ////////////////////////////////////
 // github issues
 var widgetScriptUrl = 'js/widgets.js';
