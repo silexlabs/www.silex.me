@@ -17,7 +17,6 @@ function newAnchorLink(link, pos){
     });
     // check the hash at start
     if(window.location.hash && window.location.hash === '#' + link) {
-        console.log('xxxx', window.location.hash);
         silexScrollTo(pos);
     }
 }
