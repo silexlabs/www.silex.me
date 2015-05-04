@@ -12,7 +12,7 @@
             newAnchorLink('contact', 4885);
         });
         function newAnchorLink(link, pos){
-            $('a[href="editable.html#'+link+'"]').click(function(){
+            $('a[href="#'+link+'"]').click(function(){
                 silexScrollTo(pos);
                 return false;
             });
@@ -98,4 +98,4 @@
             }
         });
         ////////////////////////////////////
-    
+

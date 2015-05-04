@@ -152,6 +152,9 @@
           max-width: 45%;
           border-radius: 5px;
         }
+        .showcase .silex-element-content {
+            overflow: hidden;
+        }
         .github-issues-image.showcase img {
           max-width: 42%;
           border-radius: 5px;
