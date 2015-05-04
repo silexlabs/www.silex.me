@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html><head>      
     <title>Design free websites with Silex</title>
     <meta charset="UTF-8">
     <meta name="generator" content="Silex v2.2.4">
@@ -25,292 +22,20 @@
     <meta http-equiv="content-language" content="en">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <!-- /seo -->
-    <script type="text/javascript" src="http://static.silex.me/2.4/jquery.js"></script>
-    <script type="text/javascript" src="http://static.silex.me/2.4/jquery-ui.js"></script>
-    <script type="text/javascript" src="http://static.silex.me/2.4/jquery.ui.touch-punch.min.js"></script>
-    <script type="text/javascript" src="http://static.silex.me/2.4/pageable.js"></script>
-    <script type="text/javascript" src="http://static.silex.me/2.4/front-end.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/pageable.js"></script>
+    <script type="text/javascript" src="js/front-end.js"></script>
     <!-- Silex style -->
-    <link href="http://static.silex.me/2.4/front-end.css" rel="stylesheet">
+    <link href="css/front-end.css" rel="stylesheet">
     <!-- Normalize -->
-    <link href="http://static.silex.me/2.4/normalize.css" rel="stylesheet">
-    <style type="text/css" class="silex-style">
-        @import url('http://fonts.googleapis.com/css?family=Abel');
-        @import url('http://fonts.googleapis.com/css?family=Oswald:400,300');
-
-        .oswald.text-element, .oswald .text-element {
-            font-family: 'Oswald', sans-serif;
-        }
-
-        .abel.text-element, .abel .text-element {
-            font-family: 'Abel', sans-serif;
-        }
-        .links a{
-            color:#006CB2;
-        }
-
-        /* text styles formatting */
-        .text-element HEADER,
-        .text-element H1,
-        .text-element H2,
-        .text-element H3,
-        .text-element DIV,
-        .text-element P,
-        .text-element QUOTE {
-          color: #FF3200;
-
-        }
-        .text-element HEADER {
-          font-size: 45px;
-        }
-        /* background element */
-        .background{
-
-        }
-        .normal {
-            text-align: justify;
-        }
-        .text-element.very-big *{
-            font-size: 80px;
-        }
-        .text-element.special-format .normal {
-            font-size: 55px;
-            color: white;
-            font-family: 'Oswald', sans-serif;
-            line-height: 57px;
-            text-align: center;
-        }
-        .special-format2 .normal {
-            text-transform: uppercase;
-            font-size: 74px;
-            line-height: 64px;
-        }
-        .special-format2.verybig * {
-            font-size: 180px;
-            line-height: 180px;
-        }
-        .special-format2 h2,
-        .special-format2 h1,
-        .special-format2 p {
-            margin: 0px;
-        }
-        .special-format2 .heading2 {
-            letter-spacing: 10px;
-            line-height: 0;
-        }
-        .special-format2 .heading1 {
-            font-size: 30px;
-            word-spacing: 1px;
-            text-align: left;
-            line-height: 30px;
-        }
-        .special-format2 .title {
-            font-size: 60px;
-            line-height: 54px;
-            word-spacing: 1px;
-        }
-        .text-shadow{
-            text-shadow: -1px 2px #ff0000;
-        }
-        .full-width{
-            width:100% !important;
-        }
-        .centered{
-           margin: auto !important;
-           position: relative !important;
-        }
-        .top{
-            z-index: 100;
-        }
-        .back{
-            z-index: -1;
-        }
-        .silex-runtime .fixed-menu{
-            position: fixed !important;
-            z-index: 120;
-        }
-        /* keywords of the footer */
-        .silex-runtime .discret li,
-        .silex-runtime .discret .heading2{
-            color: black !important;
-            font-size: 14px !important;
-            float: left !important;
-            list-style-type: none;
-            margin-left: 5px;
-        }
-        .discret H1{
-            color: black !important;
-            font-size: 16px !important;
-        }
-        /* *************************** *
-        .layout-h div{
-            position: static !important;
-            display: inline-block !important;
-        }
-
-        .animated{
-            display: inherit !important;
-            position: absolute !important;
-            left: -5000px !important;
-            opacity: 0 !important;
-        }
-        .animated.paged-element{
-            transition: left 0.8s !important;
-        }
-        /* *************************** */
-        /* github issues */
-        .github-issues .silex-element-content {
-            overflow: auto;
-        }
-        .github-issues ul {
-          margin: 0;
-          padding: 0;
-        }
-        .github-issues li {
-          list-style-type: none;
-          margin: 0;
-          padding: 3px;
-          border-bottom: 1px solid #cccccc;
-          font-size: 14px;
-          line-height: 19px;
-        }
-        .github-issues li a {
-          text-decoration: none;
-          color: black;
-        }
-        .github-issues-image ul {
-          text-align: center;
-        }
-        .github-issues-image li {
-          display: inline;
-        }
-        .github-issues-image img {
-          max-width: 47%;
-          border-radius: 5px;
-        }
-        .github-issues.github-issues-white *{
-          color: white;
-        }
-        .github-issues.github-issues-white li {
-            border-bottom-color: #999999;
-        }
-        .github-issues.github-issues-image li {
-            border-bottom: none;
-        }
-        /* share buttons from http://simplesharingbuttons.com/
-        */
-        .share-buttons{
-        	list-style: none;
-        }
-
-        .share-buttons li{
-        	display: inline;
-        }
-    </style>
+    <link href="css/normalize.css" rel="stylesheet">
+    
 
 
-    <script type="text/javascript" class="silex-script">
-        ////////////////////////////////////
-        // animate.js
-        document.write('<link href="css/animate.min.css" rel="stylesheet">');
-        ////////////////////////////////////
-        // anchors and scrolling
-        $(function(){
-            newAnchorLink('home', 0);
-            newAnchorLink('showcase', 641);
-            newAnchorLink('silex', 1785);
-            newAnchorLink('templates', 3430);
-            newAnchorLink('contact', 4885);
-        });
-        function newAnchorLink(link, pos){
-            $('a[href="editable.html#'+link+'"]').click(function(){
-                silexScrollTo(pos);
-                return false;
-            });
-            // check the hash at start
-            if(window.location.hash && window.location.hash === '#' + link) {
-                silexScrollTo(pos);
-            }
-        }
-        function silexScrollTo(pos) {
-            $('html, body').animate({
-                    scrollTop: pos
-                }, 500);
-        }
-
-        ////////////////////////////////////
-        // github issues
-        var widgetScriptUrl = 'js/widgets.js';
-        if(typeof(Worker) !== 'undefined'){
-          // web workers supported
-          // create the worker
-          var worker = new Worker(widgetScriptUrl);
-          // define silex_github_widget
-          window.silex_github_widget = function (containerSelector, labels, imageMode) {
-            $(containerSelector).append('<p class="loading">Loading...</p>');
-            worker.postMessage({
-              operation: 'silex_github_widget',
-              selector: containerSelector,
-              labels: labels,
-              imageMode: imageMode
-            });
-          };
-          // define silex_rss_widget
-          window.silex_rss_widget = function (containerSelector, feedUrl, count) {
-            $(containerSelector).append('<p class="loading">Loading...</p>');
-            worker.postMessage({
-              operation: 'silex_rss_widget',
-              selector: containerSelector,
-              url: feedUrl,
-              count: count
-            });
-          }
-          // result of the web worker calls
-          worker.onmessage = function (event) {
-            $(event.data.selector+' p.loading').remove();
-            $(event.data.selector).append(event.data.html);
-          };
-        }
-        else{
-          // no web workers, so load the script
-          if (typeof console !== "undefined") console.error('NO WEBWORKER');
-          document.write('<script src="'+widgetScriptUrl+'"></'+'script>')
-        }
-
-        ////////////////////////////////////
-        // google analytics
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-19608894-23', 'auto');
-        ga('send', 'pageview');
-
-        // track links
-        $(function(){
-            $('a, [data-silex-href]').click(function(){
-                var text = $(this).text().trim();
-                var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
-                var target = this.getAttribute('target') || this.getAttribute('data-silex-href');
-                trackLink(text, link, target);
-                if (!target || target === 'self') {
-                    return false;
-                }
-            });
-            function trackLink(text, url, target){
-                ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
-                    function () {
-                        if (!target || target === 'self') {
-                            document.location = url;
-                        }
-                    }
-                });
-            }
-        });
-        ////////////////////////////////////
-    </script>
-    <meta name="publicationPath" content="http://localhost:6805/api/1.0/dropbox/exec/put/sites-silex/www.silex.me">
+    
+    
 
 
 
@@ -319,905 +44,7 @@
 
 
 
-    <style class="silex-inline-styles" type="text/css">
-        .body-initial {
-            cursor: auto; 
-            left: 0px; 
-            top: 0px; 
-            background-color: rgb(0, 74, 122); 
-        }
-        .silex-id-1427579791827 {
-            width: 960px; 
-            height: 5617px; 
-            position: absolute; 
-            top: 5px; 
-            left: 55px; 
-            box-shadow: rgba(0, 0, 0, 0.498039) 1px 0px 10px 0px; 
-            border-top-left-radius: 0px; 
-            border-top-right-radius: 0px; 
-            border-bottom-right-radius: 0px; 
-            border-bottom-left-radius: 0px; 
-            box-sizing: content-box; 
-            background-color: rgb(255, 255, 255); 
-        }
-        .silex-id-1427579790403 {
-            position: absolute; 
-            height: 1119px; 
-            width: 960px; 
-            top: 670px; 
-            left: 0px; 
-            box-sizing: content-box; 
-            background-color: rgb(0, 155, 255); 
-        }
-        .silex-id-1427579789998 {
-            position: absolute; 
-            height: 69px; 
-            width: 960px; 
-            top: -3px; 
-            left: 0px; 
-            background-color: transparent; 
-            box-sizing: content-box; 
-        }
-        .silex-id-1427604618762 {
-            height: 1020px; 
-            width: 960px; 
-            top: 79px; 
-            left: 0px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579789590 {
-            position: absolute; 
-            left: 0px; 
-            height: 42px; 
-            box-shadow: black 0px 1px 3px; 
-            top: -5px; 
-            background-color: rgb(0, 155, 255); 
-        }
-        .silex-id-1427579789488 {
-            height: 50px; 
-            top: -5px; 
-            width: 926px; 
-            background-color: transparent; 
-            position: absolute; 
-            left: 0px; 
-        }
-        .silex-id-1427579789386 {
-            height: 70px; 
-            width: 140px; 
-            background-color: transparent; 
-            top: 0px; 
-            position: absolute; 
-            left: -20px; 
-        }
-        .silex-id-1427579789284 {
-            height: 70px; 
-            width: 140px; 
-            left: 127px; 
-            background-color: transparent; 
-            top: 0px; 
-            position: absolute; 
-        }
-        .silex-id-1427579789182 {
-            height: 70px; 
-            width: 163px; 
-            left: 748px; 
-            background-color: transparent; 
-            position: absolute; 
-            top: 0px; 
-        }
-        .silex-id-1427579789081 {
-            height: 78px; 
-            width: 159px; 
-            background-color: transparent; 
-            top: 0px; 
-            position: absolute; 
-            left: 278px; 
-        }
-        .silex-id-1427579788979 {
-            height: 70px; 
-            width: 140px; 
-            left: 445px; 
-            background-color: transparent; 
-            top: 0px; 
-            position: relative; 
-        }
-        .silex-id-1427579788878 {
-            height: 70px; 
-            width: 140px; 
-            left: 596px; 
-            background-color: transparent; 
-            top: 0px; 
-            position: absolute; 
-        }
-        .silex-id-1427579788776 {
-            position: absolute; 
-            height: 252px; 
-            width: 960px; 
-            top: 332px; 
-            left: 0px; 
-            background-image: url('assets/nuages-01.png'); 
-            background-color: transparent; 
-            background-position-x: 0%; 
-            background-position-y: 100%; 
-            background-repeat-x: no-repeat; 
-            background-repeat-y: no-repeat; 
-            background-size: cover; 
-        }
-        .silex-id-1427579788472 {
-            position: absolute; 
-            height: 50px; 
-            width: 135px; 
-            top: -25px; 
-            left: 100px; 
-            box-sizing: content-box; 
-            background-color: transparent; 
-        }
-        .silex-id-1427636113019 {
-            height: 179px; 
-            width: 178px; 
-            top: 65px; 
-            left: 5px; 
-            position: absolute; 
-        }
-        .silex-id-1427639908823 {
-            height: 205px; 
-            width: 778px; 
-            top: 46px; 
-            left: 186px; 
-            position: absolute; 
-            background-color: transparent; 
-            background-image: url('assets/nuages-typos-ab-testing2.png'); 
-            background-repeat-x: no-repeat; 
-            background-repeat-y: no-repeat; 
-            background-size: auto; 
-            background-position-x: 100%; 
-            background-position-y: 100%; 
-        }
-        .silex-id-1427579788268 {
-            height: 38px; 
-            width: 102px; 
-            top: 644px; 
-            left: 13px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579788167 {
-            height: 38px; 
-            width: 108px; 
-            top: 644px; 
-            left: 264px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579788066 {
-            height: 38px; 
-            width: 142px; 
-            top: 644px; 
-            left: 381px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787965 {
-            height: 38px; 
-            width: 129px; 
-            top: 644px; 
-            left: 521px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787357 {
-            position: absolute; 
-            height: 39px; 
-            width: 125px; 
-            top: 644px; 
-            left: 650px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787256 {
-            height: 38px; 
-            width: 107px; 
-            top: 644px; 
-            left: 138px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787153 {
-            position: absolute; 
-            height: 30px; 
-            width: 52px; 
-            top: 602px; 
-            left: 430px; 
-        }
-        .silex-id-1427579787051 {
-            position: absolute; 
-            height: 47px; 
-            width: 47px; 
-            top: 593px; 
-            left: 170px; 
-        }
-        .silex-id-1427579786950 {
-            position: absolute; 
-            height: 39px; 
-            width: 39px; 
-            top: 597px; 
-            left: 560px; 
-        }
-        .silex-id-1427579786848 {
-            position: absolute; 
-            height: 42px; 
-            width: 42px; 
-            top: 595px; 
-            left: 40px; 
-        }
-        .silex-id-1427579786237 {
-            position: absolute; 
-            width: 960px; 
-            top: 4897px; 
-            left: 0px; 
-            height: 719px; 
-            border-top-left-radius: 0px; 
-            border-top-right-radius: 0px; 
-            border-bottom-right-radius: 0px; 
-            border-bottom-left-radius: 0px; 
-            box-sizing: content-box; 
-            background-color: rgb(0, 60, 100); 
-        }
-        .silex-id-1427579786135 {
-            position: absolute; 
-            width: 920px; 
-            top: 432px; 
-            left: 20px; 
-            height: 45px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579786034 {
-            position: absolute; 
-            height: 207px; 
-            width: 960px; 
-            top: 521px; 
-            left: 0px; 
-            background-color: rgb(0, 146, 241); 
-        }
-        .silex-id-1427579785932 {
-            position: absolute; 
-            height: 70px; 
-            width: 70px; 
-            top: 127px; 
-            left: 338px; 
-        }
-        .silex-id-1427579785830 {
-            position: absolute; 
-            height: 70px; 
-            width: 70px; 
-            top: 127px; 
-            left: 248px; 
-        }
-        .silex-id-1427579785728 {
-            position: absolute; 
-            height: 70px; 
-            width: 70px; 
-            top: 127px; 
-            left: 158px; 
-        }
-        .silex-id-1427579785625 {
-            position: absolute; 
-            height: 70px; 
-            width: 70px; 
-            top: 126px; 
-            left: 428px; 
-        }
-        .silex-id-1427579785523 {
-            position: absolute; 
-            height: 70px; 
-            width: 70px; 
-            top: 125px; 
-            left: 518px; 
-        }
-        .silex-id-1427579785421 {
-            position: absolute; 
-            height: 70px; 
-            width: 70px; 
-            top: 125px; 
-            left: 608px; 
-        }
-        .silex-id-1427579785320 {
-            position: absolute; 
-            height: 70px; 
-            width: 70px; 
-            top: 125px; 
-            left: 698px; 
-        }
-        .silex-id-1427579785219 {
-            position: absolute; 
-            height: 79px; 
-            width: 265px; 
-            top: 322px; 
-            left: 55px; 
-        }
-        .silex-id-1427579785116 {
-            height: 82px; 
-            width: 265px; 
-            top: 320px; 
-            left: 351px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579785015 {
-            height: 82.3338898163606px; 
-            width: 264px; 
-            top: 320px; 
-            left: 650px; 
-            position: absolute; 
-            box-sizing: content-box; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579784913 {
-            position: absolute; 
-            height: 55px; 
-            width: 287px; 
-            top: 63px; 
-            left: 338px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579784810 {
-            position: absolute; 
-            height: 55px; 
-            width: 507px; 
-            top: 246px; 
-            left: 228px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579782875 {
-            position: absolute; 
-            height: 55px; 
-            width: 175px; 
-            top: 205px; 
-            left: 75px; 
-            border-top-width: 0px; 
-            border-right-width: 0px; 
-            border-bottom-width: 1px; 
-            border-left-width: 0px; 
-            border-top-style: solid; 
-            border-right-style: solid; 
-            border-bottom-style: solid; 
-            border-left-style: solid; 
-            background-color: transparent; 
-            background-position-x: 0%; 
-            background-position-y: 0%; 
-        }
-        .silex-id-1427579782773 {
-            height: 390px; 
-            width: 590px; 
-            top: 50px; 
-            left: 320px; 
-            position: absolute; 
-            box-sizing: content-box; 
-            z-index: -1; 
-        }
-        .silex-id-1427579782671 {
-            height: 300px; 
-            width: 550px; 
-            top: 70px; 
-            left: 340px; 
-            position: absolute; 
-            box-sizing: content-box; 
-            border-top-left-radius: 3px; 
-            border-top-right-radius: 3px; 
-            border-bottom-right-radius: 3px; 
-            border-bottom-left-radius: 3px; 
-        }
-        .silex-id-1427587769948 {
-            height: 843px; 
-            width: 960px; 
-            top: 2602px; 
-            left: 0px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579791726 {
-            position: absolute; 
-            height: 80px; 
-            width: 277px; 
-            top: 321px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579791624 {
-            position: absolute; 
-            height: 80px; 
-            width: 277px; 
-            top: 321px; 
-            left: 340px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579791522 {
-            position: absolute; 
-            height: 80px; 
-            width: 277px; 
-            top: 569px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579791421 {
-            position: absolute; 
-            height: 164px; 
-            width: 277px; 
-            top: 373px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579791319 {
-            position: absolute; 
-            height: 80px; 
-            width: 277px; 
-            top: 569px; 
-            left: 340px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579791217 {
-            position: absolute; 
-            height: 180px; 
-            width: 277px; 
-            top: 614px; 
-            left: 340px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579791116 {
-            position: absolute; 
-            height: 80px; 
-            width: 277px; 
-            top: 569px; 
-            left: 657px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579790505 {
-            position: absolute; 
-            height: 10px; 
-            width: 920px; 
-            top: 550px; 
-            left: 24px; 
-            background-color: rgb(255, 255, 255); 
-            border-top-width: 1px; 
-            border-right-width: 0px; 
-            border-bottom-width: 0px; 
-            border-left-width: 0px; 
-            border-top-style: solid; 
-            border-right-style: solid; 
-            border-bottom-style: solid; 
-            border-left-style: solid; 
-            border-top-color: rgb(0, 155, 255); 
-            border-right-color: rgb(0, 155, 255); 
-            border-bottom-color: rgb(0, 155, 255); 
-            border-left-color: rgb(0, 155, 255); 
-        }
-        .silex-id-1427579787864 {
-            position: absolute; 
-            height: 180px; 
-            width: 277px; 
-            top: 370px; 
-            left: 657px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787762 {
-            position: absolute; 
-            height: 183px; 
-            width: 277px; 
-            top: 613px; 
-            left: 21px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787660 {
-            position: absolute; 
-            height: 180px; 
-            width: 277px; 
-            top: 614px; 
-            left: 658px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579783894 {
-            position: absolute; 
-            top: 54px; 
-            background-color: transparent; 
-            height: 124px; 
-            width: 960px; 
-            left: 2px; 
-            border-top-color: rgb(0, 0, 0); 
-            border-right-color: rgb(0, 0, 0); 
-            border-bottom-color: rgb(0, 0, 0); 
-            border-left-color: rgb(0, 0, 0); 
-        }
-        .silex-id-1427579783793 {
-            height: 120px; 
-            width: 960px; 
-            top: 169px; 
-            left: 0px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579783690 {
-            position: absolute; 
-            height: 13px; 
-            width: 920px; 
-            left: 20px; 
-            background-color: transparent; 
-            border-top-width: 1px; 
-            border-right-width: 0px; 
-            border-bottom-width: 0px; 
-            border-left-width: 0px; 
-            border-top-style: solid; 
-            border-right-style: solid; 
-            border-bottom-style: solid; 
-            border-left-style: solid; 
-            border-top-color: rgb(0, 155, 255); 
-            border-right-color: rgb(0, 155, 255); 
-            border-bottom-color: rgb(0, 155, 255); 
-            border-left-color: rgb(0, 155, 255); 
-            top: 302px; 
-        }
-        .silex-id-1427579783385 {
-            position: absolute; 
-            height: 148px; 
-            width: 277px; 
-            top: 371px; 
-            left: 340px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579783283 {
-            position: absolute; 
-            height: 80px; 
-            width: 277px; 
-            top: 319px; 
-            left: 658px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579786746 {
-            position: absolute; 
-            height: 38px; 
-            width: 38px; 
-            top: 597px; 
-            left: 300px; 
-        }
-        .silex-id-1427579786644 {
-            position: absolute; 
-            height: 40px; 
-            width: 40px; 
-            top: 597px; 
-            left: 690px; 
-        }
-        .silex-id-1427579784606 {
-            position: absolute; 
-            height: 643px; 
-            width: 960px; 
-            top: 3455px; 
-            left: 0px; 
-            background-color: rgb(0, 155, 255); 
-        }
-        .silex-id-1427579784504 {
-            position: absolute; 
-            height: 96px; 
-            width: 610px; 
-            top: -3px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579784402 {
-            position: absolute; 
-            height: 490px; 
-            width: 609px; 
-            top: 98px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579784301 {
-            position: absolute; 
-            height: 490px; 
-            width: 294px; 
-            top: 96px; 
-            left: 650px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579784200 {
-            position: absolute; 
-            height: 70px; 
-            width: 287px; 
-            top: 16px; 
-            left: 653px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579783181 {
-            position: absolute; 
-            height: 50px; 
-            width: 175px; 
-            top: 585px; 
-            left: 770px; 
-            box-sizing: content-box; 
-            background-color: transparent; 
-            background-position-x: 0%; 
-            background-position-y: 0%; 
-        }
-        .silex-id-1427579783079 {
-            position: absolute; 
-            height: 50px; 
-            width: 212px; 
-            top: 90px; 
-            left: 62px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579782977 {
-            position: absolute; 
-            height: 85px; 
-            width: 212px; 
-            top: 135px; 
-            left: 63px; 
-        }
-        .silex-id-1427579782569 {
-            position: absolute; 
-            height: 39px; 
-            width: 162px; 
-            top: 644px; 
-            left: 783px; 
-            box-sizing: content-box; 
-            background-color: transparent; 
-        }
-        .silex-id-1427603853102 {
-            height: 755px; 
-            width: 960px; 
-            top: 4102px; 
-            left: 0px; 
-            position: absolute; 
-            background-color: rgb(255, 255, 255); 
-        }
-        .silex-id-1427579786440 {
-            position: absolute; 
-            height: 495px; 
-            width: 290px; 
-            top: 211px; 
-            left: 335px; 
-            background-color: rgb(255, 255, 255); 
-        }
-        .silex-id-1427579786338 {
-            position: absolute; 
-            height: 495px; 
-            width: 290px; 
-            top: 211px; 
-            left: 27px; 
-            background-color: rgb(255, 255, 255); 
-        }
-        .silex-id-1427579784708 {
-            position: absolute; 
-            top: 11px; 
-            background-color: transparent; 
-            height: 124px; 
-            width: 960px; 
-            left: 0px; 
-        }
-        .silex-id-1427579784099 {
-            position: absolute; 
-            height: 80px; 
-            width: 294px; 
-            top: 144px; 
-            left: 21px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579783996 {
-            position: absolute; 
-            width: 294px; 
-            top: 158px; 
-            left: 640px; 
-            background-color: transparent; 
-            height: 61px; 
-        }
-        .silex-id-1427579783588 {
-            position: absolute; 
-            height: 495px; 
-            width: 290px; 
-            top: 211px; 
-            left: 642px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579783487 {
-            position: absolute; 
-            width: 294px; 
-            top: 146px; 
-            left: 332px; 
-            background-color: transparent; 
-            height: 80px; 
-        }
-        .silex-id-1430089351512 {
-            height: 849px; 
-            width: 960px; 
-            top: 1785px; 
-            left: 0px; 
-            position: absolute; 
-            background-color: rgb(255, 255, 255); 
-        }
-        .silex-id-1427579790710 {
-            position: absolute; 
-            width: 280px; 
-            top: 523px; 
-            left: 657px; 
-            background-color: transparent; 
-            height: 80px; 
-        }
-        .silex-id-1427579790607 {
-            position: absolute; 
-            height: 237px; 
-            width: 280px; 
-            top: 585px; 
-            left: 656px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579782467 {
-            position: absolute; 
-            height: 80px; 
-            width: 280px; 
-            top: 270px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579782365 {
-            position: absolute; 
-            height: 80px; 
-            width: 280px; 
-            top: 270px; 
-            left: 339px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579782262 {
-            position: absolute; 
-            height: 189px; 
-            width: 280px; 
-            top: 333px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579782059 {
-            position: absolute; 
-            top: 28px; 
-            background-color: transparent; 
-            height: 124px; 
-            width: 960px; 
-            left: 2px; 
-            border-top-color: rgb(0, 0, 0); 
-            border-right-color: rgb(0, 0, 0); 
-            border-bottom-color: rgb(0, 0, 0); 
-            border-left-color: rgb(0, 0, 0); 
-        }
-        .silex-id-1427579781958 {
-            height: 104px; 
-            width: 960px; 
-            top: 129px; 
-            left: 0px; 
-            position: absolute; 
-            background-color: transparent; 
-            box-sizing: content-box; 
-        }
-        .silex-id-1427579781636 {
-            position: absolute; 
-            height: 80px; 
-            width: 280px; 
-            top: 268px; 
-            left: 658px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427583851663 {
-            position: absolute; 
-            height: 80px; 
-            width: 280px; 
-            top: 523px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427583851731 {
-            position: absolute; 
-            height: 237px; 
-            width: 280px; 
-            top: 588px; 
-            left: 22px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427583890283 {
-            position: absolute; 
-            height: 80px; 
-            width: 280px; 
-            top: 523px; 
-            left: 339px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427583925791 {
-            position: absolute; 
-            height: 226px; 
-            width: 280px; 
-            top: 587px; 
-            left: 339px; 
-            background-color: transparent; 
-            border-top-color: rgb(0, 0, 0); 
-            border-right-color: rgb(0, 0, 0); 
-            border-bottom-color: rgb(0, 0, 0); 
-            border-left-color: rgb(0, 0, 0); 
-        }
-        .silex-id-1427584588756 {
-            position: absolute; 
-            height: 10px; 
-            width: 920px; 
-            left: 20px; 
-            background-color: transparent; 
-            border-top-width: 1px; 
-            border-right-width: 0px; 
-            border-bottom-width: 0px; 
-            border-left-width: 0px; 
-            border-top-style: solid; 
-            border-right-style: solid; 
-            border-bottom-style: solid; 
-            border-left-style: solid; 
-            border-top-color: rgb(0, 155, 255); 
-            border-right-color: rgb(0, 155, 255); 
-            border-bottom-color: rgb(0, 155, 255); 
-            border-left-color: rgb(0, 155, 255); 
-            top: 241px; 
-        }
-        .silex-id-1427587170182 {
-            position: absolute; 
-            height: 10px; 
-            width: 920px; 
-            left: 20px; 
-            background-color: transparent; 
-            border-top-width: 1px; 
-            border-right-width: 0px; 
-            border-bottom-width: 0px; 
-            border-left-width: 0px; 
-            border-top-style: solid; 
-            border-right-style: solid; 
-            border-bottom-style: solid; 
-            border-left-style: solid; 
-            border-top-color: rgb(0, 155, 255); 
-            border-right-color: rgb(0, 155, 255); 
-            border-bottom-color: rgb(0, 155, 255); 
-            border-left-color: rgb(0, 155, 255); 
-            top: 515px; 
-        }
-        .silex-id-1427579782161 {
-            position: absolute; 
-            height: 188px; 
-            width: 280px; 
-            top: 331px; 
-            left: 657px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579781755 {
-            position: absolute; 
-            height: 183px; 
-            width: 280px; 
-            top: 334px; 
-            left: 339px; 
-            background-color: transparent; 
-            border-top-color: rgb(0, 0, 0); 
-            border-right-color: rgb(0, 0, 0); 
-            border-bottom-color: rgb(0, 0, 0); 
-            border-left-color: rgb(0, 0, 0); 
-        }
-        .silex-id-1427579786542 {
-            position: absolute; 
-            height: 10px; 
-            width: 920px; 
-            left: 25px; 
-            background-color: transparent; 
-            border-top-width: 1px; 
-            border-right-width: 0px; 
-            border-bottom-width: 0px; 
-            border-left-width: 0px; 
-            border-top-style: solid; 
-            border-right-style: solid; 
-            border-bottom-style: solid; 
-            border-left-style: solid; 
-            border-top-color: rgb(0, 155, 255); 
-            border-right-color: rgb(0, 155, 255); 
-            border-bottom-color: rgb(0, 155, 255); 
-            border-left-color: rgb(0, 155, 255); 
-            top: 833px; 
-        }
-    </style>
+    
 
 
 
@@ -1301,17 +128,22 @@
 
 
 
-    <link href="assets/favicon.png" rel="shortcut icon">
+    <link href="css/favicon.png" rel="shortcut icon">
+
+
+
+
+    <link class="silex-custom-font" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+
+
+
 
     <style id="current-page-style">
         .silex{display:inherit; }
     </style>
-    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" class="silex-custom-font">
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
-</head>
-
-<body class="body-initial enable-mobile silex-runtime" data-twttr-rendered="true" data-silex-id="body-initial">
+      <link href="css/styles.css" rel="stylesheet">      <script src="js/script.js" type="text/javascript"></script>  </head><body class="body-initial enable-mobile silex-runtime silex-published">
     <a id="silex" data-silex-type="page" class="page-element">Silex</a>
 
     <div class="background editable-style container-element prevent-draggable silex-id-1427579791827" data-silex-type="container" data-silex-id="silex-id-1427579791827">
@@ -1348,7 +180,7 @@
 
 
 
-            <div data-silex-type="html" class="editable-style  html-element silex paged-element silex-id-1427604618762 github-issues github-issues-image github-issues-white" data-silex-id="silex-id-1427604618762">
+            <div data-silex-type="html" class="editable-style  html-element silex paged-element silex-id-1427604618762 github-issues github-issues-image github-issues-white showcase" data-silex-id="silex-id-1427604618762">
                 <div class="silex-element-content">
                     <div id="showcase"></div>
                     <script type="text/javascript">
@@ -1435,55 +267,55 @@
 
             <div data-silex-type="container" class="editable-style silex-id-1427639908823 container-element silex paged-element" data-silex-id="silex-id-1427639908823"></div>
         </div>
-        <div class="editable-style text-element silex animated fadeIn silex-id-1427579788268" data-silex-type="text" data-silex-href="https://github.com/silexlabs/Silex" data-silex-id="silex-id-1427579788268">
+        <a target="_blank" href="https://github.com/silexlabs/Silex" class="editable-style text-element silex animated fadeIn silex-id-1427579788268" data-silex-type="text" data-silex-id="silex-id-1427579788268">
             <div class="silex-element-content">
                 <div style="text-align: center;"><span style="color: rgb(11, 83, 148);">Source code<br></span>
                 </div>
             </div>
-        </div>
-        <div class="editable-style text-element silex animated fadeIn silex-id-1427579788167" data-silex-type="text" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=bug&amp;state=open" data-silex-id="silex-id-1427579788167">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/issues?labels=bug&amp;state=open" class="editable-style text-element silex animated fadeIn silex-id-1427579788167" data-silex-type="text" data-silex-id="silex-id-1427579788167">
             <div class="silex-element-content">
                 <div style="text-align: center;"><span style="color: rgb(11, 83, 148);">Bug report<br></span>
                 </div>
             </div>
-        </div>
-        <div class="editable-style text-element silex animated fadeIn silex-id-1427579788066" data-silex-type="text" data-silex-href="https://github.com/silexlabs/Silex/blob/master/docs/change-log.md" data-silex-id="silex-id-1427579788066">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/blob/master/docs/change-log.md" class="editable-style text-element silex animated fadeIn silex-id-1427579788066" data-silex-type="text" data-silex-id="silex-id-1427579788066">
             <div class="silex-element-content">
                 <div style="text-align: center;"><span style="color: rgb(11, 83, 148);">software updates</span>
                 </div>
             </div>
-        </div>
-        <div class="editable-style text-element silex animated fadeIn silex-id-1427579787965" data-silex-type="text" data-silex-href="https://github.com/silexlabs/Silex/blob/master/docs/contributors.md" data-silex-id="silex-id-1427579787965">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/blob/master/docs/contributors.md" class="editable-style text-element silex animated fadeIn silex-id-1427579787965" data-silex-type="text" data-silex-id="silex-id-1427579787965">
             <div class="silex-element-content">
                 <div style="text-align: center;"><span style="color: rgb(11, 83, 148);">Hire our experts<br></span>
                 </div>
             </div>
-        </div>
+        </a>
 
 
 
 
 
-        <div data-silex-type="text" class="editable-style text-element silex animated fadeIn silex-id-1427579787357" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=question" data-silex-id="silex-id-1427579787357">
+        <a target="_blank" href="https://github.com/silexlabs/Silex/issues?labels=question" data-silex-type="text" class="editable-style text-element silex animated fadeIn silex-id-1427579787357" data-silex-id="silex-id-1427579787357">
             <div class="silex-element-content">
                 <div style="text-align: center;"><font color="#0b5394">Just ask</font>
                 </div>
             </div>
-        </div>
-        <div class="editable-style text-element silex animated fadeIn silex-id-1427579787256" data-silex-type="text" data-silex-href="https://github.com/silexlabs/Silex/blob/master/docs/contribute.md" data-silex-id="silex-id-1427579787256">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/blob/master/docs/contribute.md" class="editable-style text-element silex animated fadeIn silex-id-1427579787256" data-silex-type="text" data-silex-id="silex-id-1427579787256">
             <div class="silex-element-content">
                 <div style="text-align: center;"><span style="color: rgb(11, 83, 148);">Contribute</span>
                 </div>
             </div>
-        </div>
-        <div class="editable-style image-element silex animated fadeIn silex-id-1427579787153" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/blob/master/docs/change-log.md" data-silex-id="silex-id-1427579787153"><img src="assets/bouton-change-log-bleu-02.png" class="silex-element-content" alt="software updates">
-        </div>
-        <div class="editable-style image-element silex animated fadeIn silex-id-1427579787051" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/blob/master/docs/contribute.md" data-silex-id="silex-id-1427579787051"><img src="assets/bouton-contribute-bleu-02.png" class="silex-element-content" alt="contribute to Silex">
-        </div>
-        <div class="editable-style image-element silex animated fadeIn silex-id-1427579786950" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/blob/master/docs/contributors.md" data-silex-id="silex-id-1427579786950"><img src="assets/bouton-experts-bleu-02.png" class="silex-element-content" alt="hire our team of experts">
-        </div>
-        <div class="editable-style image-element silex animated fadeIn silex-id-1427579786848" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex" data-silex-id="silex-id-1427579786848"><img src="assets/bouton-source-code-bleu-02.png" class="silex-element-content" alt="Source code of Silex">
-        </div>
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/blob/master/docs/change-log.md" class="editable-style image-element silex animated fadeIn silex-id-1427579787153" data-silex-type="image" data-silex-id="silex-id-1427579787153"><img src="assets/bouton-change-log-bleu-02.png" class="silex-element-content" alt="software updates">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/blob/master/docs/contribute.md" class="editable-style image-element silex animated fadeIn silex-id-1427579787051" data-silex-type="image" data-silex-id="silex-id-1427579787051"><img src="assets/bouton-contribute-bleu-02.png" class="silex-element-content" alt="contribute to Silex">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/blob/master/docs/contributors.md" class="editable-style image-element silex animated fadeIn silex-id-1427579786950" data-silex-type="image" data-silex-id="silex-id-1427579786950"><img src="assets/bouton-experts-bleu-02.png" class="silex-element-content" alt="hire our team of experts">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex" class="editable-style image-element silex animated fadeIn silex-id-1427579786848" data-silex-type="image" data-silex-id="silex-id-1427579786848"><img src="assets/bouton-source-code-bleu-02.png" class="silex-element-content" alt="Source code of Silex">
+        </a>
 
 
 
@@ -1616,27 +448,26 @@
 
 
 
-            <div class="editable-style image-element silex-id-1427579785932" data-silex-type="image" data-silex-http:="" localhost:6805="" api="" 1.0="" dropbox="" exec="" get="" sites-silex="" www.silex.me="" editable.htmlhttp:="" editable.htmlhref="http://www.facebook.com/silexlabs "
-            data-silex-id="silex-id-1427579785932"><img src="assets/bouton-facebook-bleu.png" class="silex-element-content" alt="go to Silex Labs facebook">
+            <div class="editable-style image-element silex-id-1427579785932" data-silex-type="image" data-silex-http:="" localhost:6805="" api="" 1.0="" dropbox="" exec="" get="" sites-silex="" www.silex.me="" editable.htmlhttp:="" www="" tmp="" editable.htmlhref="http://www.facebook.com/silexlabs " data-silex-id="silex-id-1427579785932"><img src="assets/bouton-facebook-bleu.png" class="silex-element-content" alt="go to Silex Labs facebook">
             </div>
-            <div class="editable-style image-element silex-id-1427579785830" data-silex-type="image" data-silex-href="https://twitter.com/silexlabs" data-silex-id="silex-id-1427579785830"><img src="assets/bouton-twitter-bleu.png" class="silex-element-content" alt="go to Silex Labs twitter">
-            </div>
-            <div class="editable-style image-element silex-id-1427579785728" data-silex-type="image" data-silex-href="http://www.silexlabs.org/category/the-blog/blog-silex" data-silex-id="silex-id-1427579785728"><img src="assets/bouton-blog.png" class="silex-element-content" alt="go to the blog">
-            </div>
-            <div class="editable-style image-element silex-id-1427579785625" data-silex-type="image" data-silex-href="https://plus.google.com/communities/107373636457908189681" data-silex-id="silex-id-1427579785625"><img src="assets/bouton-googleplus-bleu.png" class="silex-element-content" alt="go to Silex Labs G+">
-            </div>
-            <div class="editable-style image-element silex-id-1427579785523" data-silex-type="image" data-silex-href="http://www.youtube.com/user/Silexlabs" data-silex-id="silex-id-1427579785523"><img src="assets/bouton-youtube-bleu.png" class="silex-element-content" alt="go to Silex Labs youtube channel">
-            </div>
-            <div class="editable-style image-element silex-id-1427579785421" data-silex-type="image" data-silex-href="http://eepurl.com/F48q5" data-silex-id="silex-id-1427579785421"><img src="assets/bouton-newsletter.png" class="silex-element-content" alt="go to Silex Labs mailing list">
-            </div>
-            <div class="editable-style image-element silex-id-1427579785320" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=help+wanted&amp;state=open" data-silex-id="silex-id-1427579785320"><img src="assets/bouton-join.png" class="silex-element-content" alt="go to Silex Labs website">
-            </div>
-            <div class="editable-style image-element silex-id-1427579785219" data-silex-type="image" data-silex-href="http://www.silexlabs.org/" data-silex-id="silex-id-1427579785219"><img src="assets/logo-silexlabs.png" class="silex-element-content" alt="powered by Silex Labs creative communities">
-            </div>
-            <div data-silex-type="image" class="editable-style image-element silex paged-element silex-id-1427579785116" data-silex-href="http://www.gandi.net" data-silex-id="silex-id-1427579785116"><img src="assets/gandi.png" class="silex-element-content">
-            </div>
-            <div data-silex-type="image" class="editable-style image-element silex paged-element silex-id-1427579785015" data-silex-href="http://www.browserstack.com/" data-silex-id="silex-id-1427579785015"><img src="assets/browserstack.png" class="silex-element-content">
-            </div>
+            <a target="_blank" href="https://twitter.com/silexlabs" class="editable-style image-element silex-id-1427579785830" data-silex-type="image" data-silex-id="silex-id-1427579785830"><img src="assets/bouton-twitter-bleu.png" class="silex-element-content" alt="go to Silex Labs twitter">
+            </a>
+            <a target="_blank" href="http://www.silexlabs.org/category/the-blog/blog-silex" class="editable-style image-element silex-id-1427579785728" data-silex-type="image" data-silex-id="silex-id-1427579785728"><img src="assets/bouton-blog.png" class="silex-element-content" alt="go to the blog">
+            </a>
+            <a target="_blank" href="https://plus.google.com/communities/107373636457908189681" class="editable-style image-element silex-id-1427579785625" data-silex-type="image" data-silex-id="silex-id-1427579785625"><img src="assets/bouton-googleplus-bleu.png" class="silex-element-content" alt="go to Silex Labs G+">
+            </a>
+            <a target="_blank" href="http://www.youtube.com/user/Silexlabs" class="editable-style image-element silex-id-1427579785523" data-silex-type="image" data-silex-id="silex-id-1427579785523"><img src="assets/bouton-youtube-bleu.png" class="silex-element-content" alt="go to Silex Labs youtube channel">
+            </a>
+            <a target="_blank" href="http://eepurl.com/F48q5" class="editable-style image-element silex-id-1427579785421" data-silex-type="image" data-silex-id="silex-id-1427579785421"><img src="assets/bouton-newsletter.png" class="silex-element-content" alt="go to Silex Labs mailing list">
+            </a>
+            <a target="_blank" href="https://github.com/silexlabs/Silex/issues?labels=help+wanted&amp;state=open" class="editable-style image-element silex-id-1427579785320" data-silex-type="image" data-silex-id="silex-id-1427579785320"><img src="assets/bouton-join.png" class="silex-element-content" alt="go to Silex Labs website">
+            </a>
+            <a target="_blank" href="http://www.silexlabs.org/" class="editable-style image-element silex-id-1427579785219" data-silex-type="image" data-silex-id="silex-id-1427579785219"><img src="assets/logo-silexlabs.png" class="silex-element-content" alt="powered by Silex Labs creative communities">
+            </a>
+            <a target="_blank" href="http://www.gandi.net" data-silex-type="image" class="editable-style image-element silex paged-element silex-id-1427579785116" data-silex-id="silex-id-1427579785116"><img src="assets/gandi.png" class="silex-element-content">
+            </a>
+            <a target="_blank" href="http://www.browserstack.com/" data-silex-type="image" class="editable-style image-element silex paged-element silex-id-1427579785015" data-silex-id="silex-id-1427579785015"><img src="assets/browserstack.png" class="silex-element-content">
+            </a>
 
             <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427579784913" data-silex-id="silex-id-1427579784913">
                 <div class="silex-element-content">
@@ -1690,11 +521,11 @@
             </div>
         </div>
 
-        <div data-silex-type="image" class="editable-style image-element silex-id-1427579782773" data-silex-href="http://editor.silex.me" data-silex-id="silex-id-1427579782773"><img src="assets/imac.png" class="silex-element-content" alt="background">
-        </div>
+        <a target="_blank" href="http://editor.silex.me" data-silex-type="image" class="editable-style image-element silex-id-1427579782773" data-silex-id="silex-id-1427579782773"><img src="assets/imac.png" class="silex-element-content" alt="background">
+        </a>
 
-        <div data-silex-type="image" class="editable-style image-element animated fadeIn silex-id-1427579782671" data-silex-href="http://editor.silex.me" data-silex-id="silex-id-1427579782671"><img src="assets/silex-screenshot.png" class="silex-element-content">
-        </div>
+        <a target="_blank" href="http://editor.silex.me" data-silex-type="image" class="editable-style image-element animated fadeIn silex-id-1427579782671" data-silex-id="silex-id-1427579782671"><img src="assets/silex-screenshot.png" class="silex-element-content">
+        </a>
 
 
 
@@ -1838,10 +669,10 @@
             </div>
         </div>
 
-        <div class="editable-style image-element silex animated fadeIn:w silex-id-1427579786746" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=bug&amp;state=open" data-silex-id="silex-id-1427579786746"><img src="assets/bouton-bug-bleu-02.png" class="silex-element-content" alt="bug report">
-        </div>
-        <div class="editable-style image-element silex animated fadeIn silex-id-1427579786644" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=question" data-silex-id="silex-id-1427579786644"><img src="assets/boutons-questions.png" class="silex-element-content" alt="ask questions">
-        </div>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/issues?labels=bug&amp;state=open" class="editable-style image-element silex animated fadeIn:w silex-id-1427579786746" data-silex-type="image" data-silex-id="silex-id-1427579786746"><img src="assets/bouton-bug-bleu-02.png" class="silex-element-content" alt="bug report">
+        </a>
+        <a target="_blank" href="https://github.com/silexlabs/Silex/issues?labels=question" class="editable-style image-element silex animated fadeIn silex-id-1427579786644" data-silex-type="image" data-silex-id="silex-id-1427579786644"><img src="assets/boutons-questions.png" class="silex-element-content" alt="ask questions">
+        </a>
         <div data-silex-type="container" class="editable-style container-element silex paged-element back silex-id-1427579784606" data-silex-id="silex-id-1427579784606">
             <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427579784504" data-silex-id="silex-id-1427579784504">
                 <div class="silex-element-content">
@@ -1864,26 +695,8 @@
                     </script>
                 </div>
             </div>
-            <div class="editable-style html-element github-issues github-issues-white silex-id-1427579784301" data-silex-type="html" data-silex-id="silex-id-1427579784301">
-                <div class="silex-element-content">
-                    <div id="widget"></div>
-                    <script type="text/javascript">
-                        $(function(){
-                            setTimeout(function() {
-                                silex_github_widget('#widget', 'widget');
-                            }, 400);
-                        });
-                    </script>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427579784200" data-silex-id="silex-id-1427579784200">
-                <div class="silex-element-content">
-                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255); font-size: x-large;"><a href="https://github.com/silexlabs/Silex/issues?labels=widget&amp;state=open">LATEST WIDGETS</a></span>
-                    </div>
-                    <div style="text-align: center;"><span style="text-align: justify;"><font color="#ffffff" face="Oswald">Embed videos, forms, slideshows...</font></span>
-                    </div>
-                </div>
-            </div>
+
+
 
 
         </div>
@@ -1911,8 +724,8 @@
                 </div>
             </div>
         </div>
-        <div class="editable-style image-element silex animated fadeInRight tada silex-id-1427579782977" data-silex-type="image" data-silex-href="http://editor.silex.me/" data-silex-id="silex-id-1427579782977"><img src="assets/bouton-call-01.png" class="silex-element-content" alt="Start Now!">
-        </div>
+        <a target="_blank" href="http://editor.silex.me/" class="editable-style image-element silex animated fadeInRight tada silex-id-1427579782977" data-silex-type="image" data-silex-id="silex-id-1427579782977"><img src="assets/bouton-call-01.png" class="silex-element-content" alt="Start Now!">
+        </a>
         <div data-silex-type="text" class="editable-style text-element animated fadeIn silex paged-element silex-id-1427579782569" data-silex-id="silex-id-1427579782569">
             <div class="silex-element-content">
                 <div style="text-align: center;"><font color="#0b5394">Share with the world</font>
@@ -2037,9 +850,9 @@
             <div class="editable-style text-element abel silex-id-1427579781958" data-silex-type="text" data-silex-id="silex-id-1427579781958">
                 <div class="silex-element-content">
                     <div style="text-align: center;">
-                        <div><i><font color="#444444" style="font-size: x-large;">Create websites&nbsp;</font></i><i><font color="#000000" style="font-size: x-large;">based on open standards.</font></i>
+                        <div><i><font style="font-size: x-large;" color="#444444">Create websites&nbsp;</font></i><i><font style="font-size: x-large;" color="#000000">based on open standards.</font></i>
                         </div>
-                        <div><i><font color="#444444" style="font-size: x-large;">Own your tools and your data!</font></i>
+                        <div><i><font style="font-size: x-large;" color="#444444">Own your tools and your data!</font></i>
                         </div>
                     </div>
                 </div>
@@ -2109,6 +922,28 @@
                 </div>
             </div>
             <div data-silex-type="container" class="editable-style container-element silex-id-1427579786542" data-silex-id="silex-id-1427579786542"></div>
+        </div>
+        <div data-silex-id="silex-id-1430772078598" class="editable-style silex-id-1430772078598 container-element silex paged-element" data-silex-type="container">
+            <div class="editable-style html-element github-issues github-issues-white silex-id-1427579784301" data-silex-type="html" data-silex-id="silex-id-1427579784301">
+                <div class="silex-element-content">
+                    <div id="widget"></div>
+                    <script type="text/javascript">
+                        $(function(){
+                            setTimeout(function() {
+                                silex_github_widget('#widget', 'widget');
+                            }, 400);
+                        });
+                    </script>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427579784200" data-silex-id="silex-id-1427579784200">
+                <div class="silex-element-content">
+                    <div style="text-align: center;"><span style="color: rgb(255, 255, 255); font-size: x-large;"><a href="https://github.com/silexlabs/Silex/issues?labels=widget&amp;state=open">LATEST WIDGETS</a></span>
+                    </div>
+                    <div style="text-align: center;"><span style="text-align: justify;"><font face="Oswald" color="#ffffff">Embed videos, forms, slideshows...</font></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -2182,6 +1017,12 @@
 
 
 
-</body>
 
-</html>
+
+
+
+
+
+
+
+</body></html>

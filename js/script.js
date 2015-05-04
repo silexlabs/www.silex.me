@@ -1,18 +1,18 @@
 
         ////////////////////////////////////
         // animate.js
-        document.write('<link href="./css/animate.min.css" rel="stylesheet">');
+        document.write('<link href="css/animate.min.css" rel="stylesheet">');
         ////////////////////////////////////
         // anchors and scrolling
         $(function(){
             newAnchorLink('home', 0);
             newAnchorLink('showcase', 641);
-            newAnchorLink('silex', 1134);
-            newAnchorLink('templates', 1782);
-            newAnchorLink('contact', 2215);
+            newAnchorLink('silex', 1785);
+            newAnchorLink('templates', 3430);
+            newAnchorLink('contact', 4885);
         });
         function newAnchorLink(link, pos){
-            $('a[href="#'+link+'"]').click(function(){
+            $('a[href="editable.html#'+link+'"]').click(function(){
                 silexScrollTo(pos);
                 return false;
             });
@@ -98,5 +98,4 @@
             }
         });
         ////////////////////////////////////
-©
     
