@@ -77,8 +77,8 @@ function silex_github_widget(containerSelector, labels, imageMode, cbk){
 var jsonpCallbackIdx = 0;
 function silex_rss_widget (containerSelector, feedUrl, count, cbk) {
     var callbackName = 'handleRssWidgetResult' + (jsonpCallbackIdx++);
-    var base = "https://ajax.googleapis.com/ajax/services/feed/load",
-        params = "?v=1.0&num=" + count + "&callback="+callbackName+"&q=" + feedUrl,
+    var base = 'https://ajax.googleapis.com/ajax/services/feed/load',
+        params = '?v=1.0&num=' + count + '&callback='+callbackName+'&q=' + (feedUrl.indexOf('//') === 0 ? 'http:' : '') + feedUrl,
         url = base + params;
 
     (self || window)[callbackName] = function (data) {
