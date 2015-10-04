@@ -43,6 +43,7 @@ function silex_github_widget(containerSelector, labels, imageMode, cbk){
       var listHtml = '<ul>';
       for (issueIndex in data){
         var issue = data[issueIndex];
+        if(typeof(issue) != 'object') continue; // case of IE? And when an error occured (e.g. API rate limit exceeded)
         var issueHtml = "<li>";
         issueHtml += '<a target="_blank" href="';
         issueHtml += issue.html_url;

@@ -1,6 +1,6 @@
 
-        @import url('//fonts.googleapis.com/css?family=Abel');
-        @import url('//fonts.googleapis.com/css?family=Oswald:400,300');
+        @import url('https://fonts.googleapis.com/css?family=Abel');
+        @import url('https://fonts.googleapis.com/css?family=Oswald:400,300');
         
         .oswald.text-element, .oswald .text-element {
             font-family: 'Oswald', sans-serif;
@@ -47,7 +47,6 @@
             color: white;
             font-family: 'Oswald', sans-serif;
             line-height: 57px;
-            text-align: center;
         }
         .special-format2 .normal {
             text-transform: uppercase;
@@ -322,11 +321,12 @@
             background-color: transparent; 
         }
         .silex-id-1427636113019 {
-            height: 179px; 
-            width: 178px; 
-            top: 65px; 
-            left: 5px; 
+            height: 174px; 
+            width: 170px; 
+            top: 67px; 
+            left: 15px; 
             position: absolute; 
+            background-color: rgb(0, 155, 255); 
         }
         .silex-id-1427639908823 {
             height: 205px; 
