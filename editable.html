@@ -5,11 +5,7 @@
     <title>Design free websites with Silex</title>
     <meta charset="UTF-8">
     <meta name="generator" content="Silex v2.2.5">
-    <!-- leave this for stats -->
     <meta name="description" content="Silex is a Website Builder for Designers. Silex is free and open source because we believe that free minds need to have free tools, without hidden costs.">
-
-
-    <!-- seo -->
     <link rel="canonical" href="https://www.silex.me">
     <link rel="publisher" href="https://plus.google.com/101109448111723733134/">
     <meta name="og:type" content="website">
@@ -24,207 +20,15 @@
     <meta property="twitter:account_id" content="158399803">
     <meta http-equiv="content-language" content="en">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <!-- /seo -->
-    <script type="text/javascript" src="//editor.silex.me/static/2.5/jquery.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.5/jquery-ui.js" data-silex-static=""></script>
-
-    <script type="text/javascript" src="//editor.silex.me/static/2.5/pageable.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.5/front-end.js" data-silex-static=""></script>
-    <!-- Silex style -->
-    <link href="//editor.silex.me/static/2.5/front-end.css" rel="stylesheet" data-silex-static="">
-    <!-- Normalize -->
-    <link href="//editor.silex.me/static/2.5/normalize.css" rel="stylesheet" data-silex-static="">
+    <script type="text/javascript" src="//preprod.silex.me/static/2.5/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//preprod.silex.me/static/2.5/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//preprod.silex.me/static/2.5/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//preprod.silex.me/static/2.5/front-end.js" data-silex-static=""></script>
+    <link href="//preprod.silex.me/static/2.5/front-end.css" rel="stylesheet" data-silex-static="">
+    <link href="//preprod.silex.me/static/2.5/normalize.css" rel="stylesheet" data-silex-static="">
     <style type="text/css" class="silex-style">
-        @import url('https://fonts.googleapis.com/css?family=Abel');
-        @import url('https://fonts.googleapis.com/css?family=Oswald:400,300');
-        
-        .oswald.text-element, .oswald .text-element {
-            font-family: 'Oswald', sans-serif;
-        }
-        
-        .abel.text-element, .abel .text-element {
-            font-family: 'Abel', sans-serif;
-        }
-        .links a, a{
-            color:#006CB2;
-            text-decoration: none;
-        }
-        td, tr, th {
-            border: 1px solid;
-        }
-        
-        /* text styles formatting */
-        .text-element HEADER,
-        .text-element H1,
-        .text-element H2,
-        .text-element H3,
-        .text-element DIV,
-        .text-element P,
-        .text-element QUOTE {
-        }
-        .very-big {
-          color: #FF3200;
-        }
-        .text-element HEADER {
-          font-size: 45px;
-        }
-        /* background element */
-        .background{
-        
-        }
-        .normal {
-            text-align: justify;
-        }
-        .text-element.very-big *{
-            font-size: 80px;
-        }
-        .text-element.special-format .normal {
-            font-size: 55px;
-            color: white;
-            font-family: 'Oswald', sans-serif;
-            line-height: 57px;
-        }
-        .special-format2 .normal {
-            text-transform: uppercase;
-            font-size: 74px;
-            line-height: 64px;
-        }
-        .special-format2.verybig * {
-            font-size: 180px;
-            line-height: 180px;
-        }
-        .special-format2 h2,
-        .special-format2 h1,
-        .special-format2 p {
-            margin: 0px;
-        }
-        .special-format2 .heading2 {
-            letter-spacing: 10px;
-            line-height: 0;
-        }
-        .special-format2 .heading1 {
-            font-size: 30px;
-            word-spacing: 1px;
-            text-align: left;
-            line-height: 30px;
-        }
-        .special-format2 .title {
-            font-size: 60px;
-            line-height: 54px;
-            word-spacing: 1px;
-        }
-        .text-shadow{
-            text-shadow: -1px 2px #FF3200;
-        }
-        .full-width{
-            width:100% !important;
-        }
-        .centered{
-           margin: auto !important;
-           position: relative !important;
-        }
-        .top{
-            z-index: 100;
-        }
-        .back{
-            z-index: -1;
-        }
-        .silex-runtime .fixed-menu{
-            position: fixed !important;
-            z-index: 120;
-        }
-        /* keywords of the footer */
-        .silex-runtime .discret li,
-        .silex-runtime .discret .heading2{
-            color: black !important;
-            font-size: 14px !important;
-            float: left !important;
-            list-style-type: none;
-            margin-left: 5px;
-        }
-        .discret H1{
-            color: black !important;
-            font-size: 16px !important;
-        }
-        /* *************************** *
-        .layout-h div{
-            position: static !important;
-            display: inline-block !important;
-        }
-        
-        .animated{
-            display: inherit !important;
-            position: absolute !important;
-            left: -5000px !important;
-            opacity: 0 !important;
-        }
-        .animated.paged-element{
-            transition: left 0.8s !important;
-        }
-        /* *************************** */
-        /* github issues */
-        .github-issues .silex-element-content {
-            overflow: auto;
-        }
-        .github-issues ul {
-          margin: 0;
-          padding: 0;
-        }
-        .github-issues li {
-          list-style-type: none;
-          margin: 0;
-          padding: 3px;
-          border-bottom: 1px solid #cccccc;
-          font-size: 14px;
-          line-height: 19px;
-        }
-        .github-issues li a {
-          text-decoration: none;
-          color: black;
-        }
-        .github-issues-image ul {
-          text-align: center;
-        }
-        .github-issues-image li {
-          display: inline;
-        }
-        .github-issues-image img {
-          max-width: 45%;
-          border-radius: 5px;
-        }
-        .showcase .silex-element-content {
-            overflow: hidden;
-        }
-        .github-issues-image.showcase img {
-          max-width: 42%;
-          border-radius: 5px;
-        }
-        .github-issues.github-issues-white *{
-          color: white;
-          text-align: center;
-        }
-        .github-issues.github-issues-white li {
-            border-bottom-color: #999999;
-        }
-        .github-issues.github-issues-image li {
-            border-bottom: none;
-        }
-        /* share buttons from //simplesharingbuttons.com/
-        */
-        .share-buttons{
-        	list-style: none;
-        }
-        
-        .share-buttons li{
-        	display: inline;
-        }
-        
-        .share-buttons a{
-        	text-decoration: none;
-        }
+        @import url('https://fonts.googleapis.com/css?family=Abel');@import url('https://fonts.googleapis.com/css?family=Oswald:400,300');.oswald.text-element,.oswald .text-element{font-family:'Oswald',sans-serif;}.abel.text-element,.abel .text-element{font-family:'Abel',sans-serif;}.links a,a{color:#006CB2;text-decoration:none;}td,tr,th{border:1px solid;}.text-element HEADER,.text-element H1,.text-element H2,.text-element H3,.text-element DIV,.text-element P,.text-element QUOTE{}.very-big{color:#FF3200;}.text-element HEADER{font-size:45px;}.background{}.normal{text-align:justify;}.text-element.very-big *{font-size:80px;}.text-element.special-format .normal{font-size:55px;color:white;font-family:'Oswald',sans-serif;line-height:57px;}.special-format2 .normal{text-transform:uppercase;font-size:74px;line-height:64px;}.special-format2.verybig *{font-size:180px;line-height:180px;}.special-format2 h2,.special-format2 h1,.special-format2 p{margin:0px;}.special-format2 .heading2{letter-spacing:10px;line-height:0;}.special-format2 .heading1{font-size:30px;word-spacing:1px;text-align:left;line-height:30px;}.special-format2 .title{font-size:60px;line-height:54px;word-spacing:1px;}.text-shadow{text-shadow:-1px 2px #FF3200;}.full-width{width:100%!important;}.centered{margin:auto!important;position:relative!important;}.top{z-index:100;}.back{z-index:-1;}.silex-runtime .fixed-menu{position:fixed!important;z-index:120;}.silex-runtime .discret li,.silex-runtime .discret .heading2{color:black!important;font-size:14px!important;float:left!important;list-style-type:none;margin-left:5px;}.discret H1{color:black!important;font-size:16px!important;}.github-issues .silex-element-content{overflow:auto;}.github-issues ul{margin:0;padding:0;}.github-issues li{list-style-type:none;margin:0;padding:3px;border-bottom:1px solid #cccccc;font-size:14px;line-height:19px;}.github-issues li a{text-decoration:none;color:black;}.github-issues-image ul{text-align:center;}.github-issues-image li{display:inline;}.github-issues-image img{max-width:45%;border-radius:5px;}.showcase .silex-element-content{overflow:hidden;}.github-issues-image.showcase img{max-width:42%;border-radius:5px;}.github-issues.github-issues-white *{color:white;text-align:center;}.github-issues.github-issues-white li{border-bottom-color:#999999;}.github-issues.github-issues-image li{border-bottom:none;}.share-buttons{list-style:none;}.share-buttons li{display:inline;}.share-buttons a{text-decoration:none;}
     </style>
-
-
     <script type="text/javascript" class="silex-script">
         ////////////////////////////////////
                     // animate.js
@@ -326,14 +130,6 @@
                     });
     </script>
     <meta name="publicationPath" content="/api/1.0/dropbox/exec/put/sites-silex/www.silex.me">
-
-
-
-
-
-
-
-
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
             cursor: auto; 
@@ -344,6 +140,10 @@
             border-top-right-radius: 0px; 
             border-bottom-right-radius: 10px; 
             border-bottom-left-radius: 0px; 
+            border-top-color: rgb(0, 0, 0); 
+            border-right-color: rgb(0, 0, 0); 
+            border-bottom-color: rgb(0, 0, 0); 
+            border-left-color: rgb(0, 0, 0); 
         }
         .silex-id-1427579791827 {
             width: 960px; 
@@ -351,7 +151,7 @@
             position: absolute; 
             top: 5px; 
             left: 55px; 
-            box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.498); 
+            box-shadow: rgba(0, 0, 0, 0.498039) 1px 0px 10px 0px; 
             border-top-left-radius: 0px; 
             border-top-right-radius: 0px; 
             border-bottom-right-radius: 0px; 
@@ -389,7 +189,7 @@
             position: absolute; 
             left: 0px; 
             height: 42px; 
-            box-shadow: 0px 1px 3px black; 
+            box-shadow: black 0px 1px 3px; 
             top: -5px; 
             background-color: rgb(0, 155, 255); 
         }
@@ -484,8 +284,9 @@
             position: absolute; 
             background-color: transparent; 
             background-image: url('assets/nuages-typos-ab-testing2.png'); 
-            background-size: auto auto; 
-            background-position: right bottom; 
+            background-size: auto; 
+            background-position-x: 100%; 
+            background-position-y: 100%; 
         }
         .silex-id-1427579788268 {
             height: 38px; 
@@ -1139,7 +940,7 @@
         .silex-id-1443109661547-1 {
             height: 307px; 
             width: 940px; 
-            top: 265px; 
+            top: 275px; 
             left: 10px; 
             background-color: transparent; 
             border-top-color: rgb(0, 0, 0); 
@@ -1176,90 +977,11 @@
             background-color: transparent; 
         }
     </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <meta name="twitter:title" content="Silex, live web creation">
     <meta name="twitter:description" content="Silex is a Website Builder for Designers. Silex is free and open source because we believe that free minds need to have free tools, without hidden costs.">
     <meta name="twitter:image" content="/api/1.0/www/exec/get//tmp/www.silex.me/assets/silex-screenshot.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <link href="assets/favicon.png" rel="shortcut icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 
 
@@ -1267,123 +989,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" class="silex-custom-font">
     <style id="current-page-style">
         .silex{display:inherit; }
     </style>
-    <link class="silex-custom-font" type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
     <!-- Silex HEAD tag do not remove -->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <!-- End of Silex HEAD tag do not remove -->
 </head>
 
-<body style="" class="body-initial enable-mobile silex-runtime" data-twttr-rendered="true" data-silex-id="body-initial">
+<body class="body-initial enable-mobile silex-runtime" data-twttr-rendered="true" data-silex-id="body-initial">
     <a id="silex" data-silex-type="page" class="page-element">Silex</a>
-
     <div class="background editable-style container-element prevent-draggable silex-id-1427579791827" data-silex-type="container" data-silex-id="silex-id-1427579791827">
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div data-silex-type="container" class="editable-style container-element silex silex-id-1427579790403" data-silex-id="silex-id-1427579790403">
-
-
-
             <div data-silex-type="text" class="editable-style text-element silex paged-element silex-id-1427579789998" data-silex-id="silex-id-1427579789998">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
@@ -1392,14 +1009,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
             <div data-silex-type="html" class="editable-style  html-element silex paged-element silex-id-1427604618762 github-issues github-issues-image github-issues-white showcase" data-silex-id="silex-id-1427604618762">
                 <div class="silex-element-content">
                     <div id="showcase"></div>
@@ -1427,7 +1036,7 @@
                         </p>
                     </div>
                 </div>
-                <div data-silex-href="http://editor.silex.me" data-silex-type="text" class="editable-style text-element silex-id-1427579789182" data-silex-id="silex-id-1427579789182">
+                <div data-silex-href="//editor.silex.me" data-silex-type="text" class="editable-style text-element silex-id-1427579789182" data-silex-id="silex-id-1427579789182">
                     <div class="silex-element-content">
                         <div style="text-align: center;"><font size="4"><span style="color: rgb(255, 255, 0);">Create your site </span></font></div>
                     </div>
@@ -1453,30 +1062,17 @@
             </div>
         </div>
         <div data-silex-type="container" class="editable-style container-element silex silex-id-1427579788776 bigtext" data-silex-id="silex-id-1427579788776">
-
-
-
-
             <div data-silex-type="text" class="editable-style text-element animated fadeIn silex paged-element silex-id-1427579788472" data-silex-id="silex-id-1427579788472">
                 <div class="silex-element-content">
                     <div style="text-align: center;"><i style="color: rgb(11, 83, 148);">Spread the word!</i>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
             <div data-silex-type="text" class="editable-style  text-element special-format silex-id-1427636113019" data-silex-id="silex-id-1427636113019">
                 <div class="silex-element-content normal">HTML 5 &amp;CSS 3 INSIDE ! _________
                     <br>
                 </div>
             </div>
-
-
             <div data-silex-type="container" class="editable-style silex-id-1427639908823 container-element silex paged-element" data-silex-id="silex-id-1427639908823"></div>
         </div>
         <div class="editable-style text-element silex animated fadeIn silex-id-1427579788268" data-silex-type="text" data-silex-href="https://github.com/silexlabs/Silex" data-silex-id="silex-id-1427579788268">
@@ -1503,11 +1099,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
         <div data-silex-type="text" class="editable-style text-element silex animated fadeIn silex-id-1427579787357" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=question" data-silex-id="silex-id-1427579787357">
             <div class="silex-element-content">
                 <div style="text-align: center;"><font color="#0b5394">Just ask</font>
@@ -1528,28 +1119,15 @@
         </div>
         <div class="editable-style image-element silex animated fadeIn silex-id-1427579786848" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex" data-silex-id="silex-id-1427579786848"><img src="assets/bouton-source-code-bleu-02.png" class="silex-element-content" alt="Source code of Silex">
         </div>
-
-
-
-
-
         <div data-silex-type="container" class="editable-style container-element silex-id-1427579786237" data-silex-id="silex-id-1427579786237">
-
-
-
-
-
-
             <div data-silex-type="text" class="editable-style text-element abel silex-id-1427579786135" data-silex-id="silex-id-1427579786135">
                 <div class="silex-element-content">
                     <p style="text-align: center;" class="normal"><font color="#ffffff" size="2">Copyright © <a href="https://www.silexlabs.org/">Silex Labs</a> &nbsp; &nbsp; - &nbsp; &nbsp;&nbsp;</font><span style="color: rgb(255, 255, 255); font-size: small;">Design © <a href="https://www.linkedin.com/pub/pol-goasdou%C3%A9/19/87b/616">Pol Goasdoué</a></span>
                         <span style="color: rgb(255, 255, 255); font-size: small;">&nbsp; &nbsp; - &nbsp; &nbsp;Powered by <a href="https://www.silex.me">Silex</a>
-                            </span>
+</span>
                     </p>
                 </div>
             </div>
-
-
             <div data-silex-type="text" class="editable-style text-element silex paged-element discret silex-id-1427579786034" data-silex-id="silex-id-1427579786034">
                 <div class="silex-element-content normal">
                     <blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
@@ -1656,10 +1234,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
             <div class="editable-style image-element silex-id-1427579785932" data-silex-type="image" data-silex-href="https://www.facebook.com/silexlabs" data-silex-id="silex-id-1427579785932"><img src="assets/bouton-facebook-bleu.png" class="silex-element-content" alt="go to Silex Labs facebook">
             </div>
             <div class="editable-style image-element silex-id-1427579785830" data-silex-type="image" data-silex-href="https://twitter.com/silexlabs" data-silex-id="silex-id-1427579785830"><img src="assets/bouton-twitter-bleu.png" class="silex-element-content" alt="go to Silex Labs twitter">
@@ -1680,40 +1254,19 @@
             </div>
             <div data-silex-type="image" class="editable-style image-element silex paged-element silex-id-1427579785015" data-silex-href="https://www.browserstack.com/" data-silex-id="silex-id-1427579785015"><img src="assets/browserstack.png" class="silex-element-content">
             </div>
-
             <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427579784913" data-silex-id="silex-id-1427579784913">
                 <div class="silex-element-content">
                     <div style="text-align: center;"><span style="color: rgb(255, 255, 255); font-size: x-large;"><a href="https://github.com/silexlabs/Silex/issues?labels=widget&amp;state=open">N</a>EWS AND COMMUNITY</span>
                     </div>
                 </div>
             </div>
-
-
-
             <div data-silex-type="text" class="editable-style text-element oswald silex paged-element silex-id-1427579784810" data-silex-id="silex-id-1427579784810">
                 <div class="silex-element-content">
                     <div style="text-align: center;"><font color="#ffffff" size="5">PROUDLY SPONSORED BY THE BEST</font>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="editable-style html-element silex-id-1427579782875" data-silex-type="html" data-silex-id="silex-id-1427579782875">
             <div class="silex-element-content">
                 <ul class="share-buttons">
@@ -1732,56 +1285,10 @@
                 </ul>
             </div>
         </div>
-
         <div data-silex-type="image" class="editable-style image-element silex-id-1427579782773" data-silex-href="//editor.silex.me" data-silex-id="silex-id-1427579782773"><img src="assets/imac.png" class="silex-element-content" alt="background">
         </div>
-
         <div data-silex-type="image" class="editable-style image-element animated fadeIn silex-id-1427579782671" data-silex-href="//editor.silex.me" data-silex-id="silex-id-1427579782671"><img src="assets/silex-screenshot.png" class="silex-element-content">
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div data-silex-type="container" class="editable-style silex-id-1427587769948 container-element silex paged-element" data-silex-id="silex-id-1427587769948">
             <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427579791726" data-silex-id="silex-id-1427579791726">
                 <div class="silex-element-content">
@@ -1880,7 +1387,6 @@
                 </div>
             </div>
         </div>
-
         <div class="editable-style image-element silex animated fadeIn:w silex-id-1427579786746" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=bug&amp;state=open" data-silex-id="silex-id-1427579786746"><img src="assets/bouton-bug-bleu-02.png" class="silex-element-content" alt="bug report">
         </div>
         <div class="editable-style image-element silex animated fadeIn silex-id-1427579786644" data-silex-type="image" data-silex-href="https://github.com/silexlabs/Silex/issues?labels=question" data-silex-id="silex-id-1427579786644"><img src="assets/boutons-questions.png" class="silex-element-content" alt="ask questions">
@@ -1890,7 +1396,7 @@
                 <div class="silex-element-content">
                     <p style="text-align: center;" class="normal"><font face="Oswald"><span style="color: rgb(255, 255, 255);"><a href="https://github.com/silexlabs/Silex/issues?labels=template&amp;state=open" style="font-size: x-large;">LATEST TEMPLATES</a></span><a href="https://templates.silex.me/"><br></a><font color="#ffffff"><a href="https://templates.silex.me/"><span style="color: rgb(255, 255, 255);">creative common templates</span> <span style="color: rgb(68, 68, 68);">on github</span></a> and&nbsp;</font>
                         <a href="https://www.templamatic.com/templates/silex" class="normal"><font color="#444444"><span style="color: rgb(255, 255, 255);">paid template </span>on templamatic</font>
-                            </a>
+</a>
                         </font>
                     </p>
                 </div>
@@ -1907,10 +1413,6 @@
                     </script>
                 </div>
             </div>
-
-
-
-
         </div>
         <div class="editable-style html-element silex paged-element silex-id-1427579783181" data-silex-type="html" data-silex-id="silex-id-1427579783181">
             <div class="silex-element-content">
@@ -2007,15 +1509,12 @@
             </div>
         </div>
         <div data-silex-type="container" class="editable-style silex-id-1430089351512 container-element silex paged-element" data-silex-id="silex-id-1430089351512">
-
-
             <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427579782467" data-silex-id="silex-id-1427579782467">
                 <div class="silex-element-content">
                     <p style="text-align: center;" class="normal"><font color="#444444" size="5">LIVE WEB CREATION</font>
                     </p>
                 </div>
             </div>
-
             <div data-silex-type="text" class="editable-style text-element abel links silex-id-1427579782262" data-silex-id="silex-id-1427579782262">
                 <div class="silex-element-content">
                     <p class="normal"><font color="#444444">When you change something in Silex, you see the result immediately.&nbsp;</font><span style="color: rgb(68, 68, 68);">Iterating on design is much easier.</span>
@@ -2057,8 +1556,6 @@
                     </p>
                 </div>
             </div>
-
-
             <div data-silex-type="text" class="editable-style text-element oswald silex-id-1427583890283" data-silex-id="silex-id-1427583890283">
                 <div class="silex-element-content">
                     <p style="text-align: center;" class="normal"><font color="#444444" size="5">100% ONLINE</font>
@@ -2085,7 +1582,6 @@
                     </p>
                 </div>
             </div>
-
             <div data-silex-type="container" class="editable-style container-element silex-id-1427579786542" data-silex-id="silex-id-1427579786542"></div>
             <div data-silex-type="html" class="editable-style html-element page-page-1 silex-id-1443109661547-1" data-silex-id="silex-id-1443109661547-1">
                 <div class="silex-element-content">
@@ -2096,11 +1592,11 @@
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Free</th>
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Own your data</th>
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Type of websites</th>
-                                <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending"><a href="../../../../../../../wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a> / Drag'n drop</th>
+                                <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending"><a href="https://en.wikipedia.org/wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a> / Drag'n drop</th>
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Use of CSS/JS/HTML</th>
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Widgets and templates</th>
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Self hosted / downloadable</th>
-                                <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending"><a href="../../../../../../../wiki/Static_web_page" title="Static web page">Static web page</a>
+                                <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending"><a href="https://en.wikipedia.org/wiki/Static_web_page" title="Static web page">Static web page</a>
                                 </th>
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Technical skills required</th>
                                 <th class="headerSort" style="background: #ececec; font-weight: normal; " tabindex="0" role="columnheader button" title="Sort ascending">Time to learn the basics</th>
@@ -2109,7 +1605,7 @@
                         <tbody>
                             <tr>
                                 <th style="background: #ececec; color: black; font-weight: normal; vertical-align: middle; text-align: left;" class="table-rh">Silex</th>
-                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="../../../../../../../wiki/Free_and_open-source_software" title="Free and open-source software">foss</a>)</td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" title="Free and open-source software">foss</a>)</td>
                                 <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
                                 <td>Showcase / small websites</td>
                                 <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
@@ -2121,9 +1617,9 @@
                                 <td>1h</td>
                             </tr>
                             <tr>
-                                <th style="background: #ececec; color: black; font-weight: normal; vertical-align: middle; text-align: left;" class="table-rh"><a href="../../../../../../../wiki/WordPress" title="WordPress">WordPress</a>
+                                <th style="background: #ececec; color: black; font-weight: normal; vertical-align: middle; text-align: left;" class="table-rh"><a href="https://en.wikipedia.org/wiki/WordPress" title="WordPress">WordPress</a>
                                 </th>
-                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="../../../../../../../wiki/Open-source_software" title="Open-source software">oss</a>)</td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="https://en.wikipedia.org/wiki/Open-source_software" title="Open-source software">oss</a>)</td>
                                 <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
                                 <td>Any type and size</td>
                                 <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No</td>
@@ -2135,9 +1631,9 @@
                                 <td>4h</td>
                             </tr>
                             <tr>
-                                <th style="background: #ececec; color: black; font-weight: normal; vertical-align: middle; text-align: left;" class="table-rh"><a href="../../../../../../../wiki/Wix.com" title="Wix.com">Wix</a>
+                                <th style="background: #ececec; color: black; font-weight: normal; vertical-align: middle; text-align: left;" class="table-rh"><a href="https://en.wikipedia.org/wiki/Wix.com" title="Wix.com">Wix</a>
                                 </th>
-                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="../../../../../../../wiki/Freemium" title="Freemium">freemium</a>)</td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="https://en.wikipedia.org/wiki/Freemium" title="Freemium">freemium</a>)</td>
                                 <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No</td>
                                 <td>Showcase / small websites</td>
                                 <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
@@ -2149,9 +1645,9 @@
                                 <td>1h</td>
                             </tr>
                             <tr>
-                                <th style="background: #ececec; color: black; font-weight: normal; vertical-align: middle; text-align: left;" class="table-rh"><a href="../../../../../../../wiki/Jekyll_(software)" title="Jekyll (software)">Jekyll</a>
+                                <th style="background: #ececec; color: black; font-weight: normal; vertical-align: middle; text-align: left;" class="table-rh"><a href="https://en.wikipedia.org/wiki/Jekyll_(software)" title="Jekyll (software)">Jekyll</a>
                                 </th>
-                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="../../../../../../../wiki/Free_and_open-source_software" title="Free and open-source software">foss</a>)</td>
+                                <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes (<a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" title="Free and open-source software">foss</a>)</td>
                                 <td style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
                                 <td>Any type and size</td>
                                 <td style="background:#F99;vertical-align:middle;text-align:center;" class="table-no">No</td>
@@ -2191,145 +1687,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

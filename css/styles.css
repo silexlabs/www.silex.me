@@ -1,191 +1,5 @@
 
-        @import url('https://fonts.googleapis.com/css?family=Abel');
-        @import url('https://fonts.googleapis.com/css?family=Oswald:400,300');
-        
-        .oswald.text-element, .oswald .text-element {
-            font-family: 'Oswald', sans-serif;
-        }
-        
-        .abel.text-element, .abel .text-element {
-            font-family: 'Abel', sans-serif;
-        }
-        .links a, a{
-            color:#006CB2;
-            text-decoration: none;
-        }
-        td, tr, th {
-            border: 1px solid;
-        }
-        
-        /* text styles formatting */
-        .text-element HEADER,
-        .text-element H1,
-        .text-element H2,
-        .text-element H3,
-        .text-element DIV,
-        .text-element P,
-        .text-element QUOTE {
-        }
-        .very-big {
-          color: #FF3200;
-        }
-        .text-element HEADER {
-          font-size: 45px;
-        }
-        /* background element */
-        .background{
-        
-        }
-        .normal {
-            text-align: justify;
-        }
-        .text-element.very-big *{
-            font-size: 80px;
-        }
-        .text-element.special-format .normal {
-            font-size: 55px;
-            color: white;
-            font-family: 'Oswald', sans-serif;
-            line-height: 57px;
-        }
-        .special-format2 .normal {
-            text-transform: uppercase;
-            font-size: 74px;
-            line-height: 64px;
-        }
-        .special-format2.verybig * {
-            font-size: 180px;
-            line-height: 180px;
-        }
-        .special-format2 h2,
-        .special-format2 h1,
-        .special-format2 p {
-            margin: 0px;
-        }
-        .special-format2 .heading2 {
-            letter-spacing: 10px;
-            line-height: 0;
-        }
-        .special-format2 .heading1 {
-            font-size: 30px;
-            word-spacing: 1px;
-            text-align: left;
-            line-height: 30px;
-        }
-        .special-format2 .title {
-            font-size: 60px;
-            line-height: 54px;
-            word-spacing: 1px;
-        }
-        .text-shadow{
-            text-shadow: -1px 2px #FF3200;
-        }
-        .full-width{
-            width:100% !important;
-        }
-        .centered{
-           margin: auto !important;
-           position: relative !important;
-        }
-        .top{
-            z-index: 100;
-        }
-        .back{
-            z-index: -1;
-        }
-        .silex-runtime .fixed-menu{
-            position: fixed !important;
-            z-index: 120;
-        }
-        /* keywords of the footer */
-        .silex-runtime .discret li,
-        .silex-runtime .discret .heading2{
-            color: black !important;
-            font-size: 14px !important;
-            float: left !important;
-            list-style-type: none;
-            margin-left: 5px;
-        }
-        .discret H1{
-            color: black !important;
-            font-size: 16px !important;
-        }
-        /* *************************** *
-        .layout-h div{
-            position: static !important;
-            display: inline-block !important;
-        }
-        
-        .animated{
-            display: inherit !important;
-            position: absolute !important;
-            left: -5000px !important;
-            opacity: 0 !important;
-        }
-        .animated.paged-element{
-            transition: left 0.8s !important;
-        }
-        /* *************************** */
-        /* github issues */
-        .github-issues .silex-element-content {
-            overflow: auto;
-        }
-        .github-issues ul {
-          margin: 0;
-          padding: 0;
-        }
-        .github-issues li {
-          list-style-type: none;
-          margin: 0;
-          padding: 3px;
-          border-bottom: 1px solid #cccccc;
-          font-size: 14px;
-          line-height: 19px;
-        }
-        .github-issues li a {
-          text-decoration: none;
-          color: black;
-        }
-        .github-issues-image ul {
-          text-align: center;
-        }
-        .github-issues-image li {
-          display: inline;
-        }
-        .github-issues-image img {
-          max-width: 45%;
-          border-radius: 5px;
-        }
-        .showcase .silex-element-content {
-            overflow: hidden;
-        }
-        .github-issues-image.showcase img {
-          max-width: 42%;
-          border-radius: 5px;
-        }
-        .github-issues.github-issues-white *{
-          color: white;
-          text-align: center;
-        }
-        .github-issues.github-issues-white li {
-            border-bottom-color: #999999;
-        }
-        .github-issues.github-issues-image li {
-            border-bottom: none;
-        }
-        /* share buttons from //simplesharingbuttons.com/
-        */
-        .share-buttons{
-        	list-style: none;
-        }
-        
-        .share-buttons li{
-        	display: inline;
-        }
-        
-        .share-buttons a{
-        	text-decoration: none;
-        }
+        @import url('https://fonts.googleapis.com/css?family=Abel');@import url('https://fonts.googleapis.com/css?family=Oswald:400,300');.oswald.text-element,.oswald .text-element{font-family:'Oswald',sans-serif;}.abel.text-element,.abel .text-element{font-family:'Abel',sans-serif;}.links a,a{color:#006CB2;text-decoration:none;}td,tr,th{border:1px solid;}.text-element HEADER,.text-element H1,.text-element H2,.text-element H3,.text-element DIV,.text-element P,.text-element QUOTE{}.very-big{color:#FF3200;}.text-element HEADER{font-size:45px;}.background{}.normal{text-align:justify;}.text-element.very-big *{font-size:80px;}.text-element.special-format .normal{font-size:55px;color:white;font-family:'Oswald',sans-serif;line-height:57px;}.special-format2 .normal{text-transform:uppercase;font-size:74px;line-height:64px;}.special-format2.verybig *{font-size:180px;line-height:180px;}.special-format2 h2,.special-format2 h1,.special-format2 p{margin:0px;}.special-format2 .heading2{letter-spacing:10px;line-height:0;}.special-format2 .heading1{font-size:30px;word-spacing:1px;text-align:left;line-height:30px;}.special-format2 .title{font-size:60px;line-height:54px;word-spacing:1px;}.text-shadow{text-shadow:-1px 2px #FF3200;}.full-width{width:100%!important;}.centered{margin:auto!important;position:relative!important;}.top{z-index:100;}.back{z-index:-1;}.silex-runtime .fixed-menu{position:fixed!important;z-index:120;}.silex-runtime .discret li,.silex-runtime .discret .heading2{color:black!important;font-size:14px!important;float:left!important;list-style-type:none;margin-left:5px;}.discret H1{color:black!important;font-size:16px!important;}.github-issues .silex-element-content{overflow:auto;}.github-issues ul{margin:0;padding:0;}.github-issues li{list-style-type:none;margin:0;padding:3px;border-bottom:1px solid #cccccc;font-size:14px;line-height:19px;}.github-issues li a{text-decoration:none;color:black;}.github-issues-image ul{text-align:center;}.github-issues-image li{display:inline;}.github-issues-image img{max-width:45%;border-radius:5px;}.showcase .silex-element-content{overflow:hidden;}.github-issues-image.showcase img{max-width:42%;border-radius:5px;}.github-issues.github-issues-white *{color:white;text-align:center;}.github-issues.github-issues-white li{border-bottom-color:#999999;}.github-issues.github-issues-image li{border-bottom:none;}.share-buttons{list-style:none;}.share-buttons li{display:inline;}.share-buttons a{text-decoration:none;}
     
         .body-initial {
             cursor: auto; 
@@ -196,6 +10,10 @@
             border-top-right-radius: 0px; 
             border-bottom-right-radius: 10px; 
             border-bottom-left-radius: 0px; 
+            border-top-color: rgb(0, 0, 0); 
+            border-right-color: rgb(0, 0, 0); 
+            border-bottom-color: rgb(0, 0, 0); 
+            border-left-color: rgb(0, 0, 0); 
         }
         .silex-id-1427579791827 {
             width: 960px; 
@@ -203,7 +21,7 @@
             position: absolute; 
             top: 5px; 
             left: 55px; 
-            box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.498); 
+            box-shadow: rgba(0, 0, 0, 0.498039) 1px 0px 10px 0px; 
             border-top-left-radius: 0px; 
             border-top-right-radius: 0px; 
             border-bottom-right-radius: 0px; 
@@ -241,7 +59,7 @@
             position: absolute; 
             left: 0px; 
             height: 42px; 
-            box-shadow: 0px 1px 3px black; 
+            box-shadow: black 0px 1px 3px; 
             top: -5px; 
             background-color: rgb(0, 155, 255); 
         }
@@ -336,8 +154,9 @@
             position: absolute; 
             background-color: transparent; 
             background-image: url('../assets/nuages-typos-ab-testing2.png'); 
-            background-size: auto auto; 
-            background-position: right bottom; 
+            background-size: auto; 
+            background-position-x: 100%; 
+            background-position-y: 100%; 
         }
         .silex-id-1427579788268 {
             height: 38px; 
@@ -991,7 +810,7 @@
         .silex-id-1443109661547-1 {
             height: 307px; 
             width: 940px; 
-            top: 265px; 
+            top: 275px; 
             left: 10px; 
             background-color: transparent; 
             border-top-color: rgb(0, 0, 0); 
