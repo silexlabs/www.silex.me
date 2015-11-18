@@ -6,10 +6,10 @@
                     // anchors and scrolling
                     $(function(){
                         newAnchorLink('home', 0);
-                        newAnchorLink('showcase', 641);
-                        newAnchorLink('silex', 1785);
-                        newAnchorLink('templates', 3430);
-                        newAnchorLink('contact', 4885);
+                        newAnchorLink('showcase', 860);
+                        newAnchorLink('silex', 1975);
+                        newAnchorLink('templates', 3645);
+                        newAnchorLink('contact', 5087);
                     });
                     function newAnchorLink(link, pos){
                         $('a[href="#'+link+'"]').click(function(){
