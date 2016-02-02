@@ -98,3 +98,17 @@
                         }
                     });
     
+    $(function() {
+  // this will be executed when the page is loaded
+  var current = $('body').pageable('option').currentPage;
+  $('body').addClass(current + '-opened');
+  $('body').on('pageChanged', function (event, pageName) {
+    // this will add a css class on the body, with the name of the page + '-opened'
+    // e.g. open the page `page-test1` will add the css class `page-test1-opened` to the body
+    $('body').addClass(pageName + '-opened');
+    // remove previous one
+    $('body').removeClass(current + '-opened');
+    current = pageName;
+  });
+});
+    

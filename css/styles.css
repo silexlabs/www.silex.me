@@ -1,5 +1,13 @@
 
-        @import url('//fonts.googleapis.com/css?family=Abel');@import url('//fonts.googleapis.com/css?family=Oswald:400,300');.oswald.text-element,.oswald .text-element{font-family:'Oswald',sans-serif;}.abel.text-element,.abel .text-element{font-family:'Abel',sans-serif;}.links a,a{color:#006CB2;text-decoration:none;}td,tr,th{border:1px solid;}.text-element HEADER,.text-element H1,.text-element H2,.text-element H3,.text-element DIV,.text-element P,.text-element QUOTE{}.very-big{color:#FF3200;}.text-element HEADER{font-size:45px;}.background{}.normal{text-align:justify;}.text-element.very-big *{font-size:80px;}.text-element.special-format .normal{font-size:55px;color:white;font-family:'Oswald',sans-serif;line-height:57px;}.special-format2 .normal{text-transform:uppercase;font-size:74px;line-height:64px;}.special-format2.verybig *{font-size:180px;line-height:180px;}.special-format2 h2,.special-format2 h1,.special-format2 p{margin:0px;}.special-format2 .heading2{letter-spacing:10px;line-height:0;}.special-format2 .heading1{font-size:30px;word-spacing:1px;text-align:left;line-height:30px;}.special-format2 .title{font-size:60px;line-height:54px;word-spacing:1px;}.text-shadow{text-shadow:-1px 2px #FF3200;}.full-width{width:100%!important;}.centered{margin:auto!important;position:relative!important;}.top{z-index:100;}.back{z-index:-1;}.silex-runtime .fixed-menu{position:fixed!important;z-index:120;}.silex-runtime .discret li,.silex-runtime .discret .heading2{color:black!important;font-size:14px!important;float:left!important;list-style-type:none;margin-left:5px;}.discret H1{color:black!important;font-size:16px!important;}.github-issues .silex-element-content{overflow:auto;}.github-issues ul{margin:0;padding:0;}.github-issues li{list-style-type:none;margin:0;padding:3px;border-bottom:1px solid #cccccc;font-size:14px;line-height:19px;}.github-issues li a{text-decoration:none;color:black;}.github-issues-image ul{text-align:center;}.github-issues-image li{display:inline;}.github-issues-image img{max-width:45%;border-radius:5px;}.showcase .silex-element-content{overflow:hidden;}.github-issues-image.showcase img{max-width:42%;border-radius:5px;}.github-issues.github-issues-white *{color:white;text-align:center;}.github-issues.github-issues-white li{border-bottom-color:#999999;}.github-issues.github-issues-image li{border-bottom:none;}.share-buttons{list-style:none;}.share-buttons li{display:inline;}.share-buttons a{text-decoration:none;}
+        @import url('//fonts.googleapis.com/css?family=Abel');@import url('//fonts.googleapis.com/css?family=Oswald:400,300');.oswald.text-element,.oswald .text-element{font-family:'Oswald',sans-serif;}.abel.text-element,.abel .text-element{font-family:'Abel',sans-serif;}.links a,a{color:#006CB2;text-decoration:none;}td,tr,th{border:1px solid;}.text-element HEADER,.text-element H1,.text-element H2,.text-element H3,.text-element DIV,.text-element P,.text-element QUOTE{}.very-big{color:#FF3200;}.text-element HEADER{font-size:45px;}.background{}.normal{text-align:justify;}.text-element.very-big *{font-size:80px;}.text-element.special-format .normal{font-size:55px;color:white;font-family:'Oswald',sans-serif;line-height:57px;}.special-format2 .normal{text-transform:uppercase;font-size:74px;line-height:64px;}.special-format2.verybig *{font-size:180px;line-height:180px;}.special-format2 h2,.special-format2 h1,.special-format2 p{margin:0px;}.special-format2 .heading2{letter-spacing:10px;line-height:0;}.special-format2 .heading1{font-size:30px;word-spacing:1px;text-align:left;line-height:30px;}.special-format2 .title{font-size:60px;line-height:54px;word-spacing:1px;}.text-shadow{text-shadow:-1px 2px #FF3200;}.full-width{width:100%!important;}.centered{margin:auto!important;position:relative!important;}.top{z-index:100;}.back{z-index:-1;}.silex-runtime .fixed-menu{position:fixed!important;z-index:120;}.silex-runtime .discret li,.silex-runtime .discret .heading2{color:black!important;font-size:14px!important;float:left!important;list-style-type:none;margin-left:5px;}.discret H1{color:black!important;font-size:16px!important;}.github-issues .silex-element-content{overflow:auto;}.github-issues ul{margin:0;padding:0;}.github-issues li{list-style-type:none;margin:0;padding:3px;border-bottom:1px solid #cccccc;font-size:14px;line-height:19px;}.github-issues li a{text-decoration:none;color:black;}.github-issues-image ul{text-align:center;}.github-issues-image li{display:inline;}.github-issues-image img{max-width:45%;border-radius:5px;}.showcase .silex-element-content{overflow:hidden;}.github-issues-image.showcase img{max-width:42%;border-radius:5px;}.github-issues.github-issues-white *{color:white;text-align:center;}.github-issues.github-issues-white li{border-bottom-color:#999999;}.github-issues.github-issues-image li{border-bottom:none;}.share-buttons{list-style:none;}.share-buttons li{display:inline;}.share-buttons a{text-decoration:none;}.poll-bg{position:fixed;top:0!important;left:0!important;width:100%!important;height:100%!important;z-index:100;}.page-poll-opened .background{-webkit-filter:blur(5px);-moz-filter:blur(5px);-o-filter:blur(5px);-ms-filter:blur(5px);filter:blur(5px);}.silex-runtime .poll-bg{background-color:transparent;}.poll-center{position:relative;left:-320px!important;margin-left:640px;top:-250px!important;margin-top:500px;}
+    
+    .editable-style.forkme {
+        right: 0;
+        top: 0;
+        left: auto;
+        z-index: 100;
+        position: fixed;
+    }
     
         .body-initial {
             cursor: auto; 
@@ -148,7 +156,7 @@
             height: 252px; 
             width: 960px; 
             top: 332px; 
-            left: 0px; 
+            left: -1px; 
             background-image: url('../assets/nuages-01.png'); 
             background-color: transparent; 
             background-size: cover; 
@@ -180,76 +188,6 @@
             background-image: url('../assets/nuages-typos-ab-testing2.png'); 
             background-size: auto auto; 
             background-position: right bottom; 
-            background-repeat: no-repeat; 
-        }
-        .silex-id-1427579788268 {
-            height: 38px; 
-            width: 102px; 
-            top: 644px; 
-            left: 13px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579788167 {
-            height: 38px; 
-            width: 108px; 
-            top: 644px; 
-            left: 264px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579788066 {
-            height: 38px; 
-            width: 142px; 
-            top: 644px; 
-            left: 381px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787965 {
-            height: 38px; 
-            width: 129px; 
-            top: 644px; 
-            left: 521px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787357 {
-            position: absolute; 
-            height: 39px; 
-            width: 125px; 
-            top: 644px; 
-            left: 650px; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787256 {
-            height: 38px; 
-            width: 107px; 
-            top: 644px; 
-            left: 138px; 
-            position: absolute; 
-            background-color: transparent; 
-        }
-        .silex-id-1427579787153 {
-            position: absolute; 
-            height: 30px; 
-            width: 52px; 
-            top: 602px; 
-            left: 430px; 
-        }
-        .silex-id-1427579787051 {
-            position: absolute; 
-            height: 47px; 
-            width: 47px; 
-            top: 593px; 
-            left: 170px; 
-        }
-        .silex-id-1427579786950 {
-            position: absolute; 
-            height: 39px; 
-            width: 39px; 
-            top: 597px; 
-            left: 560px; 
         }
         .silex-id-1427579786237 {
             position: absolute; 
@@ -336,13 +274,6 @@
             top: 63px; 
             left: 338px; 
             background-color: transparent; 
-        }
-        .silex-id-1427579786848 {
-            position: absolute; 
-            height: 42px; 
-            width: 42px; 
-            top: 595px; 
-            left: 40px; 
         }
         .silex-id-1427579782875 {
             position: absolute; 
@@ -529,29 +460,6 @@
             border-bottom-right-radius: 3px; 
             border-bottom-left-radius: 3px; 
         }
-        .silex-id-1427579786746 {
-            position: absolute; 
-            height: 38px; 
-            width: 38px; 
-            top: 597px; 
-            left: 300px; 
-        }
-        .silex-id-1427579786644 {
-            position: absolute; 
-            height: 40px; 
-            width: 40px; 
-            top: 597px; 
-            left: 690px; 
-        }
-        .silex-id-1427579783181 {
-            position: absolute; 
-            height: 50px; 
-            width: 175px; 
-            top: 578px; 
-            left: 770px; 
-            box-sizing: content-box; 
-            background-color: transparent; 
-        }
         .silex-id-1427579783079 {
             position: absolute; 
             height: 50px; 
@@ -722,9 +630,11 @@
             border-bottom-width: 0px; 
             border-top-style: solid; 
             border-bottom-style: solid; 
-            border-top-color: rgb(0, 155, 255); 
-            border-bottom-color: rgb(0, 155, 255); 
             top: 241px; 
+            border-top-color: rgb(0, 155, 255); 
+            border-right-color: rgb(0, 155, 255); 
+            border-bottom-color: rgb(0, 155, 255); 
+            border-left-color: rgb(0, 155, 255); 
         }
         .silex-id-1427587170182 {
             position: absolute; 
@@ -809,46 +719,68 @@
             position: absolute; 
             height: 40px; 
             width: 507px; 
-            top: 725px; 
+            top: 755px; 
             left: 225px; 
             background-color: transparent; 
         }
         .silex-id-1447867920942-4 {
             height: 69px; 
             width: 224px; 
-            top: 786px; 
+            top: 796px; 
             left: 448px; 
         }
         .silex-id-1447867928480-5 {
             height: 82px; 
             width: 246px; 
-            top: 778px; 
+            top: 788px; 
             left: 692px; 
         }
         .silex-id-1447868058113-6 {
             height: 55px; 
             width: 143px; 
-            top: 791px; 
+            top: 801px; 
             left: 284px; 
+        }
+        .silex-id-1454371934911-5 {
+            position: absolute; 
+            top: 569px; 
+            background-color: transparent; 
+            height: 124px; 
+            width: 960px; 
+            left: -8px; 
         }
         .silex-id-1447868061692-7 {
             height: 60px; 
             width: 242px; 
-            top: 793px; 
+            top: 803px; 
             left: 20px; 
         }
         .silex-id-1447869756486-0 {
-            height: 49px; 
+            height: 41px; 
             width: 140px; 
-            top: 261px; 
+            top: 265px; 
             left: 97px; 
             background-color: transparent; 
         }
-        .silex-id-1447870009653-1 {
-            height: 49px; 
-            width: 140px; 
-            top: 630px; 
-            left: 798px; 
+        .silex-id-1454364737067-0 {
+            height: 276px; 
+            width: 551px; 
+            top: 96px; 
+            left: 339px; 
+        }
+        .silex-id-1454371417474-4 {
+            height: 83px; 
+            width: 960px; 
+            top: 681px; 
+            left: 0px; 
+            position: absolute; 
             background-color: transparent; 
+            box-sizing: content-box; 
+        }
+        .silex-id-1454367000274-2 {
+            height: 149px; 
+            width: 149px; 
+            top: 73px; 
+            left: 1110px; 
         }
     
