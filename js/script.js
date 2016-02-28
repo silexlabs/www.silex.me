@@ -1,19 +1,15 @@
 
-        ////////////////////////////////////
-                    // animate.js
-                    document.write('<link href="css/animate.min.css" rel="stylesheet">');
-                    ////////////////////////////////////
-                    // anchors and scrolling
+        // anchors and scrolling
                     $(function(){
                         newAnchorLink('home', 0);
-                        newAnchorLink('showcase', 1322);
-                        newAnchorLink('silex', 2437);
-                        newAnchorLink('templates', 4107);
-                        newAnchorLink('contact', 4754);
+                        newAnchorLink('showcase', 1322-10);
+                        newAnchorLink('silex', 2437-10);
+                        newAnchorLink('templates', 4107-10);
+                        newAnchorLink('contact', 4754-10);
                     });
                     function newAnchorLink(link, pos){
                         $('a[href="#'+link+'"]').click(function(){
-                            silexScrollTo(pos-25);
+                            silexScrollTo(pos);
                             return false;
                         });
                         // check the hash at start
@@ -23,8 +19,8 @@
                     }
                     function silexScrollTo(pos) {
                         $('html, body').animate({
-                                scrollTop: pos
-                            }, 500);
+                            scrollTop: pos
+                        }, 400);
                     }
 
                     ////////////////////////////////////

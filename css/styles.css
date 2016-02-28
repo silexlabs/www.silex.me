@@ -121,7 +121,7 @@
           font-size: 16px!important;
         }
 
-        /* this is to keep overflow even when the conteiner size is set with min-height instead of height */
+        /* this is to keep overflow even when the container size is set with min-height instead of height */
         .github-issues {
           overflow-x: hidden;
           overflow-y: auto;
@@ -735,6 +735,7 @@
             background-position-x: 100%; 
             background-position-y: 100%; 
             min-height: 205px; 
+            background-position: bottom right; 
         }
         .silex-id-1427579784606 {
             width: 960px; 
