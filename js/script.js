@@ -6,14 +6,14 @@
                     // anchors and scrolling
                     $(function(){
                         newAnchorLink('home', 0);
-                        newAnchorLink('showcase', 860);
-                        newAnchorLink('silex', 1975);
-                        newAnchorLink('templates', 3645);
-                        newAnchorLink('contact', 5087);
+                        newAnchorLink('showcase', 1322);
+                        newAnchorLink('silex', 2437);
+                        newAnchorLink('templates', 4107);
+                        newAnchorLink('contact', 4754);
                     });
                     function newAnchorLink(link, pos){
                         $('a[href="#'+link+'"]').click(function(){
-                            silexScrollTo(pos);
+                            silexScrollTo(pos-25);
                             return false;
                         });
                         // check the hash at start
