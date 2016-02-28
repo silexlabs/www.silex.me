@@ -79,9 +79,6 @@
                             var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
                             var target = this.getAttribute('target') || this.getAttribute('data-silex-href');
                             trackLink(text, link, target);
-                            if (!target || target === 'self') {
-                                return false;
-                            }
                         });
                         function trackLink(text, url, target){
                             ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
