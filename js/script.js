@@ -2,10 +2,10 @@
         // anchors and scrolling
                     $(function(){
                         newAnchorLink('home', 0);
-                        newAnchorLink('showcase', 1322-10);
-                        newAnchorLink('silex', 2437-10);
-                        newAnchorLink('templates', 4107-10);
-                        newAnchorLink('contact', 4754-10);
+                        newAnchorLink('showcase', 1270);
+                        newAnchorLink('silex', 2430-10);
+                        newAnchorLink('templates', 4200-10);
+                        newAnchorLink('contact', 4830-10);
                     });
                     function newAnchorLink(link, pos){
                         $('a[href="#'+link+'"]').click(function(){
@@ -103,5 +103,20 @@
     $('body').removeClass(current + '-opened');
     current = pageName;
   });
+  
+  
+    // text font effect
+    // http://charliepark.org/hatchshow/how.html
+  $("#js-rotating").Morphext({
+    // The [in] animation type. Refer to Animate.css for a list of available animations.
+    animation: "fadeIn",
+    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+    separator: ",",
+    // The delay between the changing of each phrase in milliseconds.
+    speed: 3000,
+    complete: function () {
+        // Called after the entrance animation is executed.
+    }
+});
 });
     
