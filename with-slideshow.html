@@ -333,76 +333,78 @@
                       }
                       // result of the web worker calls
                       worker.onmessage = function (event) {
-                        $(event.data.selector+' p.loading').remove();
-                        $(event.data.selector).append(event.data.html);
-                        // slideshow
-                        console.log(event.data.selector);
-                        $(event.data.selector).slick();
-                      };
-                    }
-                    else{
-                      // no web workers, so load the script
-                      if (typeof console !== "undefined") console.error('NO WEBWORKER');
-                      document.write('<script src="'+widgetScriptUrl+'"></'+'script>')
-                    }
-                    
-                    ////////////////////////////////////
-                    // google analytics
-                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                    ga('create', 'UA-19608894-23', 'auto');
-                    ga('send', 'pageview');
-
-                    // track links
-                    $(function(){
-                        $('a, [data-silex-href]').click(function(){
-                            var text = $(this).text().trim();
-                            var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
-                            var target = this.getAttribute('target') || this.getAttribute('data-silex-href');
-                            trackLink(text, link, target);
-                        });
-                        function trackLink(text, url, target){
-                            ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
-                                function () {
-                                    if (!target || target === 'self') {
-                                        document.location = url;
-                                    }
+            event.data.html = `
+                    <div id="showcaseId"><ul><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/359"><img src="https://cloud.githubusercontent.com/assets/6841971/11363212/b1269a44-9298-11e5-99fd-f5ca9d49a713.jpg" alt="download BLUEY-creation, Interior decorative objects creations" title="BLUEY-creation, Interior decorative objects creations"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/271"><img src="https://cloud.githubusercontent.com/assets/715377/7339616/81928d7a-ec75-11e4-9c79-3b1845caa4ca.png" alt="download Aller simple, a great website for a great show" title="Aller simple, a great website for a great show"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/270"><img src="https://cloud.githubusercontent.com/assets/715377/7339580/5b5b25d2-ec74-11e4-9595-0961e1f8ee46.png" alt="download Films en Form, french film producers with a great website" title="Films en Form, french film producers with a great website"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/269"><img src="https://cloud.githubusercontent.com/assets/715377/7339560/2ed2d3bc-ec73-11e4-9a0c-307dc507c3d9.png" alt="download Leo Francia, french talented web designer, showcase website" title="Leo Francia, french talented web designer, showcase website"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/268"><img src="https://cloud.githubusercontent.com/assets/715377/10267646/28c1e33a-6a9c-11e5-8c14-863897e9e04d.png" alt="download Github Projects List, a new Silex website" title="Github Projects List, a new Silex website"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/267"><img src="https://cloud.githubusercontent.com/assets/715377/7339542/4b10541a-ec72-11e4-9258-efa87cced44f.png" alt="download Photograph website powered by Silex and flickr" title="Photograph website powered by Silex and flickr"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/266"><img src="https://cloud.githubusercontent.com/assets/715377/7339508/69894a74-ec71-11e4-9f90-c93ce73d671f.png" alt="download Cloud Explorer website" title="Cloud Explorer website"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/265"><img src="https://cloud.githubusercontent.com/assets/715377/7339480/d0933ea6-ec70-11e4-8e80-57c832999dc0.png" alt="download Monitoshi website" title="Monitoshi website"></a></li><li><a target="_blank" href="https://github.com/silexlabs/Silex/issues/167"><img src="https://cloud.githubusercontent.com/assets/715377/3787930/4d58378a-1a43-11e4-80bc-5bff8d84b139.png" alt="download Beautiful about me page template" title="Beautiful about me page template"></a></li></ul></div>
+                    <script type="text/javascript">
+                        $(function(){
+                                    //setTimeout(function() {
+                                        silex_github_widget('#showcaseId', 'showcase', true);
+                                    //}, 200);
+                                });
+    </script>
+    `; $(event.data.selector+' p.loading').remove(); $(event.data.selector).append(event.data.html); // slideshow console.log(event.data.selector); $(event.data.selector).slick(); }; } else{ // no web workers, so load the script if (typeof console !== "undefined")
+    console.error('NO WEBWORKER'); document.write('
+    <script src="'+widgetScriptUrl+'">
+        </'+'script>')
+                            }
+                            
+                            ////////////////////////////////////
+                            // google analytics
+                            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+                            ga('create', 'UA-19608894-23', 'auto');
+                            ga('send', 'pageview');
+        
+                            // track links
+                            $(function(){
+                                $('a, [data-silex-href]').click(function(){
+                                    var text = $(this).text().trim();
+                                    var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
+                                    var target = this.getAttribute('target') || this.getAttribute('data-silex-href');
+                                    trackLink(text, link, target);
+                                });
+                                function trackLink(text, url, target){
+                                    ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
+                                        function () {
+                                            if (!target || target === 'self') {
+                                                document.location = url;
+                                            }
+                                        }
+                                    });
                                 }
                             });
-                        }
-                    });
-    
-    $(function() {
-  // this will be executed when the page is loaded
-  var current = $('body').pageable('option').currentPage;
-  $('body').addClass(current + '-opened');
-  $('body').on('pageChanged', function (event, pageName) {
-    // this will add a css class on the body, with the name of the page + '-opened'
-    // e.g. open the page `page-test1` will add the css class `page-test1-opened` to the body
-    $('body').addClass(pageName + '-opened');
-    // remove previous one
-    $('body').removeClass(current + '-opened');
-    current = pageName;
-  });
-  
-  
-    // text font effect
-    // http://charliepark.org/hatchshow/how.html
-  $("#js-rotating").Morphext({
-    // The [in] animation type. Refer to Animate.css for a list of available animations.
-    animation: "fadeIn",
-    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-    separator: ",",
-    // The delay between the changing of each phrase in milliseconds.
-    speed: 3000,
-    complete: function () {
-        // Called after the entrance animation is executed.
-    }
-});
-});
+            
+            $(function() {
+          // this will be executed when the page is loaded
+          var current = $('body').pageable('option').currentPage;
+          $('body').addClass(current + '-opened');
+          $('body').on('pageChanged', function (event, pageName) {
+            // this will add a css class on the body, with the name of the page + '-opened'
+            // e.g. open the page `page-test1` will add the css class `page-test1-opened` to the body
+            $('body').addClass(pageName + '-opened');
+            // remove previous one
+            $('body').removeClass(current + '-opened');
+            current = pageName;
+          });
+          
+          
+            // text font effect
+            // http://charliepark.org/hatchshow/how.html
+          $("#js-rotating").Morphext({
+            // The [in] animation type. Refer to Animate.css for a list of available animations.
+            animation: "fadeIn",
+            // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+            separator: ",",
+            // The delay between the changing of each phrase in milliseconds.
+            speed: 3000,
+            complete: function () {
+                // Called after the entrance animation is executed.
+            }
+        });
+        });
     </script>
     <meta name="publicationPath" content="/api/1.0/github/exec/put//www.silex.me/gh-pages">
     <style class="silex-inline-styles" type="text/css">
