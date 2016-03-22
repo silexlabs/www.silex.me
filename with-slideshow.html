@@ -338,7 +338,13 @@
                         $(event.data.selector).append(event.data.html);
                         // slideshow
                         console.log(event.data.selector);
-                        $(event.data.selector).slick();
+                        $(event.data.selector).slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
                       };
                     }
                     else{
