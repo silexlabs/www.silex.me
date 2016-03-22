@@ -337,7 +337,6 @@
                         $(event.data.selector+' p.loading').remove();
                         $(event.data.selector).append(event.data.html);
                         // slideshow
-                        console.log(event.data.selector);
                         $(event.data.selector + '.slideshow ul').slick({
                           dots: true,
                           infinite: true,
@@ -1748,7 +1747,15 @@ As in <span id="js-rotating">free speech, freestyle, freehand, DIY, freedom</spa
                     <script type="text/javascript">
                         $(function(){
                                     //setTimeout(function() {
-                                        silex_github_widget('#showcaseId', 'showcase', true);
+                                        silex_github_widget('#showcaseId', 'showcase', true, function () {
+                                            $('#showcaseId.slideshow ul').slick({
+                                              dots: true,
+                                              infinite: true,
+                                              speed: 300,
+                                              slidesToShow: 3,
+                                              adaptiveHeight: true
+                                            });
+                                        });
                                     //}, 200);
                                 });
                     </script>
