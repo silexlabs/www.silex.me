@@ -85,6 +85,8 @@
                       worker.onmessage = function (event) {
                         $(event.data.selector+' p.loading').remove();
                         $(event.data.selector).append(event.data.html);
+                        // slideshow
+                        $(event.data.selector).slick();
                       };
                     }
                     else{
