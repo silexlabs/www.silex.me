@@ -64,12 +64,14 @@ function silex_github_widget(containerSelector, labels, imageMode, cbk){
         listHtml += issueHtml;
       }
       listHtml += '</ul>';
+      
       if(isWebWorker){
         cbk(listHtml);
       }
       else{
         $(containerSelector+' p.loading').remove();
         $(containerSelector).append(listHtml);
+        if(cbk) cbk();
       }
     });
 }
