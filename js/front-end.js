@@ -14,6 +14,9 @@ $(function() {
   document.createElement('HEADER');
   document.createElement('VIDEO');
 
+  // store the body selector
+  var bodyEl = $('body');
+
   /**
    * list all pages from the head section
    * and open the 1st one by default
@@ -28,7 +31,7 @@ $(function() {
    * callback for change events
    * called when a page is opened
    */
-  $('body').on('pageChanged', function (event, pageName) {
+  bodyEl.on('pageChanged', function (event, pageName) {
     // mark links to the current page as active
     $('[data-silex-href="#!'+pageName+'"]').addClass('page-link-active');
     $('[id="'+pageName+'"]').addClass('page-link-active');
@@ -46,7 +49,7 @@ $(function() {
   /**
    * init page system
    */
-  $('body').pageable({
+  bodyEl.pageable({
     currentPage: firstPageName,
     useDeeplink:true,
     pageClass: 'paged-element'
@@ -101,14 +104,15 @@ $(function() {
   };
 
   /**
-   * resize body to the size of its content
-   * this is needed since the content has absolute position
-   * so it is not automatic with css
+   * compute the desired size of the body
+   * this will allways be as big as the viewport
+   * and the bounding box (0,0) (width, height) contains all the elements in the body
+   * even if the elements are absolute positioned
+   * @return {width, height}
    */
-  var resizeBody = debounce(function (event){
+  function getBodySize() {
     var width = 0;
     var height = 0;
-    var bodyEl = $('body');
     $('body > *').each(function (index) {
       var el = $(this);
       // take elements visible on the current page
@@ -120,18 +124,60 @@ $(function() {
         if (height < bottom) height = bottom;
       }
     });
+    return {
+      'width': width,
+      'height': height
+    };
+  }
+
+  var initialViewportContent = $('meta[data-silex-viewport]').attr('content');
+  var win = $(window);
+  /**
+   * resize body to the size of its content
+   * this is needed since the content has absolute position
+   * so it is not automatic with css
+   */
+  var resizeBody = debounce(function (event){
+    var boundingBox = getBodySize();
+    var width = boundingBox.width;
+    var height = boundingBox.height;
     bodyEl.css({
       "min-width": width + "px",
       "min-height": height + "px"
     });
+    // handle the scroll bar manually
+    // prevent the scroll bar to appear when we are only a few pixels short
+    // this allows us to set width to 100% instead of 99%
+    // this will only take place on mobile with winWidth < 480 (not needed on desktop apparently)
+    var winWidth = win.width();
+    if(bodyEl.hasClass('silex-runtime') && winWidth < 480) {
+      if(width < winWidth + 10)
+        bodyEl.css('overflow-x', 'hidden');
+      else
+        bodyEl.css('overflow-x', 'auto');
+    }
   }, 500);
+
+  // only outside silex editor when the window is small enough
+  // change viewport to enable mobile view scale mode
+  // for "pixel perfect" mobile version
+  // bellow 960, the window width will be seen as 480
+  if(bodyEl.hasClass('silex-runtime')) {
+    var winWidth = win.width();
+    if(winWidth < 960) {
+      $('meta[data-silex-viewport]').attr('content', 'width=479, user-scalable=no, maximum-scale=5');
+    }
+  }
 
   // resize body at start
   resizeBody();
 
   // resize body on window resize
-  $(window).resize(resizeBody);
+  win.resize(resizeBody);
 
   // resize on page change (size will vary)
-  $('body').on('pageChanged', resizeBody);
+  bodyEl.on('pageChanged', resizeBody);
+
+  // expose for use by the widgets and Silex editor
+  window.resizeBody = resizeBody;
 });
