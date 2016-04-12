@@ -486,8 +486,8 @@
         }
         .silex-id-1456341444370-3 {
             width: 450px; 
-            top: 160px; 
-            left: 508px; 
+            top: 170px; 
+            left: 493px; 
             border-top-width: 5px; 
             border-right-width: 5px; 
             border-bottom-width: 5px; 
@@ -502,7 +502,7 @@
             border-bottom-color: rgb(0, 0, 0); 
             border-left-color: rgb(0, 0, 0); 
             min-height: 270px; 
-            border-width: 1px 1px 1px 1px ; 
+            border-width: 0 0 0 0 ; 
             border-style: solid; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1456341444370-3 {
@@ -514,10 +514,10 @@
         }.silex-id-1454371417474-4 {
             width: 506px; 
             top: 125px; 
-            left: 0px; 
+            left: -10px; 
             background-color: transparent; 
             box-sizing: content-box; 
-            min-height: 314px; 
+            min-height: 330px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1454371417474-4 {
             top: 495px; 
