@@ -1097,10 +1097,14 @@
             width: 573px; 
             top: 62px; 
             left: 328px; 
-            background-color: rgba(0,74,122,1); 
+            background-color: rgba(0,74,122,0); 
             border-width: 10px 10px 10px 10px; 
             border-style: solid; 
             min-height: 320px; 
+            background-image: url('../assets/silex-screenshot.png'); 
+            background-position: center center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
         }
         .silex-id-1454367000274-2 {
             width: 149px; 
