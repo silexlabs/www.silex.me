@@ -126,7 +126,7 @@ a:focus{ outline: none;}
     position: relative;
     top: auto;
     left: auto;
-!!!! careful: this prevents 100% bg (www.silex.me)     max-width: 95%; /* less than 100% in the editor to be able to resize container */
+    max-width: 95%; /* less than 100% in the editor to be able to resize container */
     margin-left: auto;
     margin-right: auto;
   }
