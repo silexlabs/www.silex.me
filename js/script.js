@@ -59,7 +59,7 @@
                     else{
                       // no web workers, so load the script
                       if (typeof console !== "undefined") console.error('NO WEBWORKER');
-                      document.write('<script src="'+widgetScriptUrl+'"></'+'script>')
+                      document.write('<script src="../../../../github/exec/get/www.silex.me/gh-pages/'+widgetScriptUrl+'"></'+'script>')
                     }
 
                     ////////////////////////////////////
