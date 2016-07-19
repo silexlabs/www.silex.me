@@ -5,6 +5,12 @@
         height: 320px; /* temp workaround */
     }
     
+    
+.element2{
+line-height: 18px;
+margin-left:10px;
+}
+    
         .body-initial {
             cursor: auto; 
             left: 0px; 
@@ -490,8 +496,8 @@
         }
         .silex-id-1456341444370-3 {
             width: 450px; 
-            top: 160px; 
-            left: 478px; 
+            top: 161px; 
+            left: 479px; 
             border-top-width: 5px; 
             border-right-width: 5px; 
             border-bottom-width: 5px; 
@@ -505,7 +511,7 @@
             border-right-color: rgb(0, 0, 0); 
             border-bottom-color: rgb(0, 0, 0); 
             border-left-color: rgb(0, 0, 0); 
-            min-height: 270px; 
+            min-height: 290px; 
             border-width: 1px 1px 1px 1px ; 
             border-style: solid; 
         }
@@ -517,11 +523,11 @@
         }
         }.silex-id-1454371417474-4 {
             width: 452px; 
-            top: 123px; 
-            left: 17px; 
+            top: 161px; 
+            left: 12px; 
             background-color: transparent; 
             box-sizing: content-box; 
-            min-height: 360px; 
+            min-height: 100px; 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1454371417474-4 {
             top: 495px; 
