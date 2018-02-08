@@ -377,6 +377,7 @@
                       document.write('<script src="'+widgetScriptUrl+'"></'+'script>')
                     }
 
+$(function() {
 $("#js-rotating").Morphext({
     // The [in] animation type. Refer to Animate.css for a list of available animations.
     animation: "fadeIn",
@@ -387,6 +388,7 @@ $("#js-rotating").Morphext({
     complete: function () {
         // Called after the entrance animation is executed.
     }
+});
 });
 /*
  * active menu widget for Silex
