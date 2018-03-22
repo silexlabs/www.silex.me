@@ -491,12 +491,11 @@
         @media only screen and (max-width: 480px),
         only screen and (max-device-width: 480px) {
             .silex-id-1427579788776 {
-                background-image: url('../assets/nuages-02.png');
                 background-position: bottom center;
-                min-height: 788px;
-                top: 68px;
+                min-height: 1182px;
+                top: 333px;
                 left: 11px;
-                width: 421px;
+                width: 420px;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-color: rgba(0, 74, 122, 1);
@@ -1440,7 +1439,7 @@
         .silex-id-1518113488474-8 {
             width: 960px;
             background-color: rgba(255, 255, 255, 1);
-            min-height: 537px;
+            min-height: 973px;
             top: 15px;
             left: 205px;
         }
