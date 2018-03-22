@@ -38,52 +38,8 @@
                       document.write('<script src="'+widgetScriptUrl+'"></'+'script>')
                     }
 
-                    ////////////////////////////////////
-                    // google analytics
-                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                    ga('create', 'UA-19608894-23', 'auto');
-                    ga('send', 'pageview');
-
-                    // track links
-                    $(function(){
-                        $('a, [data-silex-href]').click(function(){
-                            var text = $(this).text().trim();
-                            var link = this.getAttribute('href') || this.getAttribute('data-silex-href');
-                            var target = this.getAttribute('target') || this.getAttribute('data-silex-href');
-                            trackLink(text, link, target);
-                        });
-                        function trackLink(text, url, target){
-                            ga('send', 'event', 'outbound', 'link', text + ' (' + url +')', {'hitCallback':
-                                function () {
-                                    if (!target || target === 'self') {
-                                        document.location = url;
-                                    }
-                                }
-                            });
-                        }
-                    });
-    
-    $(function() {
-  // this will be executed when the page is loaded
-  var current = $('body').pageable('option').currentPage;
-  $('body').addClass(current + '-opened');
-  $('body').on('pageChanged', function (event, pageName) {
-    // this will add a css class on the body, with the name of the page + '-opened'
-    // e.g. open the page `page-test1` will add the css class `page-test1-opened` to the body
-    $('body').addClass(pageName + '-opened');
-    // remove previous one
-    $('body').removeClass(current + '-opened');
-    current = pageName;
-  });
-  
-  
-    // text font effect
-    // http://charliepark.org/hatchshow/how.html
-  $("#js-rotating").Morphext({
+$(function() {
+$("#js-rotating").Morphext({
     // The [in] animation type. Refer to Animate.css for a list of available animations.
     animation: "fadeIn",
     // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
