@@ -1,4 +1,7 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+
+<head>
     <title>Design free websites with Silex</title>
     <meta charset="UTF-8">
     <meta name="generator" content="Silex v2.2.7">
@@ -16,29 +19,336 @@
     <meta name="twitter:image:src" content="//www.silex.me/assets/silex.ad.png">
     <meta property="twitter:account_id" content="158399803">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="http://localhost:6805/static/2.7/jquery.js" data-silex-static=""></script>
-    <script type="text/javascript" src="http://localhost:6805/static/2.7/jquery-ui.js" data-silex-static=""></script>
-    <script type="text/javascript" src="http://localhost:6805/static/2.7/pageable.js" data-silex-static=""></script>
-    <script type="text/javascript" src="http://localhost:6805/static/2.7/front-end.js" data-silex-static=""></script>
-    <link href="http://localhost:6805/static/2.7/front-end.css" rel="stylesheet" data-silex-static="">
-    <link href="http://localhost:6805/static/2.7/normalize.css" rel="stylesheet" data-silex-static="">
-    <style type="text/css" class="silex-style">@import url(//fonts.googleapis.com/css?family=Abel);@import url(//fonts.googleapis.com/css?family=Oswald:400,300);.oswald.text-element,
-.oswald .text-element {font-family: 'Oswald', sans-serif;}.abel.text-element,
-.abel .text-element {font-family: 'Abel', sans-serif;}.links a,
-a {color: #006CB2; text-decoration: none;}.yellow-links a:hover,
-.yellow-links a {color: #ff0;}td,
-tr,
-th {border: 1px solid;}.text-element HEADER,
-.text-element H1,
-.text-element H2,
-.text-element H3,
-.text-element DIV,
-.text-element P,
-.text-element QUOTE {}.very-big {color: #FF3200;}.text-element HEADER {font-size: 45px;}.background {}.normal {text-align: justify;}.text-element.very-big * {font-size: 50px; line-height: 2.5; font-weight: 100;}.text-element.special-format .normal {font-size: 55px; color: white; font-family: 'Oswald', sans-serif; line-height: 57px;}.special-format2 .normal {text-transform: uppercase; font-size: 74px; line-height: 64px;}.special-format2.verybig * {font-size: 180px; line-height: 180px;}.special-format2 h2,
-.special-format2 h1,
-.special-format2 p {margin: 0px;}.special-format2 .heading2 {letter-spacing: 10px; line-height: 0;}.special-format2 .heading1 {font-size: 30px; word-spacing: 1px; text-align: left; line-height: 30px;}.special-format2 .title {font-size: 60px; line-height: 54px; word-spacing: 1px;}.text-shadow {text-shadow: -1px 2px #FF3200;}div.full-width {width: 100%;}.centered {margin: auto; position: relative;}.top {z-index: 100;}.back {z-index: -1;}.fixed-menu .text-element {padding: 0px; min-height: 35px; top: 0px; line-height: 1.8; font-size: 18px; color: #FFFFFF; text-align: center;}.silex-runtime .fixed-menu {position: fixed; z-index: 120;}.silex-runtime .fixed-menu *:hover,
-.silex-runtime .fixed-menu *:focus {color: #FFFFFF; text-decoration: none; outline: none;}.active-menu {border-bottom: 3px solid #FFFFFF;}.silex-runtime .discret li,
-.silex-runtime .discret .heading2 {color: black !important; font-size: 14px !important; float: left !important; list-style-type: none; margin-left: 5px;}.discret H1 {color: black !important; font-size: 16px !important;}.github-issues {overflow-x: hidden; overflow-y: auto;}.noscroll-list.github-issues {overflow: hidden;}.github-issues ul {position: absolute;}.github-issues .silex-element-content {overflow: hidden;}.github-issues ul {margin: 0; padding: 0;}.github-issues li {list-style-type: none; margin: 0; padding: 3px; border-bottom: 1px solid #cccccc; font-size: 14px; line-height: 30px;}.github-issues li a {text-decoration: none; color: black;}.github-issues-image ul {text-align: center;}.github-issues-image li {display: inline;}.github-issues-image img {max-width: 45%; border-radius: 5px;}.github-issues-image.showcase-list img {max-width: 42%; border-radius: 5px;}.github-issues.github-issues-white * {color: white; text-align: center;}.github-issues.github-issues-white li {border-bottom-color: #999999;}.github-issues.github-issues-image li {border-bottom: none;}.share-buttons {list-style: none;}.share-buttons li {display: inline;}.share-buttons a {text-decoration: none;}.poll-bg {position: fixed; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; z-index: 100;}.page-poll-opened .background {-webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);}.silex-runtime .poll-bg {background-color: transparent;}.poll-center {position: relative; left: -320px !important; margin-left: 640px; top: -250px !important; margin-top: 500px;}.editable-style.forkme {right: 0; top: 0; left: auto; z-index: 1000; position: fixed;}.limit-height {height: 500px;}.silex-pages {display: none;}body.enable-mobile {padding-top: 0;}.header h1 {letter-spacing: 12px; font-family: Abel, sans-serif;}.header h2 {font-size: 3.3em; font-family: 'Oswald', sans-serif; color: #ff0; font-weight: 200; text-transform: uppercase; text-align: center; letter-spacing: 12px; line-height: 1.3;}.header-slideshow {height: 320px;}.element2 {line-height: 18px; margin-left: 10px;}</style>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link href="//editor.silex.me/static/2.7/front-end.css" rel="stylesheet" data-silex-static="">
+    <link href="//editor.silex.me/static/2.7/normalize.css" rel="stylesheet" data-silex-static="">
+    <style type="text/css" class="silex-style">
+        @import url('//fonts.googleapis.com/css?family=Abel');
+        @import url('//fonts.googleapis.com/css?family=Oswald:400,300');
+        .oswald.text-element,
+        .oswald .text-element {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .abel.text-element,
+        .abel .text-element {
+            font-family: 'Abel', sans-serif;
+        }
+        
+        .links a,
+        a {
+            color: #006CB2;
+            text-decoration: none;
+        }
+        
+        .yellow-links a:hover,
+        .yellow-links a {
+            color: #ff0;
+        }
+        
+        td,
+        tr,
+        th {
+            border: 1px solid;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            * {
+                font-size: x-large;
+            }
+            .github-issues-image.editable-style .silex-element-content img {
+                max-width: 100%;
+            }
+        }
+        
+        .text-element HEADER,
+        .text-element H1,
+        .text-element H2,
+        .text-element H3,
+        .text-element DIV,
+        .text-element P,
+        .text-element QUOTE {}
+        
+        .very-big {
+            color: #FF3200;
+        }
+        
+        .text-element HEADER {
+            font-size: 45px;
+        }
+        
+        .background {}
+        
+        .normal {
+            text-align: justify;
+        }
+        
+        .text-element.very-big * {
+            font-size: 50px;
+            line-height: 2.5;
+            font-weight: 100;
+        }
+        
+        .text-element.special-format .normal {
+            font-size: 55px;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            line-height: 57px;
+        }
+        
+        .special-format2 .normal {
+            text-transform: uppercase;
+            font-size: 74px;
+            line-height: 64px;
+        }
+        
+        .special-format2.verybig * {
+            font-size: 180px;
+            line-height: 180px;
+        }
+        
+        .special-format2 h2,
+        .special-format2 h1,
+        .special-format2 p {
+            margin: 0px;
+        }
+        
+        .special-format2 .heading2 {
+            letter-spacing: 10px;
+            line-height: 0;
+        }
+        
+        .special-format2 .heading1 {
+            font-size: 30px;
+            word-spacing: 1px;
+            text-align: left;
+            line-height: 30px;
+        }
+        
+        .special-format2 .title {
+            font-size: 60px;
+            line-height: 54px;
+            word-spacing: 1px;
+        }
+        
+        .text-shadow {
+            text-shadow: -1px 2px #FF3200;
+        }
+        
+        div.full-width {
+            width: 100%;
+        }
+        
+        .centered {
+            margin: auto;
+            position: relative;
+        }
+        
+        .top {
+            z-index: 100;
+        }
+        
+        .back {
+            z-index: -1;
+        }
+        
+        .fixed-menu .text-element {
+            padding: 0px;
+            min-height: 35px;
+            top: 0px;
+            line-height: 1.8;
+            font-size: 18px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        
+        .silex-runtime .fixed-menu {
+            position: fixed;
+            z-index: 120;
+        }
+        
+        .silex-runtime .fixed-menu *:hover,
+        .silex-runtime .fixed-menu *:focus {
+            color: #FFFFFF;
+            text-decoration: none;
+            outline: none;
+        }
+        
+        .active-menu {
+            border-bottom: 3px solid #FFFFFF;
+        }
+        
+        .silex-runtime .discret li,
+        .silex-runtime .discret .heading2 {
+            color: black !important;
+            font-size: 14px !important;
+            float: left !important;
+            list-style-type: none;
+            margin-left: 5px;
+        }
+        
+        .discret H1 {
+            color: black !important;
+            font-size: 16px !important;
+        }
+        
+        .github-issues {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        
+        .noscroll-list.github-issues {
+            overflow: hidden;
+        }
+        
+        .github-issues ul {
+            position: absolute;
+        }
+        
+        .github-issues .silex-element-content {
+            overflow: hidden;
+        }
+        
+        .github-issues ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .github-issues li {
+            list-style-type: none;
+            margin: 0;
+            padding: 3px;
+            border-bottom: 1px solid #cccccc;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        
+        .github-issues li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .github-issues-image ul {
+            text-align: center;
+        }
+        
+        .github-issues-image li {
+            display: inline;
+        }
+        
+        .github-issues-image img {
+            max-width: 45%;
+            border-radius: 5px;
+        }
+        
+        .github-issues-image.showcase-list img {
+            max-width: 42%;
+            border-radius: 5px;
+        }
+        
+        .github-issues.github-issues-white * {
+            color: white;
+            text-align: center;
+        }
+        
+        .github-issues.github-issues-white li {
+            border-bottom-color: #999999;
+        }
+        
+        .github-issues.github-issues-image li {
+            border-bottom: none;
+        }
+        
+        .share-buttons {
+            list-style: none;
+        }
+        
+        .share-buttons li {
+            display: inline;
+        }
+        
+        .share-buttons a {
+            text-decoration: none;
+        }
+        
+        .poll-bg {
+            position: fixed;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 100;
+        }
+        
+        .page-poll-opened .background {
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+        
+        .silex-runtime .poll-bg {
+            background-color: transparent;
+        }
+        
+        .poll-center {
+            position: relative;
+            left: -320px !important;
+            margin-left: 640px;
+            top: -250px !important;
+            margin-top: 500px;
+        }
+        
+        .editable-style.forkme {
+            right: 0;
+            top: 0;
+            left: auto;
+            z-index: 1000;
+            position: fixed;
+        }
+        
+        .limit-height {
+            height: 500px;
+        }
+        
+        .silex-pages {
+            display: none;
+        }
+        
+        body.enable-mobile {
+            padding-top: 0;
+        }
+        
+        .header h1 {
+            letter-spacing: 12px;
+            font-family: Abel, sans-serif;
+        }
+        
+        .header h2 {
+            font-size: 3.3em;
+            font-family: 'Oswald', sans-serif;
+            color: #ff0;
+            font-weight: 200;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 12px;
+            line-height: 1.3;
+        }
+        
+        .header-slideshow {
+            height: 320px;
+        }
+        
+        .element2 {
+            line-height: 18px;
+            margin-left: 10px;
+        }
+    </style>
     <script type="text/javascript" class="silex-script">
         ////////////////////////////////////
                     // github issues
@@ -170,14 +480,1791 @@ $(function() {
 });
     </script>
 
-    <style class="silex-inline-styles" type="text/css">.body-initial {cursor: auto; left: 0px; top: 0px; background-color: rgb(0, 74, 122); border-top-left-radius: 10px; border-top-right-radius: 0px; border-bottom-right-radius: 10px; border-bottom-left-radius: 0px; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); border-color: #000000;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.body-initial {background-color: rgba(255,255,255,1);}}.silex-id-1518111566640-6 {min-width: 960px; top: 5px; left: 5px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518111566640-6 {top: 0px; left: 0px;}}.silex-id-1518111566638-5 {width: 960px; background-color: rgba(255,255,255,1); min-height: 645px; top: 15px; left: 326px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518111566638-5 {background-color: transparent; min-height: 1635px;}}.silex-id-1518111974791-7 {width: 121px; min-height: 68px; background-color: transparent; top: 352px; left: 114px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518111974791-7 {top: 922px; left: 168px; width: 108px; min-height: 68px;}}.silex-id-1518171394936-32 {width: 239px; min-height: 134px; top: 92px; left: 46px;}.silex-id-1427579789590 {left: 0px; top: 0px; min-height: 35px; box-shadow: black 0px 1px 3px; background-color: rgba(0,155,255,1); width: 960px;}.silex-id-1427579789488 {top: 0px; width: 926px; left: 16px; min-height: 38px; background-color: transparent;}.silex-id-1427579789386 {width: 140px; top: -10px; left: -15px; background-color: transparent; min-height: -10px; border-radius: 2px 2px 2px 2px;}.silex-id-1427579789284 {width: 140px; left: 127px; top: 0px; min-height: -9px; background-color: transparent; border-radius: 2px 2px 2px 2px;}.silex-id-1427579789182 {width: 163px; left: 748px; background-color: transparent; top: 15px; min-height: 5px;}.silex-id-1427579789081 {width: 159px; top: 0px; left: 278px; min-height: -9px; background-color: transparent; border-radius: 2px 2px 2px 2px;}.silex-id-1427579788979 {width: 140px; left: 445px; top: 0px; background-color: transparent; min-height: -10px; border-radius: 2px 2px 2px 2px;}.silex-id-1427579788878 {width: 140px; left: 596px; top: 0px; min-height: -9px; background-color: transparent; border-radius: 2px 2px 2px 2px;}.silex-id-1427579788776 {width: 960px; top: 394px; left: 0px; background-image: url('assets/nuages-01.png'); background-color: transparent; background-size: cover; min-height: 252px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579788776 {background-image: url('assets/nuages-02.png'); background-position: bottom center; min-height: 788px; top: 68px; left: 11px; width: 421px; background-size: contain; background-repeat: no-repeat; background-color: rgba(0,74,122,1);}}.silex-id-1458611359360-0 {min-height: 212px; width: 960px; top: 0px; left: 0px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1458611359360-0 {top: 61px; left: 11px; width: 400px; min-height: 667px;}}.silex-id-1458607043374-1 {min-height: 91px; width: 940px; top: 87px; left: 10px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1458607043374-1 {top: 7px; left: 0px; width: 401px; min-height: 227px;}}.silex-id-1458608765361-0 {min-height: -1px; width: 940px; top: 123px; left: 10px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1458608765361-0 {top: 277px; left: 10px; width: 380px; min-height: 375px;}}.silex-id-1427579782977 {width: 212px; top: 272px; left: 66px; min-height: 85px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579782977 {top: 60px; left: 27px; width: 213px; min-height: 85px;}}.silex-id-1427579783079 {width: 212px; top: 215px; left: 65px; background-color: transparent; min-height: 50px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579783079 {top: 95px; left: 9px; width: 470px; min-height: 50px;}}.silex-id-1521236362605-0 {height: 331px; width: 600px; top: 71px; left: 326px; background-color: transparent; min-height: 350px; border-width: 5px 5px 5px 5px; border-style: solid; border-color: rgba(0,60,100,1); border-radius: 15px 15px 15px 15px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1521236362605-0 {top: 1287px; left: 6px; width: 424px; height: 336px; min-height: 336px;}}.silex-id-1454367000274-2 {width: 149px; top: 2px; left: 1467px; min-height: 149px;}.silex-id-1518122966043-15 {top: 685px; left: 5px;}.silex-id-1518122966039-14 {background-color: rgba(0,155,255,1); min-height: 1589px;}.silex-id-1427579784504 {width: 891px; top: 10px; left: 40px; background-color: transparent; min-height: 126px;}.silex-id-1518123091288-18 {width: 890px; top: 150px; left: 40px; background-color: transparent; min-height: 123px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518123091288-18 {top: 1197px; left: 10px; width: 449px; min-height: 93px;}}.silex-id-1427579784402 {width: 959px; top: 274px; left: 0px; background-color: transparent; min-height: 1295px;}.silex-id-1518124137652-22 {top: 5502px; left: 5px;}.silex-id-1518124137650-21 {background-color: rgba(255,255,255,1); min-height: 1000px;}.silex-id-1427579782059 {top: 22px; background-color: transparent; width: 960px; left: 2px; border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); min-height: 124px;}.silex-id-1427579781958 {width: 960px; top: 123px; left: 0px; background-color: transparent; box-sizing: content-box; min-height: 104px;}.silex-id-1458572218532-2 {min-height: 383px; width: 930px; top: 290px; left: 13px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1458572218532-2 {top: 228px; left: 11px; width: 402px; min-height: 209px;}}.silex-id-1427579782467 {width: 280px; top: 724px; left: 19px; background-color: transparent; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); min-height: 80px; border-color: #000000;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579782467 {top: 238px; left: 10px; width: 450px; min-height: 80px;}}.silex-id-1427579782262 {width: 280px; top: 788px; left: 19px; background-color: transparent; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); min-height: 189px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579782262 {top: 668px; left: 0px; width: 422px; min-height: 153px;}}.silex-id-1427583890283 {width: 280px; top: 720px; left: 338px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427583890283 {top: 651px; left: 10px; width: 450px; min-height: 80px;}}.silex-id-1427583925791 {width: 280px; top: 787px; left: 338px; background-color: transparent; border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); min-height: 226px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427583925791 {top: 659px; left: 5px; width: 449px; min-height: 168px;}}.silex-id-1427579781636 {width: 280px; top: 722px; left: 657px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579781636 {top: 571px; left: 10px; width: 450px; min-height: 80px;}}.silex-id-1427579782161 {width: 280px; top: 786px; left: 656px; background-color: transparent; min-height: 188px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579782161 {top: 1144px; left: 10px; width: 449px; min-height: 131px;}}.silex-id-1427584588756 {width: 920px; left: 20px; background-color: transparent; border-top-width: 1px; border-bottom-width: 0px; border-top-style: solid; border-bottom-style: solid; top: 235px; border-top-color: rgb(0, 155, 255); border-right-color: rgb(0, 155, 255); border-bottom-color: rgb(0, 155, 255); border-left-color: rgb(0, 155, 255); min-height: 10px;}.silex-id-1518124620627-26 {min-height: 100px;}.silex-id-1518124620626-25 {background-color: rgba(255,255,255,1); min-height: 300px;}.silex-id-1456340720913-0 {width: 960px; top: 21px; left: 0px; background-color: transparent; min-height: 266px; border-color: #000000;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1456340720913-0 {top: 5681px; left: 12px; width: 422px; min-height: 364px;}}.silex-id-1427579784810 {width: 507px; top: 44px; left: 224px; background-color: transparent; min-height: 40px; border-color: #000000;}.silex-id-1447868061692-7 {width: 182px; top: 99px; left: 388px; min-height: 51px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1447868061692-7 {top: 130px; left: 61px; width: 299px; min-height: 83px;}}.silex-id-1447867920942-4 {width: 176px; top: 165px; left: 244px; min-height: 57px;}.silex-id-1447867928480-5 {width: 188px; top: 165px; left: 499px; min-height: 64px;}.silex-id-1447868058113-6 {width: 124px; top: 168px; left: 41px; min-height: 49px;}.silex-id-1454959210068-1 {width: 157px; top: 173px; left: 757px; min-height: 50px;}.silex-id-1456673374542-16 {width: 920px; top: 6px; left: 18px; background-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 0px; border-top-style: solid; border-bottom-style: solid; border-top-color: rgb(0, 155, 255); border-bottom-color: rgb(0, 155, 255); min-height: 20px; border-color: #009bff; border-width: 1px 0 0 0; border-style: solid;}.silex-id-1518124209273-24 {top: 3754px; left: 5px;}.silex-id-1518124209272-23 {background-color: rgba(0,155,255,1); min-height: 1183px;}.silex-id-1427579789998 {width: 960px; top: 40px; left: 0px; background-color: transparent; box-sizing: content-box; min-height: 69px;}.silex-id-1427604618762 {width: 960px; top: 122px; left: 0px; background-color: transparent; min-height: 1020px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427604618762 {top: 131px; left: 11px; width: 421px; min-height: 1035px;}}.silex-id-1518124068019-20 {top: 5502px; left: 5px; min-width: 960px;}.silex-id-1518124068017-19 {width: 960px; background-color: rgba(255,255,255,1); min-height: 1061px; top: 15px; left: 324px;}.silex-id-1427587769948 {width: 960px; top: 24px; left: 0px; background-color: transparent; min-height: 1017px; border-color: #000000;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427587769948 {top: 3610px; left: 12px; width: 422px; min-height: 1810px;}}.silex-id-1427579783894 {top: 54px; background-color: transparent; width: 960px; left: 2px; border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); min-height: 124px; border-color: #000000;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579783894 {top: 15px; left: 0px; width: 422px; min-height: 248px;}}.silex-id-1427579783793 {width: 960px; top: 169px; left: 0px; background-color: transparent; min-height: 120px;}.silex-id-1427579791726 {width: 277px; top: 321px; left: 20px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579791726 {border-color: #000000; top: 366px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1427579791421 {width: 277px; top: 373px; left: 20px; background-color: transparent; min-height: 176px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579791421 {top: 425px; left: 9px; width: 404px; min-height: 152px;}}.silex-id-1427579791624 {width: 277px; top: 321px; left: 340px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579791624 {top: 434px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1427579783385 {width: 277px; top: 371px; left: 340px; background-color: transparent; min-height: 148px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579783385 {top: 1308px; left: 10px; width: 449px; min-height: 56px;}}.silex-id-1427579783283 {width: 277px; top: 319px; left: 658px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579783283 {top: 1382px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1427579787864 {width: 277px; top: 370px; left: 657px; background-color: transparent; min-height: 203px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579787864 {top: 933px; left: 10px; width: 449px; min-height: 135px;}}.silex-id-1427579791522 {width: 277px; top: 569px; left: 20px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579791522 {top: 502px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1427579787762 {width: 277px; top: 613px; left: 20px; background-color: transparent; min-height: 161px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579787762 {top: 1086px; left: 10px; width: 449px; min-height: 93px;}}.silex-id-1427579791319 {width: 277px; top: 569px; left: 340px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579791319 {top: 723px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1427579791217 {width: 277px; top: 615px; left: 340px; background-color: transparent; min-height: 160px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579791217 {top: 791px; left: 10px; width: 449px; min-height: 56px;}}.silex-id-1427579791116 {width: 277px; top: 569px; left: 657px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579791116 {top: 865px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1427579790505 {width: 920px; top: 550px; left: 24px; background-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 0px; border-top-style: solid; border-bottom-style: solid; border-top-color: rgb(0, 155, 255); border-bottom-color: rgb(0, 155, 255); min-height: 10px; border-color: #009bff;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579790505 {border-color: #009bff;}}.silex-id-1427579787660 {width: 276px; top: 615px; left: 658px; background-color: transparent; min-height: 160px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579787660 {top: 1197px; left: 10px; width: 449px; min-height: 93px;}}.silex-id-1427579783690 {width: 920px; left: 20px; background-color: transparent; border-top-width: 1px; border-bottom-width: 0px; border-top-style: solid; border-bottom-style: solid; top: 302px; border-top-color: rgb(0, 155, 255); border-right-color: rgb(0, 155, 255); border-bottom-color: rgb(0, 155, 255); border-left-color: rgb(0, 155, 255); min-height: 13px;}.silex-id-1427579786542 {width: 920px; left: 20px; background-color: transparent; border-top-width: 1px; border-bottom-width: 0px; border-top-style: solid; border-bottom-style: solid; top: 14px; border-top-color: rgb(0, 155, 255); border-right-color: rgb(0, 155, 255); border-bottom-color: rgb(0, 155, 255); border-left-color: rgb(0, 155, 255); min-height: 20px; border-color: #009bff;}.silex-id-1518607196602-0 {width: 920px; top: 791px; left: 24px; background-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 0px; border-top-style: solid; border-bottom-style: solid; border-top-color: rgb(0, 155, 255); border-bottom-color: rgb(0, 155, 255); min-height: 30px; border-color: #009bff;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518607196602-0 {border-color: #009bff;}}.silex-id-1518607234867-5 {width: 277px; top: 861px; left: 27px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518607234867-5 {top: 502px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1518607227659-1 {width: 277px; top: 815px; left: 340px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518607227659-1 {top: 502px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1518607227681-2 {width: 277px; top: 860px; left: 340px; background-color: transparent; min-height: 161px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518607227681-2 {top: 1086px; left: 10px; width: 449px; min-height: 93px;}}.silex-id-1518607231057-3 {width: 277px; top: 815px; left: 658px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518607231057-3 {top: 502px; left: 10px; width: 449px; min-height: 50px;}}.silex-id-1518607231106-4 {width: 277px; top: 860px; left: 658px; background-color: transparent; min-height: 161px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518607231106-4 {top: 1086px; left: 10px; width: 449px; min-height: 93px;}}.silex-id-1518113488475-9 {min-width: 960px; top: 584px; left: 5px;}.silex-id-1518113488474-8 {width: 960px; background-color: rgba(255,255,255,1); min-height: 541px; top: 15px; left: 326px;}.silex-id-1458575539616-3 {min-height: 525px; width: 960px; top: 0px; left: 0px; background-color: transparent;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1458575539616-3 {top: 15px; left: 21px; width: 422px; min-height: 838px;}}.silex-id-1456341206871-2 {top: 6px; background-color: transparent; width: 960px; left: 0px; border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); min-height: 125px;}.silex-id-1456341444370-3 {width: 450px; top: 157px; left: 477px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; opacity: 0.8; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); min-height: 350px; border-width: 5px 5px 5px 5px; border-style: solid; border-color: rgba(0,60,100,1);}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1456341444370-3 {border-width: 5px 5px 5px 5px; border-style: solid; top: 135px; left: 65px;}}.silex-id-1454371417474-4 {width: 420px; top: 162px; left: 20px; background-color: transparent; box-sizing: content-box; min-height: 188px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1454371417474-4 {top: 556px; left: 11px; width: 400px; min-height: 162px;}}.silex-id-1518128028014-31 {width: 121px; min-height: 68px; background-color: transparent; top: 351px; left: 173px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518128028014-31 {top: 756px; left: 152px; width: 117px; min-height: 68px;}}.silex-id-1518128027987-30 {width: 166px; top: 423px; left: 147px; box-sizing: content-box; background-color: transparent; min-height: 30px; border-width: 1px 0 0 0; border-style: solid; border-color: rgba(0,155,255,1);}.silex-id-1518122500534-13 {min-width: 960px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518122500534-13 {top: 7977px; left: 0px;}}.silex-id-1518122500531-12 {width: 960px; background-color: rgba(255,255,255,1); min-height: 1192px; top: 15px; left: 326px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518122500531-12 {min-height: 1378px;}}.silex-id-1427579784708 {top: 0px; background-color: transparent; width: 960px; left: 0px; min-height: 124px;}.silex-id-1427579783487 {width: 294px; top: 135px; left: 92px; background-color: transparent; min-height: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579783487 {top: 1775px; left: 10px; width: 449px; min-height: 80px;}}.silex-id-1427579786440 {width: 440px; top: 200px; left: 25px; background-color: rgb(255, 255, 255); min-height: 971px; border-width: 1px 0 0 0; border-style: solid; border-color: rgba(204,204,204,1);}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579786440 {top: 260px; left: 11px; width: 421px; min-height: 500px;}}.silex-id-1427579783996 {width: 294px; top: 147px; left: 559px; background-color: transparent; min-height: 61px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579783996 {top: 1214px; left: 10px; width: 449px; min-height: 61px;}}.silex-id-1427579783588 {width: 440px; top: 200px; left: 501px; background-color: transparent; min-height: 971px; border-width: 1px 0 0 0; border-style: solid; border-color: rgba(204,204,204,1);}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579783588 {top: 868px; left: 11px; width: 421px; min-height: 498px;}}.silex-id-1518122397477-11 {top: 6924px; left: 5px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518122397477-11 {top: 9361px; left: 0px;}}.silex-id-1518122397475-10 {background-color: rgba(0,60,100,1); min-height: 630px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518122397475-10 {min-height: 249px;}}.silex-id-1427579784913 {width: 287px; top: 42px; left: 338px; background-color: transparent; min-height: 55px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579784913 {top: 71px; left: 10px; width: 469px; min-height: 55px;}}.silex-id-1427579786034 {width: 854px; top: 331px; left: 20px; background-color: transparent; min-height: 1170px;}.silex-id-1427579785932 {width: 70px; top: 106px; left: 338px; min-height: 70px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579785932 {top: 110px; left: 9px; width: 43px; min-height: 45px;}}.silex-id-1427579785830 {width: 70px; top: 106px; left: 248px; min-height: 70px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579785830 {top: 110px; left: 71px; width: 44px; min-height: 45px;}}.silex-id-1427579785728 {width: 70px; top: 106px; left: 158px; min-height: 70px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579785728 {top: 110px; left: 133px; width: 42px; min-height: 45px;}}.silex-id-1427579785625 {width: 70px; top: 105px; left: 428px; min-height: 70px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579785625 {top: 110px; left: 193px; width: 41px; min-height: 45px;}}.silex-id-1427579785523 {width: 70px; top: 104px; left: 518px; min-height: 70px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579785523 {top: 110px; left: 253px; width: 41px; min-height: 45px;}}.silex-id-1427579785421 {width: 70px; top: 104px; left: 608px; min-height: 70px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579785421 {top: 110px; left: 312px; width: 42px; min-height: 45px;}}.silex-id-1427579785320 {width: 70px; top: 104px; left: 698px; min-height: 70px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1427579785320 {top: 110px; left: 372px; width: 41px; min-height: 45px;}}.silex-id-1427579786135 {width: 920px; top: 252px; left: 20px; background-color: transparent; min-height: 45px;}</style>
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {
+            cursor: auto;
+            left: 0px;
+            top: 0px;
+            background-color: rgb(0, 74, 122);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-top-color: rgb(0, 0, 0);
+            border-right-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            border-left-color: rgb(0, 0, 0);
+            border-color: #000000;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .body-initial {
+                background-color: rgba(255, 255, 255, 1);
+            }
+        }
+        
+        .silex-id-1518111566640-6 {
+            min-width: 960px;
+            top: 5px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518111566640-6 {
+                top: 0px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1518111566638-5 {
+            width: 960px;
+            background-color: rgba(255, 255, 255, 1);
+            min-height: 645px;
+            top: 15px;
+            left: 326px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518111566638-5 {
+                background-color: rgba(0, 74, 122, 1);
+                min-height: 691px;
+            }
+        }
+        
+        .silex-id-1518111974791-7 {
+            width: 121px;
+            min-height: 68px;
+            background-color: transparent;
+            top: 352px;
+            left: 114px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518111974791-7 {
+                top: 922px;
+                left: 168px;
+                width: 108px;
+                min-height: 68px;
+            }
+        }
+        
+        .silex-id-1518171394936-32 {
+            width: 200px;
+            min-height: 200px;
+            top: 34px;
+            left: 73px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518171394936-32 {
+                width: 287px;
+                min-height: 333px;
+            }
+        }
+        
+        .silex-id-1427579789590 {
+            left: 0px;
+            top: 0px;
+            min-height: 35px;
+            box-shadow: black 0px 1px 3px;
+            background-color: rgba(0, 155, 255, 1);
+            width: 960px;
+        }
+        
+        .silex-id-1427579789488 {
+            top: 0px;
+            width: 926px;
+            left: 16px;
+            min-height: 38px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1427579789386 {
+            width: 140px;
+            top: -10px;
+            left: -15px;
+            background-color: transparent;
+            min-height: -10px;
+            border-radius: 2px 2px 2px 2px;
+        }
+        
+        .silex-id-1427579789284 {
+            width: 140px;
+            left: 127px;
+            top: 0px;
+            min-height: -9px;
+            background-color: transparent;
+            border-radius: 2px 2px 2px 2px;
+        }
+        
+        .silex-id-1427579789182 {
+            width: 163px;
+            left: 748px;
+            background-color: transparent;
+            top: 15px;
+            min-height: 5px;
+        }
+        
+        .silex-id-1427579789081 {
+            width: 159px;
+            top: 0px;
+            left: 278px;
+            min-height: -9px;
+            background-color: transparent;
+            border-radius: 2px 2px 2px 2px;
+        }
+        
+        .silex-id-1427579788979 {
+            width: 140px;
+            left: 445px;
+            top: 0px;
+            background-color: transparent;
+            min-height: -10px;
+            border-radius: 2px 2px 2px 2px;
+        }
+        
+        .silex-id-1427579788878 {
+            width: 140px;
+            left: 596px;
+            top: 0px;
+            min-height: -9px;
+            background-color: transparent;
+            border-radius: 2px 2px 2px 2px;
+        }
+        
+        .silex-id-1427579788776 {
+            width: 960px;
+            top: 394px;
+            left: 0px;
+            background-image: url('assets/nuages-01.png');
+            background-color: transparent;
+            background-size: cover;
+            min-height: 252px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579788776 {
+                background-image: url('assets/nuages-02.png');
+                background-position: bottom center;
+                min-height: 788px;
+                top: 68px;
+                left: 11px;
+                width: 421px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: rgba(0, 74, 122, 1);
+            }
+        }
+        
+        .silex-id-1458611359360-0 {
+            min-height: 212px;
+            width: 960px;
+            top: 0px;
+            left: 0px;
+            background-color: transparent;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1458611359360-0 {
+                top: 61px;
+                left: 11px;
+                width: 400px;
+                min-height: 667px;
+            }
+        }
+        
+        .silex-id-1458607043374-1 {
+            min-height: 91px;
+            width: 940px;
+            top: 87px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1458607043374-1 {
+                top: 7px;
+                left: 0px;
+                width: 401px;
+                min-height: 227px;
+            }
+        }
+        
+        .silex-id-1458608765361-0 {
+            min-height: -1px;
+            width: 940px;
+            top: 123px;
+            left: 10px;
+            background-color: transparent;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1458608765361-0 {
+                top: 277px;
+                left: 10px;
+                width: 380px;
+                min-height: 375px;
+            }
+        }
+        
+        .silex-id-1427579782977 {
+            width: 212px;
+            top: 272px;
+            left: 66px;
+            min-height: 85px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579782977 {
+                top: 60px;
+                left: 27px;
+                width: 213px;
+                min-height: 85px;
+            }
+        }
+        
+        .silex-id-1427579783079 {
+            width: 212px;
+            top: 215px;
+            left: 65px;
+            background-color: transparent;
+            min-height: 50px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579783079 {
+                top: 95px;
+                left: 9px;
+                width: 470px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1521236362605-0 {
+            height: 331px;
+            width: 600px;
+            top: 71px;
+            left: 326px;
+            background-color: transparent;
+            min-height: 350px;
+            border-width: 5px 5px 5px 5px;
+            border-style: solid;
+            border-color: rgba(0, 60, 100, 1);
+            border-radius: 15px 15px 15px 15px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1521236362605-0 {
+                top: 1287px;
+                left: 6px;
+                width: 424px;
+                height: 336px;
+                min-height: 336px;
+            }
+        }
+        
+        .silex-id-1454367000274-2 {
+            width: 149px;
+            top: 2px;
+            left: 1467px;
+            min-height: 149px;
+        }
+        
+        .silex-id-1518122966043-15 {
+            top: 685px;
+            left: 5px;
+        }
+        
+        .silex-id-1518122966039-14 {
+            background-color: rgba(0, 155, 255, 1);
+            min-height: 1589px;
+        }
+        
+        .silex-id-1427579784504 {
+            width: 891px;
+            top: 10px;
+            left: 40px;
+            background-color: transparent;
+            min-height: 126px;
+        }
+        
+        .silex-id-1518123091288-18 {
+            width: 890px;
+            top: 150px;
+            left: 40px;
+            background-color: transparent;
+            min-height: 123px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518123091288-18 {
+                top: 1197px;
+                left: 10px;
+                width: 449px;
+                min-height: 93px;
+            }
+        }
+        
+        .silex-id-1427579784402 {
+            width: 959px;
+            top: 274px;
+            left: 0px;
+            background-color: transparent;
+            min-height: 1295px;
+        }
+        
+        .silex-id-1518124137652-22 {
+            top: 5502px;
+            left: 5px;
+        }
+        
+        .silex-id-1518124137650-21 {
+            background-color: rgba(255, 255, 255, 1);
+            min-height: 1000px;
+        }
+        
+        .silex-id-1427579782059 {
+            top: 22px;
+            background-color: transparent;
+            width: 960px;
+            left: 2px;
+            border-top-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            min-height: 124px;
+        }
+        
+        .silex-id-1427579781958 {
+            width: 960px;
+            top: 123px;
+            left: 0px;
+            background-color: transparent;
+            box-sizing: content-box;
+            min-height: 104px;
+        }
+        
+        .silex-id-1458572218532-2 {
+            min-height: 383px;
+            width: 930px;
+            top: 290px;
+            left: 13px;
+            background-color: transparent;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1458572218532-2 {
+                top: 228px;
+                left: 11px;
+                width: 402px;
+                min-height: 209px;
+            }
+        }
+        
+        .silex-id-1427579782467 {
+            width: 280px;
+            top: 724px;
+            left: 19px;
+            background-color: transparent;
+            border-top-color: rgb(0, 0, 0);
+            border-right-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            border-left-color: rgb(0, 0, 0);
+            min-height: 80px;
+            border-color: #000000;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579782467 {
+                top: 238px;
+                left: 10px;
+                width: 450px;
+                min-height: 80px;
+            }
+        }
+        
+        .silex-id-1427579782262 {
+            width: 280px;
+            top: 788px;
+            left: 19px;
+            background-color: transparent;
+            border-top-color: rgb(0, 0, 0);
+            border-right-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            border-left-color: rgb(0, 0, 0);
+            min-height: 189px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579782262 {
+                top: 668px;
+                left: 0px;
+                width: 422px;
+                min-height: 153px;
+            }
+        }
+        
+        .silex-id-1427583890283 {
+            width: 280px;
+            top: 720px;
+            left: 338px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427583890283 {
+                top: 651px;
+                left: 10px;
+                width: 450px;
+                min-height: 80px;
+            }
+        }
+        
+        .silex-id-1427583925791 {
+            width: 280px;
+            top: 787px;
+            left: 338px;
+            background-color: transparent;
+            border-top-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            min-height: 226px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427583925791 {
+                top: 659px;
+                left: 5px;
+                width: 449px;
+                min-height: 168px;
+            }
+        }
+        
+        .silex-id-1427579781636 {
+            width: 280px;
+            top: 722px;
+            left: 657px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579781636 {
+                top: 571px;
+                left: 10px;
+                width: 450px;
+                min-height: 80px;
+            }
+        }
+        
+        .silex-id-1427579782161 {
+            width: 280px;
+            top: 786px;
+            left: 656px;
+            background-color: transparent;
+            min-height: 188px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579782161 {
+                top: 1144px;
+                left: 10px;
+                width: 449px;
+                min-height: 131px;
+            }
+        }
+        
+        .silex-id-1427584588756 {
+            width: 920px;
+            left: 20px;
+            background-color: transparent;
+            border-top-width: 1px;
+            border-bottom-width: 0px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            top: 235px;
+            border-top-color: rgb(0, 155, 255);
+            border-right-color: rgb(0, 155, 255);
+            border-bottom-color: rgb(0, 155, 255);
+            border-left-color: rgb(0, 155, 255);
+            min-height: 10px;
+        }
+        
+        .silex-id-1518124620627-26 {
+            min-height: 100px;
+        }
+        
+        .silex-id-1518124620626-25 {
+            background-color: rgba(255, 255, 255, 1);
+            min-height: 300px;
+        }
+        
+        .silex-id-1456340720913-0 {
+            width: 960px;
+            top: 21px;
+            left: 0px;
+            background-color: transparent;
+            min-height: 266px;
+            border-color: #000000;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1456340720913-0 {
+                top: 5681px;
+                left: 12px;
+                width: 422px;
+                min-height: 364px;
+            }
+        }
+        
+        .silex-id-1427579784810 {
+            width: 507px;
+            top: 44px;
+            left: 224px;
+            background-color: transparent;
+            min-height: 40px;
+            border-color: #000000;
+        }
+        
+        .silex-id-1447868061692-7 {
+            width: 182px;
+            top: 99px;
+            left: 388px;
+            min-height: 51px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1447868061692-7 {
+                top: 130px;
+                left: 61px;
+                width: 299px;
+                min-height: 83px;
+            }
+        }
+        
+        .silex-id-1447867920942-4 {
+            width: 176px;
+            top: 165px;
+            left: 244px;
+            min-height: 57px;
+        }
+        
+        .silex-id-1447867928480-5 {
+            width: 188px;
+            top: 165px;
+            left: 499px;
+            min-height: 64px;
+        }
+        
+        .silex-id-1447868058113-6 {
+            width: 124px;
+            top: 168px;
+            left: 41px;
+            min-height: 49px;
+        }
+        
+        .silex-id-1454959210068-1 {
+            width: 157px;
+            top: 173px;
+            left: 757px;
+            min-height: 50px;
+        }
+        
+        .silex-id-1456673374542-16 {
+            width: 920px;
+            top: 6px;
+            left: 18px;
+            background-color: rgb(255, 255, 255);
+            border-top-width: 1px;
+            border-bottom-width: 0px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-top-color: rgb(0, 155, 255);
+            border-bottom-color: rgb(0, 155, 255);
+            min-height: 20px;
+            border-color: #009bff;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        .silex-id-1518124209273-24 {
+            top: 3754px;
+            left: 5px;
+        }
+        
+        .silex-id-1518124209272-23 {
+            background-color: rgba(0, 155, 255, 1);
+            min-height: 1183px;
+        }
+        
+        .silex-id-1427579789998 {
+            width: 960px;
+            top: 40px;
+            left: 0px;
+            background-color: transparent;
+            box-sizing: content-box;
+            min-height: 69px;
+        }
+        
+        .silex-id-1427604618762 {
+            width: 960px;
+            top: 122px;
+            left: 0px;
+            background-color: transparent;
+            min-height: 1020px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427604618762 {
+                top: 131px;
+                left: 11px;
+                width: 421px;
+                min-height: 1035px;
+            }
+        }
+        
+        .silex-id-1518124068019-20 {
+            top: 5502px;
+            left: 5px;
+            min-width: 960px;
+        }
+        
+        .silex-id-1518124068017-19 {
+            width: 960px;
+            background-color: rgba(255, 255, 255, 1);
+            min-height: 1061px;
+            top: 15px;
+            left: 324px;
+        }
+        
+        .silex-id-1427587769948 {
+            width: 960px;
+            top: 24px;
+            left: 0px;
+            background-color: transparent;
+            min-height: 1017px;
+            border-color: #000000;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427587769948 {
+                top: 3610px;
+                left: 12px;
+                width: 422px;
+                min-height: 1810px;
+            }
+        }
+        
+        .silex-id-1427579783894 {
+            top: 54px;
+            background-color: transparent;
+            width: 960px;
+            left: 2px;
+            border-top-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            min-height: 124px;
+            border-color: #000000;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579783894 {
+                top: 15px;
+                left: 0px;
+                width: 422px;
+                min-height: 248px;
+            }
+        }
+        
+        .silex-id-1427579783793 {
+            width: 960px;
+            top: 169px;
+            left: 0px;
+            background-color: transparent;
+            min-height: 120px;
+        }
+        
+        .silex-id-1427579791726 {
+            width: 277px;
+            top: 321px;
+            left: 20px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579791726 {
+                border-color: #000000;
+                top: 366px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1427579791421 {
+            width: 277px;
+            top: 373px;
+            left: 20px;
+            background-color: transparent;
+            min-height: 176px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579791421 {
+                top: 425px;
+                left: 9px;
+                width: 404px;
+                min-height: 152px;
+            }
+        }
+        
+        .silex-id-1427579791624 {
+            width: 277px;
+            top: 321px;
+            left: 340px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579791624 {
+                top: 434px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1427579783385 {
+            width: 277px;
+            top: 371px;
+            left: 340px;
+            background-color: transparent;
+            min-height: 148px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579783385 {
+                top: 1308px;
+                left: 10px;
+                width: 449px;
+                min-height: 56px;
+            }
+        }
+        
+        .silex-id-1427579783283 {
+            width: 277px;
+            top: 319px;
+            left: 658px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579783283 {
+                top: 1382px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1427579787864 {
+            width: 277px;
+            top: 370px;
+            left: 657px;
+            background-color: transparent;
+            min-height: 203px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579787864 {
+                top: 933px;
+                left: 10px;
+                width: 449px;
+                min-height: 135px;
+            }
+        }
+        
+        .silex-id-1427579791522 {
+            width: 277px;
+            top: 569px;
+            left: 20px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579791522 {
+                top: 502px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1427579787762 {
+            width: 277px;
+            top: 613px;
+            left: 20px;
+            background-color: transparent;
+            min-height: 161px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579787762 {
+                top: 1086px;
+                left: 10px;
+                width: 449px;
+                min-height: 93px;
+            }
+        }
+        
+        .silex-id-1427579791319 {
+            width: 277px;
+            top: 569px;
+            left: 340px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579791319 {
+                top: 723px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1427579791217 {
+            width: 277px;
+            top: 615px;
+            left: 340px;
+            background-color: transparent;
+            min-height: 160px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579791217 {
+                top: 791px;
+                left: 10px;
+                width: 449px;
+                min-height: 56px;
+            }
+        }
+        
+        .silex-id-1427579791116 {
+            width: 277px;
+            top: 569px;
+            left: 657px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579791116 {
+                top: 865px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1427579790505 {
+            width: 920px;
+            top: 550px;
+            left: 24px;
+            background-color: rgb(255, 255, 255);
+            border-top-width: 1px;
+            border-bottom-width: 0px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-top-color: rgb(0, 155, 255);
+            border-bottom-color: rgb(0, 155, 255);
+            min-height: 10px;
+            border-color: #009bff;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579790505 {
+                border-color: #009bff;
+            }
+        }
+        
+        .silex-id-1427579787660 {
+            width: 276px;
+            top: 615px;
+            left: 658px;
+            background-color: transparent;
+            min-height: 160px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579787660 {
+                top: 1197px;
+                left: 10px;
+                width: 449px;
+                min-height: 93px;
+            }
+        }
+        
+        .silex-id-1427579783690 {
+            width: 920px;
+            left: 20px;
+            background-color: transparent;
+            border-top-width: 1px;
+            border-bottom-width: 0px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            top: 302px;
+            border-top-color: rgb(0, 155, 255);
+            border-right-color: rgb(0, 155, 255);
+            border-bottom-color: rgb(0, 155, 255);
+            border-left-color: rgb(0, 155, 255);
+            min-height: 13px;
+        }
+        
+        .silex-id-1427579786542 {
+            width: 920px;
+            left: 20px;
+            background-color: transparent;
+            border-top-width: 1px;
+            border-bottom-width: 0px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            top: 14px;
+            border-top-color: rgb(0, 155, 255);
+            border-right-color: rgb(0, 155, 255);
+            border-bottom-color: rgb(0, 155, 255);
+            border-left-color: rgb(0, 155, 255);
+            min-height: 20px;
+            border-color: #009bff;
+        }
+        
+        .silex-id-1518607196602-0 {
+            width: 920px;
+            top: 791px;
+            left: 24px;
+            background-color: rgb(255, 255, 255);
+            border-top-width: 1px;
+            border-bottom-width: 0px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-top-color: rgb(0, 155, 255);
+            border-bottom-color: rgb(0, 155, 255);
+            min-height: 30px;
+            border-color: #009bff;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518607196602-0 {
+                border-color: #009bff;
+            }
+        }
+        
+        .silex-id-1518607234867-5 {
+            width: 277px;
+            top: 861px;
+            left: 27px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518607234867-5 {
+                top: 502px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1518607227659-1 {
+            width: 277px;
+            top: 815px;
+            left: 340px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518607227659-1 {
+                top: 502px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1518607227681-2 {
+            width: 277px;
+            top: 860px;
+            left: 340px;
+            background-color: transparent;
+            min-height: 161px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518607227681-2 {
+                top: 1086px;
+                left: 10px;
+                width: 449px;
+                min-height: 93px;
+            }
+        }
+        
+        .silex-id-1518607231057-3 {
+            width: 277px;
+            top: 815px;
+            left: 658px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518607231057-3 {
+                top: 502px;
+                left: 10px;
+                width: 449px;
+                min-height: 50px;
+            }
+        }
+        
+        .silex-id-1518607231106-4 {
+            width: 277px;
+            top: 860px;
+            left: 658px;
+            background-color: transparent;
+            min-height: 161px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518607231106-4 {
+                top: 1086px;
+                left: 10px;
+                width: 449px;
+                min-height: 93px;
+            }
+        }
+        
+        .silex-id-1518113488475-9 {
+            min-width: 960px;
+            top: 584px;
+            left: 5px;
+        }
+        
+        .silex-id-1518113488474-8 {
+            width: 960px;
+            background-color: rgba(255, 255, 255, 1);
+            min-height: 537px;
+            top: 15px;
+            left: 205px;
+        }
+        
+        .silex-id-1458575539616-3 {
+            min-height: 525px;
+            width: 960px;
+            top: 0px;
+            left: 0px;
+            background-color: transparent;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1458575539616-3 {
+                top: 15px;
+                left: 21px;
+                width: 422px;
+                min-height: 838px;
+            }
+        }
+        
+        .silex-id-1456341206871-2 {
+            top: 6px;
+            background-color: transparent;
+            width: 960px;
+            left: 0px;
+            border-top-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            min-height: 125px;
+        }
+        
+        .silex-id-1456341444370-3 {
+            width: 450px;
+            top: 157px;
+            left: 477px;
+            border-top-width: 5px;
+            border-right-width: 5px;
+            border-bottom-width: 5px;
+            border-left-width: 5px;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            opacity: 0.8;
+            border-top-color: rgb(0, 0, 0);
+            border-right-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            border-left-color: rgb(0, 0, 0);
+            min-height: 350px;
+            border-width: 5px 5px 5px 5px;
+            border-style: solid;
+            border-color: rgba(0, 60, 100, 1);
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1456341444370-3 {
+                border-width: 5px 5px 5px 5px;
+                border-style: solid;
+                top: 135px;
+                left: 65px;
+            }
+        }
+        
+        .silex-id-1454371417474-4 {
+            width: 420px;
+            top: 162px;
+            left: 20px;
+            background-color: transparent;
+            box-sizing: content-box;
+            min-height: 188px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1454371417474-4 {
+                top: 556px;
+                left: 11px;
+                width: 400px;
+                min-height: 162px;
+            }
+        }
+        
+        .silex-id-1518128028014-31 {
+            width: 121px;
+            min-height: 68px;
+            background-color: transparent;
+            top: 351px;
+            left: 173px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518128028014-31 {
+                top: 756px;
+                left: 152px;
+                width: 117px;
+                min-height: 68px;
+            }
+        }
+        
+        .silex-id-1518128027987-30 {
+            width: 166px;
+            top: 423px;
+            left: 147px;
+            box-sizing: content-box;
+            background-color: transparent;
+            min-height: 30px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+            border-color: rgba(0, 155, 255, 1);
+        }
+        
+        .silex-id-1518122500534-13 {
+            min-width: 960px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518122500534-13 {
+                top: 7977px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1518122500531-12 {
+            width: 960px;
+            background-color: rgba(255, 255, 255, 1);
+            min-height: 1192px;
+            top: 15px;
+            left: 326px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518122500531-12 {
+                min-height: 1378px;
+            }
+        }
+        
+        .silex-id-1427579784708 {
+            top: 0px;
+            background-color: transparent;
+            width: 960px;
+            left: 0px;
+            min-height: 124px;
+        }
+        
+        .silex-id-1427579783487 {
+            width: 294px;
+            top: 135px;
+            left: 92px;
+            background-color: transparent;
+            min-height: 80px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579783487 {
+                top: 1775px;
+                left: 10px;
+                width: 449px;
+                min-height: 80px;
+            }
+        }
+        
+        .silex-id-1427579786440 {
+            width: 440px;
+            top: 200px;
+            left: 25px;
+            background-color: rgb(255, 255, 255);
+            min-height: 971px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+            border-color: rgba(204, 204, 204, 1);
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579786440 {
+                top: 260px;
+                left: 11px;
+                width: 421px;
+                min-height: 500px;
+            }
+        }
+        
+        .silex-id-1427579783996 {
+            width: 294px;
+            top: 147px;
+            left: 559px;
+            background-color: transparent;
+            min-height: 61px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579783996 {
+                top: 1214px;
+                left: 10px;
+                width: 449px;
+                min-height: 61px;
+            }
+        }
+        
+        .silex-id-1427579783588 {
+            width: 440px;
+            top: 200px;
+            left: 501px;
+            background-color: transparent;
+            min-height: 971px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+            border-color: rgba(204, 204, 204, 1);
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579783588 {
+                top: 868px;
+                left: 11px;
+                width: 421px;
+                min-height: 498px;
+            }
+        }
+        
+        .silex-id-1518122397477-11 {
+            top: 6924px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518122397477-11 {
+                top: 9361px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1518122397475-10 {
+            background-color: rgba(0, 60, 100, 1);
+            min-height: 630px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1518122397475-10 {
+                min-height: 249px;
+            }
+        }
+        
+        .silex-id-1427579784913 {
+            width: 287px;
+            top: 42px;
+            left: 338px;
+            background-color: transparent;
+            min-height: 55px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579784913 {
+                top: 71px;
+                left: 10px;
+                width: 469px;
+                min-height: 55px;
+            }
+        }
+        
+        .silex-id-1427579786034 {
+            width: 854px;
+            top: 331px;
+            left: 20px;
+            background-color: transparent;
+            min-height: 1170px;
+        }
+        
+        .silex-id-1427579785932 {
+            width: 70px;
+            top: 106px;
+            left: 338px;
+            min-height: 70px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579785932 {
+                top: 110px;
+                left: 9px;
+                width: 43px;
+                min-height: 45px;
+            }
+        }
+        
+        .silex-id-1427579785830 {
+            width: 70px;
+            top: 106px;
+            left: 248px;
+            min-height: 70px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579785830 {
+                top: 110px;
+                left: 71px;
+                width: 44px;
+                min-height: 45px;
+            }
+        }
+        
+        .silex-id-1427579785728 {
+            width: 70px;
+            top: 106px;
+            left: 158px;
+            min-height: 70px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579785728 {
+                top: 110px;
+                left: 133px;
+                width: 42px;
+                min-height: 45px;
+            }
+        }
+        
+        .silex-id-1427579785625 {
+            width: 70px;
+            top: 105px;
+            left: 428px;
+            min-height: 70px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579785625 {
+                top: 110px;
+                left: 193px;
+                width: 41px;
+                min-height: 45px;
+            }
+        }
+        
+        .silex-id-1427579785523 {
+            width: 70px;
+            top: 104px;
+            left: 518px;
+            min-height: 70px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579785523 {
+                top: 110px;
+                left: 253px;
+                width: 41px;
+                min-height: 45px;
+            }
+        }
+        
+        .silex-id-1427579785421 {
+            width: 70px;
+            top: 104px;
+            left: 608px;
+            min-height: 70px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579785421 {
+                top: 110px;
+                left: 312px;
+                width: 42px;
+                min-height: 45px;
+            }
+        }
+        
+        .silex-id-1427579785320 {
+            width: 70px;
+            top: 104px;
+            left: 698px;
+            min-height: 70px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1427579785320 {
+                top: 110px;
+                left: 372px;
+                width: 41px;
+                min-height: 45px;
+            }
+        }
+        
+        .silex-id-1427579786135 {
+            width: 920px;
+            top: 252px;
+            left: 20px;
+            background-color: transparent;
+            min-height: 45px;
+        }
+    </style>
     <meta name="twitter:title" content="Silex, live web creation">
     <meta name="twitter:description" content="Silex is a Website Builder for Designers. Silex is free and open source because we believe that free minds need to have free tools, without hidden costs.">
     <meta name="twitter:image" content="//www.silex.me/assets/silex-screenshot.png">
     <link href="../../../../assets/favicon.png" rel="shortcut icon">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <style id="poll_style9190643" type="text/css">#PDI_container9190643 .pds-box {font-family: Helvetica, Arial, sans-serif; background: #fff; border: 1px solid #ccc; width: 630px; font-size: 13px; text-align: left; color: #4e4e4e; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;}#PDI_container9190643 .pds-box A {outline: none;}#PDI_container9190643 .pds-clear {display: block; clear: both;}#PDI_container9190643 .pds-box-outer {padding: 14px;}#PDI_container9190643 .pds-question-top {font-size: 24px; line-height: 120%; color: #333; font-weight: 700; padding: 5px 0 20px; position: relative;}#PDI_container9190643 .pds-answer {padding: 20px 0; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8;}#PDI_container9190643 .pds-answer label {color: #4e4e4e; font-size: 13px; font-weight: 700; line-height: 150%; position: relative;}#PDI_container9190643 .pds-answer-group {display: block; padding: 8px 0;}#PDI_container9190643 .pds-answer-group BR {display: none;}#PDI_container9190643 .pds-answer-input {display: block; float: left; width: 25px;}#PDI_container9190643 .pds-input-label {display: block; float: left; width: 570px; cursor: pointer;}#PDI_container9190643 .pds-answer-other {padding: 0 0 0 10px;}#PDI_container9190643 .pds-textfield {background: #FFF; border: 1px solid #d1d1d1; font-size: 12px; padding: 2px; width: 250px;}#PDI_container9190643 .pds-answer-other BR {display: none;}#PDI_container9190643 .pds-other-label {display: block; float: left; cursor: pointer;}#PDI_container9190643 .pds-feedback-result {float: right;}#PDI_container9190643 .pds-answer-text {float: left;}#PDI_container9190643 .pds-feedback-group {display: block; padding: 8px 0;}#PDI_container9190643 .pds-feedback-label {display: block; padding: 0 0 5px;}#PDI_container9190643 .pds-feedback-per {font-weight: 400;}#PDI_container9190643 .pds-feedback-votes {font-weight: 400;}#PDI_container9190643 .pds-answer-feedback {background-color: #f1f1f1; border: 1px solid #d1d1d1; position: relative;}#PDI_container9190643 .pds-answer-feedback-bar {font-size: 2px; background: #3478e3; height: 18px;}#PDI_container9190643 .pds-vote {padding: 10px 0;}#PDI_container9190643 .pds-vote BR {display: none;}#PDI_container9190643 .pds-vote-button {color: #464646; padding: 3px 25px; white-space: nowrap; background: #F2F2F2 url('//i0.poll.fm/images/white-grad.png') repeat-x scroll left top; -webkit-border-radius: 11px; -moz-border-radius: 11px; border-radius: 11px; border: 1px solid #999; cursor: pointer; font-size: 12px; font-family: "Lucida Grande", Verdana, Arial; text-decoration: none; line-height: 25px; font-weight: 700; float: left;}#PDI_container9190643 .pds-vote-button:hover {border: 1px solid #333;}#PDI_container9190643 .pds-vote-button-load {color: #464646; padding: 3px 25px; white-space: nowrap; -webkit-border-radius: 11px; -moz-border-radius: 11px; border-radius: 11px; border: 1px solid #999; cursor: pointer; font-size: 12px; font-family: "Lucida Grande", Verdana, Arial; text-decoration: none; line-height: 25px; font-weight: 700; float: left; background: #EEE url('//i.polldaddy.com/polls/vote-loader-eeeeee.gif') no-repeat scroll 50% 50%;}#PDI_container9190643 .pds-vote-button-load SPAN {visibility: hidden;}#PDI_container9190643 .pds-links A {font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #4e4e4e; text-decoration: none; padding: 10px 0 0 15px; float: left; display: block; font-weight: 700;}#PDI_container9190643 .pds-links-back A {font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #4e4e4e; text-decoration: none; padding: 10px 0 0 15px; float: left; display: block; font-weight: 700;}#PDI_container9190643 .pds-links A:hover {text-decoration: underline;}#PDI_container9190643 .pds-links-back A:hover {text-decoration: underline;}#PDI_container9190643 .pds-pd-link {float: right !important;}#PDI_container9190643 .pds-comments {padding: 10px 0 0;}#PDI_container9190643 .pds-comments SPAN {font-weight: 400;}#PDI_container9190643 .pds-total-votes {padding: 10px 0 0; position: relative;}#PDI_container9190643 .pds-total-votes SPAN {font-weight: 700;}@media only screen and (max-width: 650px) {#PDI_container9190643 .pds-box {width: 330px;}#PDI_container9190643 .pds-input-label {width: 250px;}#PDI_container9190643 .pds-textfield {width: 50px;}}#PDI_container9190643 div {margin: 0; padding: 0;}</style>
-    <script type="text/json" class="silex-json-styles">[{"desktop":{"body-initial":{"cursor":"auto","left":"0px","top":"0px","background-color":"rgb(0, 74, 122)","border-top-left-radius":"10px","border-top-right-radius":"0px","border-bottom-right-radius":"10px","border-bottom-left-radius":"0px","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","border-color":"#000000"},"silex-id-1427579784504":{"width":"891px","top":"10px","left":"40px","background-color":"transparent","min-height":"126px"},"silex-id-1427579784402":{"width":"959px","top":"274px","left":"0px","background-color":"transparent","min-height":"1295px"},"silex-id-1427579789998":{"width":"960px","top":"40px","left":"0px","background-color":"transparent","box-sizing":"content-box","min-height":"69px"},"silex-id-1427604618762":{"width":"960px","top":"122px","left":"0px","background-color":"transparent","min-height":"1020px"},"silex-id-1427579789590":{"left":"0px","top":"0px","min-height":"35px","box-shadow":"black 0px 1px 3px","background-color":"rgba(0,155,255,1)","width":"960px"},"silex-id-1427579789488":{"top":"0px","width":"926px","left":"16px","min-height":"38px","background-color":"transparent"},"silex-id-1427579789386":{"width":"140px","top":"-10px","left":"-15px","background-color":"transparent","min-height":"-10px","border-radius":"2px 2px 2px 2px "},"silex-id-1427579789284":{"width":"140px","left":"127px","top":"0px","min-height":"-9px","background-color":"transparent","border-radius":"2px 2px 2px 2px "},"silex-id-1427579789182":{"width":"163px","left":"748px","background-color":"transparent","top":"15px","min-height":"5px"},"silex-id-1427579789081":{"width":"159px","top":"0px","left":"278px","min-height":"-9px","background-color":"transparent","border-radius":"2px 2px 2px 2px "},"silex-id-1427579788979":{"width":"140px","left":"445px","top":"0px","background-color":"transparent","min-height":"-10px","border-radius":"2px 2px 2px 2px "},"silex-id-1427579788878":{"width":"140px","left":"596px","top":"0px","min-height":"-9px","background-color":"transparent","border-radius":"2px 2px 2px 2px "},"silex-id-1427579788776":{"width":"960px","top":"394px","left":"0px","background-image":"url('assets/nuages-01.png')","background-color":"transparent","background-size":"cover","min-height":"252px"},"silex-id-1427636113019":{"width":"170px","top":"73px","left":"777px","background-color":"transparent","min-height":"179px"},"silex-id-1427639908823":{"width":"778px","top":"166px","left":"187px","background-color":"transparent","background-image":"url('assets/nuages-typos-ab-testing2.png')","background-size":"auto","background-position-x":"100%","background-position-y":"100%","min-height":"205px","background-position":"bottom right"},"silex-id-1427579786135":{"width":"920px","top":"252px","left":"20px","background-color":"transparent","min-height":"45px"},"silex-id-1427579786034":{"width":"854px","top":"331px","left":"20px","background-color":"transparent","min-height":"1170px"},"silex-id-1427579785932":{"width":"70px","top":"106px","left":"338px","min-height":"70px"},"silex-id-1427579785830":{"width":"70px","top":"106px","left":"248px","min-height":"70px"},"silex-id-1427579785728":{"width":"70px","top":"106px","left":"158px","min-height":"70px"},"silex-id-1427579785625":{"width":"70px","top":"105px","left":"428px","min-height":"70px"},"silex-id-1427579785523":{"width":"70px","top":"104px","left":"518px","min-height":"70px"},"silex-id-1427579785421":{"width":"70px","top":"104px","left":"608px","min-height":"70px"},"silex-id-1427579785320":{"width":"70px","top":"104px","left":"698px","min-height":"70px"},"silex-id-1427579784913":{"width":"287px","top":"42px","left":"338px","background-color":"transparent","min-height":"55px"},"silex-id-1427587769948":{"width":"960px","top":"24px","left":"0px","background-color":"transparent","min-height":"1017px","border-color":"#000000"},"silex-id-1427579791726":{"width":"277px","top":"321px","left":"20px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791624":{"width":"277px","top":"321px","left":"340px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791522":{"width":"277px","top":"569px","left":"20px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791421":{"width":"277px","top":"373px","left":"20px","background-color":"transparent","min-height":"176px"},"silex-id-1427579791319":{"width":"277px","top":"569px","left":"340px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791217":{"width":"277px","top":"615px","left":"340px","background-color":"transparent","min-height":"160px"},"silex-id-1427579791116":{"width":"277px","top":"569px","left":"657px","background-color":"transparent","min-height":"80px"},"silex-id-1427579790505":{"width":"920px","top":"550px","left":"24px","background-color":"rgb(255, 255, 255)","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","border-top-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","min-height":"10px","border-color":"#009bff"},"silex-id-1427579787864":{"width":"277px","top":"370px","left":"657px","background-color":"transparent","min-height":"203px"},"silex-id-1427579787762":{"width":"277px","top":"613px","left":"20px","background-color":"transparent","min-height":"161px"},"silex-id-1427579787660":{"width":"276px","top":"615px","left":"658px","background-color":"transparent","min-height":"160px"},"silex-id-1427579783894":{"top":"54px","background-color":"transparent","width":"960px","left":"2px","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"124px","border-color":"#000000"},"silex-id-1427579783793":{"width":"960px","top":"169px","left":"0px","background-color":"transparent","min-height":"120px"},"silex-id-1427579783690":{"width":"920px","left":"20px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"302px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"13px"},"silex-id-1427579783385":{"width":"277px","top":"371px","left":"340px","background-color":"transparent","min-height":"148px"},"silex-id-1427579783283":{"width":"277px","top":"319px","left":"658px","background-color":"transparent","min-height":"80px"},"silex-id-1427579782671":{"width":"550px","top":"70px","left":"340px","box-sizing":"content-box","border-top-left-radius":"3px","border-top-right-radius":"3px","border-bottom-right-radius":"3px","border-bottom-left-radius":"3px","min-height":"300px"},"silex-id-1427579783079":{"width":"212px","top":"215px","left":"65px","background-color":"transparent","min-height":"50px"},"silex-id-1427579782977":{"width":"212px","top":"272px","left":"66px","min-height":"85px"},"silex-id-1427579786440":{"width":"440px","top":"200px","left":"25px","background-color":"rgb(255, 255, 255)","min-height":"971px","border-width":"1px 0 0 0 ","border-style":"solid","border-color":"rgba(204,204,204,1)"},"silex-id-1427579784708":{"top":"0px","background-color":"transparent","width":"960px","left":"0px","min-height":"124px"},"silex-id-1427579783996":{"width":"294px","top":"147px","left":"559px","background-color":"transparent","min-height":"61px"},"silex-id-1427579783588":{"width":"440px","top":"200px","left":"501px","background-color":"transparent","min-height":"971px","border-width":"1px 0 0 0 ","border-style":"solid","border-color":"rgba(204,204,204,1)"},"silex-id-1427579783487":{"width":"294px","top":"135px","left":"92px","background-color":"transparent","min-height":"80px"},"silex-id-1427579782467":{"width":"280px","top":"724px","left":"19px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"80px","border-color":"#000000"},"silex-id-1427579782262":{"width":"280px","top":"788px","left":"19px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"189px"},"silex-id-1427579782059":{"top":"22px","background-color":"transparent","width":"960px","left":"2px","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"124px"},"silex-id-1427579781958":{"width":"960px","top":"123px","left":"0px","background-color":"transparent","box-sizing":"content-box","min-height":"104px"},"silex-id-1427579781636":{"width":"280px","top":"722px","left":"657px","background-color":"transparent","min-height":"80px"},"silex-id-1427583890283":{"width":"280px","top":"720px","left":"338px","background-color":"transparent","min-height":"80px"},"silex-id-1427583925791":{"width":"280px","top":"787px","left":"338px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"226px"},"silex-id-1427584588756":{"width":"920px","left":"20px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"235px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"10px"},"silex-id-1427587170182":{"width":"920px","left":"19px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"708px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"10px","border-color":"#009bff"},"silex-id-1427579782161":{"width":"280px","top":"786px","left":"656px","background-color":"transparent","min-height":"188px"},"silex-id-1427579786542":{"width":"920px","left":"20px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"14px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"20px","border-color":"#009bff"},"silex-id-1443109661547-1":{"width":"940px","top":"260px","left":"10px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"307px"},"silex-id-1427579784301":{"width":"319px","top":"97px","left":"36px","background-color":"transparent","min-height":"483px"},"silex-id-1427579784200":{"width":"340px","top":"17px","left":"15px","background-color":"transparent","min-height":"70px"},"silex-id-1454364737067-0":{"width":"551px","top":"96px","left":"339px","min-height":"276px"},"silex-id-1456340720913-0":{"width":"960px","top":"21px","left":"0px","background-color":"transparent","min-height":"266px","border-color":"#000000"},"silex-id-1427579784810":{"width":"507px","top":"44px","left":"224px","background-color":"transparent","min-height":"40px","border-color":"#000000"},"silex-id-1447867920942-4":{"width":"176px","top":"165px","left":"244px","min-height":"57px"},"silex-id-1447867928480-5":{"width":"188px","top":"165px","left":"499px","min-height":"64px"},"silex-id-1447868058113-6":{"width":"124px","top":"168px","left":"41px","min-height":"49px"},"silex-id-1447868061692-7":{"width":"182px","top":"99px","left":"388px","min-height":"51px"},"silex-id-1454959210068-1":{"width":"157px","top":"173px","left":"757px","min-height":"50px"},"silex-id-1454371417474-4":{"width":"420px","top":"162px","left":"20px","background-color":"transparent","box-sizing":"content-box","min-height":"188px"},"silex-id-1456341206871-2":{"top":"6px","background-color":"transparent","width":"960px","left":"0px","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"125px"},"silex-id-1456341444370-3":{"width":"450px","top":"157px","left":"477px","border-top-width":"5px","border-right-width":"5px","border-bottom-width":"5px","border-left-width":"5px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","opacity":"0.8","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"350px","border-width":"5px 5px 5px 5px ","border-style":"solid","border-color":"rgba(0,60,100,1)"},"silex-id-1454367000274-2":{"width":"149px","top":"2px","left":"1467px","min-height":"149px"},"silex-id-1456673374542-16":{"width":"920px","top":"6px","left":"18px","background-color":"rgb(255, 255, 255)","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","border-top-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","min-height":"20px","border-color":"#009bff","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1458559802171-0":{"min-height":"237px","width":"940px","top":"264px","left":"10px"},"silex-id-1458560037257-1":{"min-height":"310px","width":"920px","top":"252px","left":"20px"},"silex-id-1458572218532-2":{"min-height":"383px","width":"930px","top":"290px","left":"13px","background-color":"transparent"},"silex-id-1458575539616-3":{"min-height":"525px","width":"960px","top":"0px","left":"0px","background-color":"transparent"},"silex-id-1458603107417-0":{"min-height":"276px","width":"551px","top":"96px","left":"340px","background-color":"transparent","background-image":"url('assets/silex-ui.gif')"},"silex-id-1458607043374-1":{"min-height":"91px","width":"940px","top":"87px","left":"10px","background-color":"transparent"},"silex-id-1458608765361-0":{"min-height":"-1px","width":"940px","top":"123px","left":"10px","background-color":"transparent"},"silex-id-1458609229947-0":{"min-height":"100px","width":"100px","top":"100px","left":"100px","background-color":"rgb(255, 255, 255)"},"silex-id-1458611359360-0":{"min-height":"212px","width":"960px","top":"0px","left":"0px","background-color":"transparent"},"silex-id-1458671891465-0":{"min-height":"300px","width":"450px","top":"100px","left":"100px"},"silex-id-1518111566638-5":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"645px","top":"15px","left":"326px"},"silex-id-1518111566640-6":{"min-width":"960px","top":"5px","left":"5px","border-radius":""},"silex-id-1518111974791-7":{"width":"121px","min-height":"68px","background-color":"transparent","top":"352px","left":"114px"},"silex-id-1518113488474-8":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"541px","top":"15px","left":"326px"},"silex-id-1518113488475-9":{"min-width":"960px","top":"584px","left":"5px"},"silex-id-1518122397475-10":{"width":"","background-color":"rgba(0,60,100,1)","min-height":"630px"},"silex-id-1518122397477-11":{"top":"6924px","left":"5px"},"silex-id-1518122500531-12":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"1192px","top":"15px","left":"326px"},"silex-id-1518122500534-13":{"min-width":"960px"},"silex-id-1518122966039-14":{"width":"","background-color":"rgba(0,155,255,1)","min-height":"1589px"},"silex-id-1518122966043-15":{"top":"685px","left":"5px"},"silex-id-1518123052457-16":{"width":"","background-color":"","min-height":"100px"},"silex-id-1518123091288-18":{"width":"890px","top":"150px","left":"40px","background-color":"transparent","min-height":"123px"},"silex-id-1518124068017-19":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"1061px","top":"15px","left":"324px"},"silex-id-1518124068019-20":{"top":"5502px","left":"5px","min-width":"960px"},"silex-id-1518124137650-21":{"width":"","background-color":"rgba(255,255,255,1)","min-height":"1000px"},"silex-id-1518124137652-22":{"top":"5502px","left":"5px"},"silex-id-1518124209272-23":{"width":"","background-color":"rgba(0,155,255,1)","min-height":"1183px"},"silex-id-1518124209273-24":{"top":"3754px","left":"5px"},"silex-id-1518124620626-25":{"width":"","background-color":"rgba(255,255,255,1)","min-height":"300px"},"silex-id-1518124620627-26":{"min-height":"100px"},"silex-id-1518128027987-30":{"width":"166px","top":"423px","left":"147px","box-sizing":"content-box","background-color":"transparent","min-height":"30px","border-width":"1px 0 0 0 ","border-style":"solid","border-color":"rgba(0,155,255,1)"},"silex-id-1518128028014-31":{"width":"121px","min-height":"68px","background-color":"transparent","top":"351px","left":"173px"},"silex-id-1518171394936-32":{"width":"239px","min-height":"134px","top":"92px","left":"46px"},"silex-id-1518607196602-0":{"width":"920px","top":"791px","left":"24px","background-color":"rgb(255, 255, 255)","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","border-top-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","min-height":"30px","border-color":"#009bff"},"silex-id-1518607227659-1":{"width":"277px","top":"815px","left":"340px","background-color":"transparent","min-height":"80px"},"silex-id-1518607227681-2":{"width":"277px","top":"860px","left":"340px","background-color":"transparent","min-height":"161px"},"silex-id-1518607231057-3":{"width":"277px","top":"815px","left":"658px","background-color":"transparent","min-height":"80px"},"silex-id-1518607231106-4":{"width":"277px","top":"860px","left":"658px","background-color":"transparent","min-height":"161px"},"silex-id-1518607234867-5":{"width":"277px","top":"861px","left":"27px","background-color":"transparent","min-height":"80px"},"silex-id-1520635700868-0":{"width":"100px","min-height":"100px","top":"100px","left":"435px"},"silex-id-1521236362605-0":{"height":"331px","width":"600px","top":"71px","left":"326px","background-color":"transparent","min-height":"350px","border-width":"5px 5px 5px 5px","border-style":"solid","border-color":"rgba(0,60,100,1)","border-radius":"15px 15px 15px 15px"}},"mobile":{"silex-id-1427579784301":{"top":"15px","left":"10px","width":"450px","minHeight":"483px"},"silex-id-1454371417474-4":{"top":"556px","left":"11px","width":"400px","min-height":"162px"},"silex-id-1427579783079":{"top":"95px","left":"9px","width":"470px","minHeight":"50px"},"silex-id-1427579782977":{"top":"60px","left":"27px","width":"213px","minHeight":"85px"},"silex-id-1427579782467":{"top":"238px","left":"10px","width":"450px","minHeight":"80px"},"silex-id-1427579782262":{"top":"668px","left":"0px","width":"422px","min-height":"153px"},"silex-id-1427579781636":{"top":"571px","left":"10px","width":"450px","minHeight":"80px"},"silex-id-1427583890283":{"top":"651px","left":"10px","width":"450px","minHeight":"80px"},"silex-id-1427583925791":{"top":"659px","left":"5px","width":"449px","min-height":"168px"},"silex-id-1427579782161":{"top":"1144px","left":"10px","width":"449px","minHeight":"131px"},"silex-id-1427587170182":{"borderColor":"#009bff"},"silex-id-1443109661547-1":{"borderColor":"#000000","top":"1158px","left":"9px"},"silex-id-1427579790505":{"borderColor":"#009bff"},"silex-id-1427579791726":{"borderColor":"#000000","top":"366px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791624":{"top":"434px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791522":{"top":"502px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791421":{"top":"425px","left":"9px","width":"404px","min-height":"152px"},"silex-id-1427579791319":{"top":"723px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791217":{"top":"791px","left":"10px","width":"449px","minHeight":"56px"},"silex-id-1427579791116":{"top":"865px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579787864":{"top":"933px","left":"10px","width":"449px","minHeight":"135px"},"silex-id-1427579787762":{"top":"1086px","left":"10px","width":"449px","minHeight":"93px"},"silex-id-1427579787660":{"top":"1197px","left":"10px","width":"449px","minHeight":"93px"},"silex-id-1427579783385":{"top":"1308px","left":"10px","width":"449px","minHeight":"56px"},"silex-id-1427579783283":{"top":"1382px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579786440":{"top":"260px","left":"11px","width":"421px","min-height":"500px"},"silex-id-1427604618762":{"top":"131px","left":"11px","width":"421px","min-height":"1035px"},"silex-id-1456341444370-3":{"border-width":"5px 5px 5px 5px ","border-style":"solid","top":"135px","left":"65px"},"silex-id-1427579783996":{"top":"1214px","left":"10px","width":"449px","min-height":"61px"},"silex-id-1427579783588":{"top":"868px","left":"11px","width":"421px","min-height":"498px"},"silex-id-1427579783487":{"top":"1775px","left":"10px","width":"449px","min-height":"80px"},"silex-id-1456340720913-0":{"top":"5681px","left":"12px","width":"422px","min-height":"364px"},"silex-id-1427579784913":{"top":"71px","left":"10px","width":"469px","min-height":"55px"},"silex-id-1427579782671":{"top":"19px","left":"12px","width":"422px","min-height":"250px"},"silex-id-1447868061692-7":{"top":"130px","left":"61px","width":"299px","min-height":"83px"},"silex-id-1458572218532-2":{"top":"228px","left":"11px","width":"402px","min-height":"209px"},"silex-id-1427579785932":{"top":"110px","left":"9px","width":"43px","min-height":"45px"},"silex-id-1427579785830":{"top":"110px","left":"71px","width":"44px","min-height":"45px"},"silex-id-1427579785728":{"top":"110px","left":"133px","width":"42px","min-height":"45px"},"silex-id-1427579785625":{"top":"110px","left":"193px","width":"41px","min-height":"45px"},"silex-id-1427579785523":{"top":"110px","left":"253px","width":"41px","min-height":"45px"},"silex-id-1427579785421":{"top":"110px","left":"312px","width":"42px","min-height":"45px"},"silex-id-1427579785320":{"top":"110px","left":"372px","width":"41px","min-height":"45px"},"silex-id-1458575539616-3":{"top":"15px","left":"21px","width":"422px","min-height":"838px"},"silex-id-1427587769948":{"top":"3610px","left":"12px","width":"422px","min-height":"1810px"},"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1427579788776":{"background-image":"url('assets/nuages-02.png')","background-position":"bottom center","min-height":"788px","top":"68px","left":"11px","width":"421px","background-size":"contain","background-repeat":"no-repeat","background-color":"rgba(0,74,122,1)"},"silex-id-1427639908823":{"width":"778px","top":"46px","left":"187px","background-color":"transparent","background-image":"url('assets/nuages-typos-ab-testing2.png')","background-size":"auto","min-height":"205px","background-position":"bottom right"},"silex-id-1458608765361-0":{"top":"277px","left":"10px","width":"380px","min-height":"375px"},"silex-id-1458611359360-0":{"top":"61px","left":"11px","width":"400px","min-height":"667px"},"silex-id-1458607043374-1":{"top":"7px","left":"0px","width":"401px","min-height":"227px"},"silex-id-1427579783894":{"top":"15px","left":"0px","width":"422px","min-height":"248px"},"silex-id-1518123091288-18":{"top":"1197px","left":"10px","width":"449px","min-height":"93px"},"silex-id-1518111974791-7":{"top":"922px","left":"168px","width":"108px","min-height":"68px"},"silex-id-1518128028014-31":{"top":"756px","left":"152px","width":"117px","min-height":"68px"},"silex-id-1518122500534-13":{"top":"7977px","left":"0px"},"silex-id-1518122500531-12":{"min-height":"1378px"},"silex-id-1518122397477-11":{"top":"9361px","left":"0px"},"silex-id-1518122397475-10":{"min-height":"249px"},"silex-id-1518111566638-5":{"background-color":"transparent","min-height":"1635px"},"silex-id-1518111566640-6":{"top":"0px","left":"0px"},"silex-id-1518607196602-0":{"border-color":"#009bff"},"silex-id-1518607227659-1":{"top":"502px","left":"10px","width":"449px","min-height":"50px"},"silex-id-1518607227681-2":{"top":"1086px","left":"10px","width":"449px","min-height":"93px"},"silex-id-1518607231057-3":{"top":"502px","left":"10px","width":"449px","min-height":"50px"},"silex-id-1518607231106-4":{"top":"1086px","left":"10px","width":"449px","min-height":"93px"},"silex-id-1518607234867-5":{"top":"502px","left":"10px","width":"449px","min-height":"50px"},"silex-id-1521236362605-0":{"top":"1287px","left":"6px","width":"424px","height":"336px","min-height":"336px"}},"componentData":{"silex-id-1518111974791-7":{"name":"share1","templateName":"share","networks":["Facebook","Twitter","LinkedIn"],"url":"https://www.silex.me/","title":"Silex website builder","description":"Silex is a static website builder in the cloud. "},"silex-id-1518128028014-31":{"name":"share1","templateName":"share","networks":["Facebook","Twitter","LinkedIn"],"url":"https://www.silex.me/","title":"Silex website builder","description":"Silex is a static website builder in the cloud. "},"silex-id-1521236362605-0":{"name":"slideshow1","templateName":"slideshow","slides":[{"image":[{"url":"/fs/get/Documents/www.silex.me/assets/silex-screenshot2.png","lastModifiedDate":null,"name":"silex-screenshot2.png","size":18959}],"link":"https://editor.silex.me/"},{"image":[{"url":"/fs/get/Documents/www.silex.me/assets/silex-screenshot.png","lastModifiedDate":null,"name":"silex-screenshot.png","size":54656}],"link":"https://editor.silex.me/"},{"image":[{"url":"/fs/get/Documents/www.silex.me/assets/Silex-Website-Builder-template.jpg","lastModifiedDate":null,"name":"Silex-Website-Builder-template.jpg","size":41719}],"link":"https://editor.silex.me/"},{"image":[{"url":"/fs/get/Documents/www.silex.me/assets/silex-particules.jpg","lastModifiedDate":null,"name":"silex-particules.jpg","size":21276}],"link":"https://editor.silex.me/"}],"arrows":false,"nav":false,"speed":"300","delay":"4000"}}}]</script>
+    <style id="poll_style9190643" type="text/css">
+        #PDI_container9190643 .pds-box {
+            font-family: Helvetica, Arial, sans-serif;
+            background: #fff;
+            border: 1px solid #ccc;
+            width: 630px;
+            font-size: 13px;
+            text-align: left;
+            color: #4e4e4e;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+        }
+        
+        #PDI_container9190643 .pds-box A {
+            outline: none;
+        }
+        
+        #PDI_container9190643 .pds-clear {
+            display: block;
+            clear: both;
+        }
+        
+        #PDI_container9190643 .pds-box-outer {
+            padding: 14px;
+        }
+        
+        #PDI_container9190643 .pds-question-top {
+            font-size: 24px;
+            line-height: 120%;
+            color: #333;
+            font-weight: 700;
+            padding: 5px 0 20px;
+            position: relative;
+        }
+        
+        #PDI_container9190643 .pds-answer {
+            padding: 20px 0;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        
+        #PDI_container9190643 .pds-answer label {
+            color: #4e4e4e;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 150%;
+            position: relative;
+        }
+        
+        #PDI_container9190643 .pds-answer-group {
+            display: block;
+            padding: 8px 0;
+        }
+        
+        #PDI_container9190643 .pds-answer-group BR {
+            display: none;
+        }
+        
+        #PDI_container9190643 .pds-answer-input {
+            display: block;
+            float: left;
+            width: 25px;
+        }
+        
+        #PDI_container9190643 .pds-input-label {
+            display: block;
+            float: left;
+            width: 570px;
+            cursor: pointer;
+        }
+        
+        #PDI_container9190643 .pds-answer-other {
+            padding: 0 0 0 10px;
+        }
+        
+        #PDI_container9190643 .pds-textfield {
+            background: #FFF;
+            border: 1px solid #d1d1d1;
+            font-size: 12px;
+            padding: 2px;
+            width: 250px;
+        }
+        
+        #PDI_container9190643 .pds-answer-other BR {
+            display: none;
+        }
+        
+        #PDI_container9190643 .pds-other-label {
+            display: block;
+            float: left;
+            cursor: pointer;
+        }
+        
+        #PDI_container9190643 .pds-feedback-result {
+            float: right;
+        }
+        
+        #PDI_container9190643 .pds-answer-text {
+            float: left;
+        }
+        
+        #PDI_container9190643 .pds-feedback-group {
+            display: block;
+            padding: 8px 0;
+        }
+        
+        #PDI_container9190643 .pds-feedback-label {
+            display: block;
+            padding: 0 0 5px;
+        }
+        
+        #PDI_container9190643 .pds-feedback-per {
+            font-weight: 400;
+        }
+        
+        #PDI_container9190643 .pds-feedback-votes {
+            font-weight: 400;
+        }
+        
+        #PDI_container9190643 .pds-answer-feedback {
+            background-color: #f1f1f1;
+            border: 1px solid #d1d1d1;
+            position: relative;
+        }
+        
+        #PDI_container9190643 .pds-answer-feedback-bar {
+            font-size: 2px;
+            background: #3478e3;
+            height: 18px;
+        }
+        
+        #PDI_container9190643 .pds-vote {
+            padding: 10px 0;
+        }
+        
+        #PDI_container9190643 .pds-vote BR {
+            display: none;
+        }
+        
+        #PDI_container9190643 .pds-vote-button {
+            color: #464646;
+            padding: 3px 25px;
+            white-space: nowrap;
+            background: #F2F2F2 url('//i0.poll.fm/images/white-grad.png') repeat-x scroll left top;
+            -webkit-border-radius: 11px;
+            -moz-border-radius: 11px;
+            border-radius: 11px;
+            border: 1px solid #999;
+            cursor: pointer;
+            font-size: 12px;
+            font-family: "Lucida Grande", Verdana, Arial;
+            text-decoration: none;
+            line-height: 25px;
+            font-weight: 700;
+            float: left;
+        }
+        
+        #PDI_container9190643 .pds-vote-button:hover {
+            border: 1px solid #333;
+        }
+        
+        #PDI_container9190643 .pds-vote-button-load {
+            color: #464646;
+            padding: 3px 25px;
+            white-space: nowrap;
+            -webkit-border-radius: 11px;
+            -moz-border-radius: 11px;
+            border-radius: 11px;
+            border: 1px solid #999;
+            cursor: pointer;
+            font-size: 12px;
+            font-family: "Lucida Grande", Verdana, Arial;
+            text-decoration: none;
+            line-height: 25px;
+            font-weight: 700;
+            float: left;
+            background: #EEE url('//i.polldaddy.com/polls/vote-loader-eeeeee.gif') no-repeat scroll 50% 50%;
+        }
+        
+        #PDI_container9190643 .pds-vote-button-load SPAN {
+            visibility: hidden;
+        }
+        
+        #PDI_container9190643 .pds-links A {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: #4e4e4e;
+            text-decoration: none;
+            padding: 10px 0 0 15px;
+            float: left;
+            display: block;
+            font-weight: 700;
+        }
+        
+        #PDI_container9190643 .pds-links-back A {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            color: #4e4e4e;
+            text-decoration: none;
+            padding: 10px 0 0 15px;
+            float: left;
+            display: block;
+            font-weight: 700;
+        }
+        
+        #PDI_container9190643 .pds-links A:hover {
+            text-decoration: underline;
+        }
+        
+        #PDI_container9190643 .pds-links-back A:hover {
+            text-decoration: underline;
+        }
+        
+        #PDI_container9190643 .pds-pd-link {
+            float: right !important;
+        }
+        
+        #PDI_container9190643 .pds-comments {
+            padding: 10px 0 0;
+        }
+        
+        #PDI_container9190643 .pds-comments SPAN {
+            font-weight: 400;
+        }
+        
+        #PDI_container9190643 .pds-total-votes {
+            padding: 10px 0 0;
+            position: relative;
+        }
+        
+        #PDI_container9190643 .pds-total-votes SPAN {
+            font-weight: 700;
+        }
+        
+        @media only screen and (max-width: 650px) {
+            #PDI_container9190643 .pds-box {
+                width: 330px;
+            }
+            #PDI_container9190643 .pds-input-label {
+                width: 250px;
+            }
+            #PDI_container9190643 .pds-textfield {
+                width: 50px;
+            }
+        }
+        
+        #PDI_container9190643 div {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script type="text/json" class="silex-json-styles">
+        [{"desktop":{"body-initial":{"cursor":"auto","left":"0px","top":"0px","background-color":"rgb(0, 74, 122)","border-top-left-radius":"10px","border-top-right-radius":"0px","border-bottom-right-radius":"10px","border-bottom-left-radius":"0px","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","border-color":"#000000"},"silex-id-1427579784504":{"width":"891px","top":"10px","left":"40px","background-color":"transparent","min-height":"126px"},"silex-id-1427579784402":{"width":"959px","top":"274px","left":"0px","background-color":"transparent","min-height":"1295px"},"silex-id-1427579789998":{"width":"960px","top":"40px","left":"0px","background-color":"transparent","box-sizing":"content-box","min-height":"69px"},"silex-id-1427604618762":{"width":"960px","top":"122px","left":"0px","background-color":"transparent","min-height":"1020px"},"silex-id-1427579789590":{"left":"0px","top":"0px","min-height":"35px","box-shadow":"black 0px 1px 3px","background-color":"rgba(0,155,255,1)","width":"960px"},"silex-id-1427579789488":{"top":"0px","width":"926px","left":"16px","min-height":"38px","background-color":"transparent"},"silex-id-1427579789386":{"width":"140px","top":"-10px","left":"-15px","background-color":"transparent","min-height":"-10px","border-radius":"2px 2px 2px 2px "},"silex-id-1427579789284":{"width":"140px","left":"127px","top":"0px","min-height":"-9px","background-color":"transparent","border-radius":"2px 2px 2px 2px "},"silex-id-1427579789182":{"width":"163px","left":"748px","background-color":"transparent","top":"15px","min-height":"5px"},"silex-id-1427579789081":{"width":"159px","top":"0px","left":"278px","min-height":"-9px","background-color":"transparent","border-radius":"2px 2px 2px 2px "},"silex-id-1427579788979":{"width":"140px","left":"445px","top":"0px","background-color":"transparent","min-height":"-10px","border-radius":"2px 2px 2px 2px "},"silex-id-1427579788878":{"width":"140px","left":"596px","top":"0px","min-height":"-9px","background-color":"transparent","border-radius":"2px 2px 2px 2px "},"silex-id-1427579788776":{"width":"960px","top":"394px","left":"0px","background-image":"url('assets/nuages-01.png')","background-color":"transparent","background-size":"cover","min-height":"252px"},"silex-id-1427636113019":{"width":"170px","top":"73px","left":"777px","background-color":"transparent","min-height":"179px"},"silex-id-1427639908823":{"width":"778px","top":"166px","left":"187px","background-color":"transparent","background-image":"url('assets/nuages-typos-ab-testing2.png')","background-size":"auto","background-position-x":"100%","background-position-y":"100%","min-height":"205px","background-position":"bottom right"},"silex-id-1427579786135":{"width":"920px","top":"252px","left":"20px","background-color":"transparent","min-height":"45px"},"silex-id-1427579786034":{"width":"854px","top":"331px","left":"20px","background-color":"transparent","min-height":"1170px"},"silex-id-1427579785932":{"width":"70px","top":"106px","left":"338px","min-height":"70px"},"silex-id-1427579785830":{"width":"70px","top":"106px","left":"248px","min-height":"70px"},"silex-id-1427579785728":{"width":"70px","top":"106px","left":"158px","min-height":"70px"},"silex-id-1427579785625":{"width":"70px","top":"105px","left":"428px","min-height":"70px"},"silex-id-1427579785523":{"width":"70px","top":"104px","left":"518px","min-height":"70px"},"silex-id-1427579785421":{"width":"70px","top":"104px","left":"608px","min-height":"70px"},"silex-id-1427579785320":{"width":"70px","top":"104px","left":"698px","min-height":"70px"},"silex-id-1427579784913":{"width":"287px","top":"42px","left":"338px","background-color":"transparent","min-height":"55px"},"silex-id-1427587769948":{"width":"960px","top":"24px","left":"0px","background-color":"transparent","min-height":"1017px","border-color":"#000000"},"silex-id-1427579791726":{"width":"277px","top":"321px","left":"20px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791624":{"width":"277px","top":"321px","left":"340px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791522":{"width":"277px","top":"569px","left":"20px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791421":{"width":"277px","top":"373px","left":"20px","background-color":"transparent","min-height":"176px"},"silex-id-1427579791319":{"width":"277px","top":"569px","left":"340px","background-color":"transparent","min-height":"80px"},"silex-id-1427579791217":{"width":"277px","top":"615px","left":"340px","background-color":"transparent","min-height":"160px"},"silex-id-1427579791116":{"width":"277px","top":"569px","left":"657px","background-color":"transparent","min-height":"80px"},"silex-id-1427579790505":{"width":"920px","top":"550px","left":"24px","background-color":"rgb(255, 255, 255)","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","border-top-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","min-height":"10px","border-color":"#009bff"},"silex-id-1427579787864":{"width":"277px","top":"370px","left":"657px","background-color":"transparent","min-height":"203px"},"silex-id-1427579787762":{"width":"277px","top":"613px","left":"20px","background-color":"transparent","min-height":"161px"},"silex-id-1427579787660":{"width":"276px","top":"615px","left":"658px","background-color":"transparent","min-height":"160px"},"silex-id-1427579783894":{"top":"54px","background-color":"transparent","width":"960px","left":"2px","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"124px","border-color":"#000000"},"silex-id-1427579783793":{"width":"960px","top":"169px","left":"0px","background-color":"transparent","min-height":"120px"},"silex-id-1427579783690":{"width":"920px","left":"20px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"302px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"13px"},"silex-id-1427579783385":{"width":"277px","top":"371px","left":"340px","background-color":"transparent","min-height":"148px"},"silex-id-1427579783283":{"width":"277px","top":"319px","left":"658px","background-color":"transparent","min-height":"80px"},"silex-id-1427579782671":{"width":"550px","top":"70px","left":"340px","box-sizing":"content-box","border-top-left-radius":"3px","border-top-right-radius":"3px","border-bottom-right-radius":"3px","border-bottom-left-radius":"3px","min-height":"300px"},"silex-id-1427579783079":{"width":"212px","top":"215px","left":"65px","background-color":"transparent","min-height":"50px"},"silex-id-1427579782977":{"width":"212px","top":"272px","left":"66px","min-height":"85px"},"silex-id-1427579786440":{"width":"440px","top":"200px","left":"25px","background-color":"rgb(255, 255, 255)","min-height":"971px","border-width":"1px 0 0 0 ","border-style":"solid","border-color":"rgba(204,204,204,1)"},"silex-id-1427579784708":{"top":"0px","background-color":"transparent","width":"960px","left":"0px","min-height":"124px"},"silex-id-1427579783996":{"width":"294px","top":"147px","left":"559px","background-color":"transparent","min-height":"61px"},"silex-id-1427579783588":{"width":"440px","top":"200px","left":"501px","background-color":"transparent","min-height":"971px","border-width":"1px 0 0 0 ","border-style":"solid","border-color":"rgba(204,204,204,1)"},"silex-id-1427579783487":{"width":"294px","top":"135px","left":"92px","background-color":"transparent","min-height":"80px"},"silex-id-1427579782467":{"width":"280px","top":"724px","left":"19px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"80px","border-color":"#000000"},"silex-id-1427579782262":{"width":"280px","top":"788px","left":"19px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"189px"},"silex-id-1427579782059":{"top":"22px","background-color":"transparent","width":"960px","left":"2px","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"124px"},"silex-id-1427579781958":{"width":"960px","top":"123px","left":"0px","background-color":"transparent","box-sizing":"content-box","min-height":"104px"},"silex-id-1427579781636":{"width":"280px","top":"722px","left":"657px","background-color":"transparent","min-height":"80px"},"silex-id-1427583890283":{"width":"280px","top":"720px","left":"338px","background-color":"transparent","min-height":"80px"},"silex-id-1427583925791":{"width":"280px","top":"787px","left":"338px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"226px"},"silex-id-1427584588756":{"width":"920px","left":"20px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"235px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"10px"},"silex-id-1427587170182":{"width":"920px","left":"19px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"708px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"10px","border-color":"#009bff"},"silex-id-1427579782161":{"width":"280px","top":"786px","left":"656px","background-color":"transparent","min-height":"188px"},"silex-id-1427579786542":{"width":"920px","left":"20px","background-color":"transparent","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","top":"14px","border-top-color":"rgb(0, 155, 255)","border-right-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","border-left-color":"rgb(0, 155, 255)","min-height":"20px","border-color":"#009bff"},"silex-id-1443109661547-1":{"width":"940px","top":"260px","left":"10px","background-color":"transparent","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"307px"},"silex-id-1427579784301":{"width":"319px","top":"97px","left":"36px","background-color":"transparent","min-height":"483px"},"silex-id-1427579784200":{"width":"340px","top":"17px","left":"15px","background-color":"transparent","min-height":"70px"},"silex-id-1454364737067-0":{"width":"551px","top":"96px","left":"339px","min-height":"276px"},"silex-id-1456340720913-0":{"width":"960px","top":"21px","left":"0px","background-color":"transparent","min-height":"266px","border-color":"#000000"},"silex-id-1427579784810":{"width":"507px","top":"44px","left":"224px","background-color":"transparent","min-height":"40px","border-color":"#000000"},"silex-id-1447867920942-4":{"width":"176px","top":"165px","left":"244px","min-height":"57px"},"silex-id-1447867928480-5":{"width":"188px","top":"165px","left":"499px","min-height":"64px"},"silex-id-1447868058113-6":{"width":"124px","top":"168px","left":"41px","min-height":"49px"},"silex-id-1447868061692-7":{"width":"182px","top":"99px","left":"388px","min-height":"51px"},"silex-id-1454959210068-1":{"width":"157px","top":"173px","left":"757px","min-height":"50px"},"silex-id-1454371417474-4":{"width":"420px","top":"162px","left":"20px","background-color":"transparent","box-sizing":"content-box","min-height":"188px"},"silex-id-1456341206871-2":{"top":"6px","background-color":"transparent","width":"960px","left":"0px","border-top-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","min-height":"125px"},"silex-id-1456341444370-3":{"width":"450px","top":"157px","left":"477px","border-top-width":"5px","border-right-width":"5px","border-bottom-width":"5px","border-left-width":"5px","border-top-style":"solid","border-right-style":"solid","border-bottom-style":"solid","border-left-style":"solid","opacity":"0.8","border-top-color":"rgb(0, 0, 0)","border-right-color":"rgb(0, 0, 0)","border-bottom-color":"rgb(0, 0, 0)","border-left-color":"rgb(0, 0, 0)","min-height":"350px","border-width":"5px 5px 5px 5px ","border-style":"solid","border-color":"rgba(0,60,100,1)"},"silex-id-1454367000274-2":{"width":"149px","top":"2px","left":"1467px","min-height":"149px"},"silex-id-1456673374542-16":{"width":"920px","top":"6px","left":"18px","background-color":"rgb(255, 255, 255)","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","border-top-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","min-height":"20px","border-color":"#009bff","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1458559802171-0":{"min-height":"237px","width":"940px","top":"264px","left":"10px"},"silex-id-1458560037257-1":{"min-height":"310px","width":"920px","top":"252px","left":"20px"},"silex-id-1458572218532-2":{"min-height":"383px","width":"930px","top":"290px","left":"13px","background-color":"transparent"},"silex-id-1458575539616-3":{"min-height":"525px","width":"960px","top":"0px","left":"0px","background-color":"transparent"},"silex-id-1458603107417-0":{"min-height":"276px","width":"551px","top":"96px","left":"340px","background-color":"transparent","background-image":"url('assets/silex-ui.gif')"},"silex-id-1458607043374-1":{"min-height":"91px","width":"940px","top":"87px","left":"10px","background-color":"transparent"},"silex-id-1458608765361-0":{"min-height":"-1px","width":"940px","top":"123px","left":"10px","background-color":"transparent"},"silex-id-1458609229947-0":{"min-height":"100px","width":"100px","top":"100px","left":"100px","background-color":"rgb(255, 255, 255)"},"silex-id-1458611359360-0":{"min-height":"212px","width":"960px","top":"0px","left":"0px","background-color":"transparent"},"silex-id-1458671891465-0":{"min-height":"300px","width":"450px","top":"100px","left":"100px"},"silex-id-1518111566638-5":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"645px","top":"15px","left":"326px"},"silex-id-1518111566640-6":{"min-width":"960px","top":"5px","left":"5px","border-radius":""},"silex-id-1518111974791-7":{"width":"121px","min-height":"68px","background-color":"transparent","top":"352px","left":"114px"},"silex-id-1518113488474-8":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"973px","top":"15px","left":"205px"},"silex-id-1518113488475-9":{"min-width":"960px","top":"584px","left":"5px"},"silex-id-1518122397475-10":{"width":"","background-color":"rgba(0,60,100,1)","min-height":"630px"},"silex-id-1518122397477-11":{"top":"6924px","left":"5px"},"silex-id-1518122500531-12":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"1192px","top":"15px","left":"326px"},"silex-id-1518122500534-13":{"min-width":"960px"},"silex-id-1518122966039-14":{"width":"","background-color":"rgba(0,155,255,1)","min-height":"1589px"},"silex-id-1518122966043-15":{"top":"685px","left":"5px"},"silex-id-1518123052457-16":{"width":"","background-color":"","min-height":"100px"},"silex-id-1518123091288-18":{"width":"890px","top":"150px","left":"40px","background-color":"transparent","min-height":"123px"},"silex-id-1518124068017-19":{"width":"960px","background-color":"rgba(255,255,255,1)","min-height":"1061px","top":"15px","left":"324px"},"silex-id-1518124068019-20":{"top":"5502px","left":"5px","min-width":"960px"},"silex-id-1518124137650-21":{"width":"","background-color":"rgba(255,255,255,1)","min-height":"1000px"},"silex-id-1518124137652-22":{"top":"5502px","left":"5px"},"silex-id-1518124209272-23":{"width":"","background-color":"rgba(0,155,255,1)","min-height":"1183px"},"silex-id-1518124209273-24":{"top":"3754px","left":"5px"},"silex-id-1518124620626-25":{"width":"","background-color":"rgba(255,255,255,1)","min-height":"300px"},"silex-id-1518124620627-26":{"min-height":"100px"},"silex-id-1518128027987-30":{"width":"166px","top":"423px","left":"147px","box-sizing":"content-box","background-color":"transparent","min-height":"30px","border-width":"1px 0 0 0 ","border-style":"solid","border-color":"rgba(0,155,255,1)"},"silex-id-1518128028014-31":{"width":"121px","min-height":"68px","background-color":"transparent","top":"351px","left":"173px"},"silex-id-1518171394936-32":{"width":"200px","min-height":"200px","top":"34px","left":"73px"},"silex-id-1518607196602-0":{"width":"920px","top":"791px","left":"24px","background-color":"rgb(255, 255, 255)","border-top-width":"1px","border-bottom-width":"0px","border-top-style":"solid","border-bottom-style":"solid","border-top-color":"rgb(0, 155, 255)","border-bottom-color":"rgb(0, 155, 255)","min-height":"30px","border-color":"#009bff"},"silex-id-1518607227659-1":{"width":"277px","top":"815px","left":"340px","background-color":"transparent","min-height":"80px"},"silex-id-1518607227681-2":{"width":"277px","top":"860px","left":"340px","background-color":"transparent","min-height":"161px"},"silex-id-1518607231057-3":{"width":"277px","top":"815px","left":"658px","background-color":"transparent","min-height":"80px"},"silex-id-1518607231106-4":{"width":"277px","top":"860px","left":"658px","background-color":"transparent","min-height":"161px"},"silex-id-1518607234867-5":{"width":"277px","top":"861px","left":"27px","background-color":"transparent","min-height":"80px"},"silex-id-1520635700868-0":{"width":"100px","min-height":"100px","top":"100px","left":"435px"},"silex-id-1521236362605-0":{"height":"331px","width":"600px","top":"71px","left":"326px","background-color":"transparent","min-height":"350px","border-width":"5px 5px 5px 5px","border-style":"solid","border-color":"rgba(0,60,100,1)","border-radius":"15px 15px 15px 15px"},"silex-id-1521409612619-0":{"width":"100px","min-height":"100px","top":"100px","left":"767px","background-color":"rgba(0,74,122,1)"}},"mobile":{"silex-id-1427579784301":{"top":"15px","left":"10px","width":"450px","minHeight":"483px"},"silex-id-1454371417474-4":{"top":"556px","left":"11px","width":"400px","min-height":"162px"},"silex-id-1427579783079":{"top":"95px","left":"9px","width":"470px","minHeight":"50px"},"silex-id-1427579782977":{"top":"60px","left":"27px","width":"213px","minHeight":"85px"},"silex-id-1427579782467":{"top":"238px","left":"10px","width":"450px","minHeight":"80px"},"silex-id-1427579782262":{"top":"668px","left":"0px","width":"422px","min-height":"153px"},"silex-id-1427579781636":{"top":"571px","left":"10px","width":"450px","minHeight":"80px"},"silex-id-1427583890283":{"top":"651px","left":"10px","width":"450px","minHeight":"80px"},"silex-id-1427583925791":{"top":"659px","left":"5px","width":"449px","min-height":"168px"},"silex-id-1427579782161":{"top":"1144px","left":"10px","width":"449px","minHeight":"131px"},"silex-id-1427587170182":{"borderColor":"#009bff"},"silex-id-1443109661547-1":{"borderColor":"#000000","top":"1158px","left":"9px"},"silex-id-1427579790505":{"borderColor":"#009bff"},"silex-id-1427579791726":{"borderColor":"#000000","top":"366px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791624":{"top":"434px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791522":{"top":"502px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791421":{"top":"425px","left":"9px","width":"404px","min-height":"152px"},"silex-id-1427579791319":{"top":"723px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579791217":{"top":"791px","left":"10px","width":"449px","minHeight":"56px"},"silex-id-1427579791116":{"top":"865px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579787864":{"top":"933px","left":"10px","width":"449px","minHeight":"135px"},"silex-id-1427579787762":{"top":"1086px","left":"10px","width":"449px","minHeight":"93px"},"silex-id-1427579787660":{"top":"1197px","left":"10px","width":"449px","minHeight":"93px"},"silex-id-1427579783385":{"top":"1308px","left":"10px","width":"449px","minHeight":"56px"},"silex-id-1427579783283":{"top":"1382px","left":"10px","width":"449px","minHeight":"50px"},"silex-id-1427579786440":{"top":"260px","left":"11px","width":"421px","min-height":"500px"},"silex-id-1427604618762":{"top":"131px","left":"11px","width":"421px","min-height":"1035px"},"silex-id-1456341444370-3":{"border-width":"5px 5px 5px 5px ","border-style":"solid","top":"135px","left":"65px"},"silex-id-1427579783996":{"top":"1214px","left":"10px","width":"449px","min-height":"61px"},"silex-id-1427579783588":{"top":"868px","left":"11px","width":"421px","min-height":"498px"},"silex-id-1427579783487":{"top":"1775px","left":"10px","width":"449px","min-height":"80px"},"silex-id-1456340720913-0":{"top":"5681px","left":"12px","width":"422px","min-height":"364px"},"silex-id-1427579784913":{"top":"71px","left":"10px","width":"469px","min-height":"55px"},"silex-id-1427579782671":{"top":"19px","left":"12px","width":"422px","min-height":"250px"},"silex-id-1447868061692-7":{"top":"130px","left":"61px","width":"299px","min-height":"83px"},"silex-id-1458572218532-2":{"top":"228px","left":"11px","width":"402px","min-height":"209px"},"silex-id-1427579785932":{"top":"110px","left":"9px","width":"43px","min-height":"45px"},"silex-id-1427579785830":{"top":"110px","left":"71px","width":"44px","min-height":"45px"},"silex-id-1427579785728":{"top":"110px","left":"133px","width":"42px","min-height":"45px"},"silex-id-1427579785625":{"top":"110px","left":"193px","width":"41px","min-height":"45px"},"silex-id-1427579785523":{"top":"110px","left":"253px","width":"41px","min-height":"45px"},"silex-id-1427579785421":{"top":"110px","left":"312px","width":"42px","min-height":"45px"},"silex-id-1427579785320":{"top":"110px","left":"372px","width":"41px","min-height":"45px"},"silex-id-1458575539616-3":{"top":"15px","left":"21px","width":"422px","min-height":"838px"},"silex-id-1427587769948":{"top":"3610px","left":"12px","width":"422px","min-height":"1810px"},"body-initial":{"background-color":"rgba(255,255,255,1)"},"silex-id-1427579788776":{"background-image":"url('assets/nuages-02.png')","background-position":"bottom center","min-height":"788px","top":"68px","left":"11px","width":"421px","background-size":"contain","background-repeat":"no-repeat","background-color":"rgba(0,74,122,1)"},"silex-id-1427639908823":{"width":"778px","top":"46px","left":"187px","background-color":"transparent","background-image":"url('assets/nuages-typos-ab-testing2.png')","background-size":"auto","min-height":"205px","background-position":"bottom right"},"silex-id-1458608765361-0":{"top":"277px","left":"10px","width":"380px","min-height":"375px"},"silex-id-1458611359360-0":{"top":"61px","left":"11px","width":"400px","min-height":"667px"},"silex-id-1458607043374-1":{"top":"7px","left":"0px","width":"401px","min-height":"227px"},"silex-id-1427579783894":{"top":"15px","left":"0px","width":"422px","min-height":"248px"},"silex-id-1518123091288-18":{"top":"1197px","left":"10px","width":"449px","min-height":"93px"},"silex-id-1518111974791-7":{"top":"922px","left":"168px","width":"108px","min-height":"68px"},"silex-id-1518128028014-31":{"top":"756px","left":"152px","width":"117px","min-height":"68px"},"silex-id-1518122500534-13":{"top":"7977px","left":"0px"},"silex-id-1518122500531-12":{"min-height":"1378px"},"silex-id-1518122397477-11":{"top":"9361px","left":"0px"},"silex-id-1518122397475-10":{"min-height":"249px"},"silex-id-1518111566638-5":{"background-color":"rgba(0,74,122,1)","min-height":"691px"},"silex-id-1518111566640-6":{"top":"0px","left":"0px"},"silex-id-1518607196602-0":{"border-color":"#009bff"},"silex-id-1518607227659-1":{"top":"502px","left":"10px","width":"449px","min-height":"50px"},"silex-id-1518607227681-2":{"top":"1086px","left":"10px","width":"449px","min-height":"93px"},"silex-id-1518607231057-3":{"top":"502px","left":"10px","width":"449px","min-height":"50px"},"silex-id-1518607231106-4":{"top":"1086px","left":"10px","width":"449px","min-height":"93px"},"silex-id-1518607234867-5":{"top":"502px","left":"10px","width":"449px","min-height":"50px"},"silex-id-1521236362605-0":{"top":"1287px","left":"6px","width":"424px","height":"336px","min-height":"336px"},"silex-id-1518171394936-32":{"width":"287px","min-height":"333px"}},"componentData":{"silex-id-1518111974791-7":{"name":"share1","templateName":"share","networks":["Facebook","Twitter","LinkedIn"],"url":"https://www.silex.me/","title":"Silex website builder","description":"Silex is a static website builder in the cloud. "},"silex-id-1518128028014-31":{"name":"share1","templateName":"share","networks":["Facebook","Twitter","LinkedIn"],"url":"https://www.silex.me/","title":"Silex website builder","description":"Silex is a static website builder in the cloud. "},"silex-id-1521236362605-0":{"name":"slideshow1","templateName":"slideshow","slides":[{"image":[{"url":"https://editor.silex.me/github/get/www.silex.me/wip/assets/silex-screenshot.png","lastModifiedDate":null,"name":"silex-screenshot.png","size":54656}],"link":"https://editor.silex.me/"},{"image":[{"url":"https://editor.silex.me/github/get/www.silex.me/wip/assets/silex-screenshot2.png","lastModifiedDate":null,"name":"silex-screenshot2.png","size":18959}],"link":"https://editor.silex.me/"},{"image":[{"url":"https://editor.silex.me/github/get/www.silex.me/wip/assets/Silex-Website-Builder-template.jpg","lastModifiedDate":null,"name":"Silex-Website-Builder-template.jpg","size":41719}],"link":"https://editor.silex.me/"},{"image":[{"url":"https://editor.silex.me/github/get/www.silex.me/wip/assets/silex-particules.jpg","lastModifiedDate":null,"name":"silex-particules.jpg","size":21276}],"link":"https://editor.silex.me/"}],"arrows":false,"nav":false,"speed":"300","delay":"4000","autoplay":true}}}]
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
 
 
@@ -280,8 +2367,6 @@ $(function() {
 
 
 
-    
-    
 
 
 
@@ -308,7 +2393,9 @@ $(function() {
 
 
 
-    <meta name="publicationPath" content="{&quot;absPath&quot;:&quot;/github/get/www.silex.me/wip&quot;,&quot;isDir&quot;:true,&quot;mime&quot;:&quot;application/octet-stream&quot;,&quot;name&quot;:&quot;wip&quot;,&quot;folder&quot;:&quot;www.silex.me&quot;,&quot;path&quot;:&quot;www.silex.me/wip&quot;,&quot;service&quot;:&quot;github&quot;,&quot;url&quot;:&quot;http://localhost:6805/github/get/www.silex.me/wip&quot;}">
+
+
+    <meta name="publicationPath" content="{&quot;absPath&quot;:&quot;/github/get/www.silex.me/wip&quot;,&quot;isDir&quot;:true,&quot;mime&quot;:&quot;application/octet-stream&quot;,&quot;name&quot;:&quot;wip&quot;,&quot;folder&quot;:&quot;www.silex.me&quot;,&quot;path&quot;:&quot;www.silex.me/wip&quot;,&quot;service&quot;:&quot;github&quot;,&quot;url&quot;:&quot;//localhost:6805/github/get/www.silex.me/wip&quot;}">
 
 
 
@@ -329,13 +2416,28 @@ $(function() {
 
 
 
-    
 
-    
-<script src="http://localhost:6805/static/2.7/unslider/unslider-min.js" data-silex-static="" data-dependency=""></script><script src="http://localhost:6805/static/2.7/unslider/unslider-min.js" data-silex-static="" data-dependency=""></script><link rel="stylesheet" href="http://localhost:6805/static/2.7/unslider/unslider.css" data-silex-static="" data-dependency=""><link rel="stylesheet" href="http://localhost:6805/static/2.7/unslider/unslider.css" data-silex-static="" data-dependency=""><link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" class="silex-custom-font"><!-- Silex HEAD tag do not remove -->
+
+
+    <script src="//editor.silex.me/static/2.7/unslider/unslider-min.js" data-silex-static="" data-dependency=""></script>
+    <script src="//editor.silex.me/static/2.7/unslider/unslider-min.js" data-silex-static="" data-dependency=""></script>
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/unslider/unslider.css" data-silex-static="" data-dependency="">
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/unslider/unslider.css" data-silex-static="" data-dependency="">
+
+
+
+
+
+
+
+
+    <link href="//fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" class="silex-custom-font">
+
+    <!-- Silex HEAD tag do not remove -->
     <link rel="stylesheet" href="css/morphext.css">
     <script src="js/morphext.min.js" type="text/javascript"></script>
-    <!-- End of Silex HEAD tag do not remove --></head>
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
 
 <body class="body-initial enable-mobile home silex-runtime" data-twttr-rendered="true" data-silex-id="body-initial" style="">
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518111566640-6 section-element anchor-home" data-silex-id="silex-id-1518111566640-6">
@@ -345,12 +2447,12 @@ $(function() {
                     <ul class="share-buttons" id="id_1518112092780_235">
 
                         <li>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me/&amp;t=Silex website builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" data-silex-static="" src="http://localhost:6805/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Facebook.png"></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me/&amp;t=Silex website builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" data-silex-static="" src="//editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Facebook.png"></a>
                         </li>
 
 
                         <li>
-                            <a href="https://twitter.com/intent/tweet?source=https://www.silex.me/&amp;text=Silex website builder:%20https://www.silex.me/&amp;via=silexlabs" target="_blank" title="Share on Twitter"><img alt="Twitt" data-silex-static="" src="http://localhost:6805/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Twitter.png"></a>
+                            <a href="https://twitter.com/intent/tweet?source=https://www.silex.me/&amp;text=Silex website builder:%20https://www.silex.me/&amp;via=silexlabs" target="_blank" title="Share on Twitter"><img alt="Twitt" data-silex-static="" src="//editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Twitter.png"></a>
                         </li>
 
 
@@ -360,7 +2462,7 @@ $(function() {
 
 
                         <li>
-                            <a href="//www.linkedin.com/shareArticle?mini=true&amp;url=https://www.silex.me/&amp;title=Silex website builder&amp;summary=Silex is a static website builder in the cloud. &amp;source=https://www.silex.me/{ " target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" data-silex-static="" src="http://localhost:6805/static/2.7/simplesharingbuttons/flat_web_icon_set/color/LinkedIn.png"></a>
+                            <a href="//www.linkedin.com/shareArticle?mini=true&amp;url=https://www.silex.me/&amp;title=Silex website builder&amp;summary=Silex is a static website builder in the cloud. &amp;source=https://www.silex.me/{ " target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" data-silex-static="" src="//editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/color/LinkedIn.png"></a>
                         </li>
 
 
@@ -368,7 +2470,26 @@ $(function() {
 
                     </ul>
 
-                    <style type="text/css">#id_1518112092780_235.share-buttons {list-style: none; padding: 0;}#id_1518112092780_235.share-buttons li {display: inline;}#id_1518112092780_235.share-buttons .sr-only {position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;}</style>
+                    <style type="text/css">
+                        #id_1518112092780_235.share-buttons {
+                            list-style: none;
+                            padding: 0;
+                        }
+                        
+                        #id_1518112092780_235.share-buttons li {
+                            display: inline;
+                        }
+                        
+                        #id_1518112092780_235.share-buttons .sr-only {
+                            position: absolute;
+                            clip: rect(1px, 1px, 1px, 1px);
+                            padding: 0;
+                            border: 0;
+                            height: 1px;
+                            width: 1px;
+                            overflow: hidden;
+                        }
+                    </style>
                 </div>
             </div>
 
@@ -381,7 +2502,7 @@ $(function() {
 
 
 
-            <div data-silex-type="image" class="editable-style silex-id-1518171394936-32 image-element animated fadeIn" data-silex-id="silex-id-1518171394936-32" style=""><img src="assets/silex-logo.png" class="silex-element-content"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1518171394936-32 image-element animated fadeIn" data-silex-id="silex-id-1518171394936-32" style=""><img src="assets/logo-ceubri.png" class="silex-element-content"></div>
             <div data-silex-type="container" class="editable-style container-element silex-id-1427579789590 full-width fixed-menu hide-on-mobile page-silex-home" data-silex-id="silex-id-1427579789590" style="">
                 <div data-silex-type="container" class="editable-style container-element centered abel silex-id-1427579789488" data-silex-id="silex-id-1427579789488" style="">
                     <div data-silex-type="text" class="editable-style text-element silex-id-1427579789386 anchor-link" data-silex-id="silex-id-1427579789386" data-silex-href="#anchor-home" style="">
@@ -431,8 +2552,8 @@ $(function() {
                 </div>
 
             </div>
-            
-            <div class="editable-style image-element silex-id-1427579782977 animated tada hide-on-mobile page-silex-home paged-element-visible" data-silex-type="image" data-silex-href="//editor.silex.me" data-silex-id="silex-id-1427579782977" style=""><img src="assets/bouton-call-01.png" class="silex-element-content" alt="Start Now!">
+
+            <div class="editable-style image-element silex-id-1427579782977 animated tada hide-on-mobile page-silex-home" data-silex-type="image" data-silex-href="//editor.silex.me" data-silex-id="silex-id-1427579782977" style=""><img src="assets/bouton-call-01.png" class="silex-element-content" alt="Start Now!">
             </div>
 
 
@@ -447,108 +2568,245 @@ $(function() {
                 </div>
             </div>
 
-        <div data-silex-type="html" class="editable-style silex-id-1521236362605-0 html-element silex-component silex-component-slideshow silex-use-height-not-minheight" data-silex-id="silex-id-1521236362605-0" style=""><div class="silex-element-content"><div id="parent_1521327373712_69">
-<!-- preview -->
-<div class="prodotype-preview">
-  
-  <div class="preview-text prodotype-force-size"><p>~ Preview ~</p></div>
-  <figure class="slide-0">
-    <div class="slide-image prodotype-force-size">
-      
+            <div data-silex-type="html" class="editable-style silex-id-1521236362605-0 html-element silex-component silex-component-slideshow silex-use-height-not-minheight hide-on-mobile" data-silex-id="silex-id-1521236362605-0" style="">
+                <div class="silex-element-content">
+                    <div id="parent_1521714875979_985">
+                        <!-- preview -->
+                        <div class="prodotype-preview">
+
+                            <div class="preview-text prodotype-force-size">
+                                <p>~ Preview ~</p>
+                            </div>
+                            <figure class="slide-0">
+                                <div class="slide-image prodotype-force-size">
+
+                                </div>
+                            </figure>
+
+                        </div>
+                        <div id="id_1521714875979_985">
+                            <!-- runtime -->
+                            <!-- the whole slideshow -->
+                            <ul class="prodotype-runtime">
+
+                                <li>
+                                    <figure class="slide-0">
+
+                                        <a href="../../../../">
+
+                                            <div class="slide-image">
+
+                                            </div>
+
+                                        </a>
+
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure class="slide-1">
+
+                                        <a href="../../../../">
+
+                                            <div class="slide-image">
+
+                                            </div>
+
+                                        </a>
+
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure class="slide-2">
+
+                                        <a href="../../../../">
+
+                                            <div class="slide-image">
+
+                                            </div>
+
+                                        </a>
+
+                                    </figure>
+                                </li>
+
+                                <li>
+                                    <figure class="slide-3">
+
+                                        <a href="../../../../">
+
+                                            <div class="slide-image">
+
+                                            </div>
+
+                                        </a>
+
+                                    </figure>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <style type="text/css">
+                        /* *********************** */
+                        /* "Preview" label always on top of the slideshow in silex */
+                        
+                        #parent_1521714875979_985 .prodotype-preview {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        #parent_1521714875979_985 .prodotype-preview .preview-text {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        
+                        #parent_1521714875979_985 .prodotype-preview .preview-text p {
+                            z-index: 1;
+                            background-color: black;
+                            color: white;
+                        }
+                        /* *********************** */
+                        /* styles for each slide */
+                        
+                        #parent_1521714875979_985 .slide-0 .slide-image {
+                            background-image: url('assets/silex-screenshot.png');
+                        }
+                        
+                        #parent_1521714875979_985 .slide-1 .slide-image {
+                            background-image: url('assets/silex-screenshot2.png');
+                        }
+                        
+                        #parent_1521714875979_985 .slide-2 .slide-image {
+                            background-image: url('assets/Silex-Website-Builder-template.jpg');
+                        }
+                        
+                        #parent_1521714875979_985 .slide-3 .slide-image {
+                            background-image: url('assets/silex-particules.jpg');
+                        }
+                        /* *********************** */
+                        /* styles for all the slides */
+                        
+                        #parent_1521714875979_985 .slide-image {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: 50%;
+                            align-items: flex-end;
+                            justify-content: center;
+                        }
+                        
+                        #parent_1521714875979_985 figcaption {
+                            padding: 50px;
+                            color: white;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            width: 100%;
+                            text-align: center;
+                        }
+                        /* *********************** */
+                        /* UI style */
+                        
+                        #parent_1521714875979_985 .unslider-nav {
+                            position: absolute;
+                            bottom: 10px;
+                            left: 0;
+                            right: 0;
+                            top: auto;
+                            margin: 0;
+                        }
+                        
+                        #parent_1521714875979_985 .unslider-nav ol {
+                            text-align: center;
+                        }
+                        
+                        #parent_1521714875979_985 .unslider-nav ol li.unslider-active {
+                            background: #fff;
+                            cursor: default;
+                            opacity: 1;
+                        }
+                        
+                        #parent_1521714875979_985 .unslider-nav ol li {
+                            display: inline-block;
+                            float: none;
+                            width: 6px;
+                            height: 6px;
+                            margin: 0 4px;
+                            padding: 3px;
+                            background: transparent;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            text-indent: -999em;
+                            border: 2px solid #fff;
+                            cursor: pointer;
+                            opacity: .4;
+                        }
+                        
+                        #parent_1521714875979_985 .unslider-arrow {
+                            display: block;
+                            width: 32px;
+                            height: 32px;
+                            top: 50%;
+                            right: 16px;
+                            left: auto;
+                            margin-top: -16px;
+                            overflow: hidden;
+                            background: rgba(0, 0, 0, .2) no-repeat 50% 50%;
+                            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==');
+                            background-size: 7px 11px;
+                            border-radius: 32px;
+                            text-indent: -999em;
+                            opacity: .6;
+                            transition: opacity .2s;
+                        }
+                        
+                        #parent_1521714875979_985 .unslider-arrow.prev {
+                            left: 16px;
+                            right: auto;
+                            -ms-transform: rotate(-180deg);
+                            transform: rotate(-180deg);
+                        }
+                        /* *********************** */
+                    </style>
+                    <script type="text/javascript">
+                        (function() {
+                            function initUnslider() {
+                              // do not start in the editor (it would mess with the markup)
+                              if(!$('body').hasClass('silex-runtime')) return;
+                        
+                              var slider = $('#id_1521714875979_985').unslider({
+                                'autoplay': true,
+                                'speed': 300,
+                                'delay': 4000,
+                                'index': 0,
+                                'nav': false,
+                                'animation': 'horizontal',
+                                'arrows': false
+                              });
+                              //  Listen to slide changes
+                              
+                              // apply element height to the images
+                              var silexElement = $('#id_1521714875979_985').closest('.editable-style');
+                              var elementMinHeight = silexElement.css('height');
+                              var elementWidth = silexElement.css('width');
+                              $('#id_1521714875979_985 li .slide-image').css({
+                                'height': elementMinHeight
+                              });
+                              
+                          }
+                            initUnslider();
+                          })();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div data-silex-type="image" class="editable-style silex-id-1454367000274-2 image-element paged-element forkme hide-on-mobile page-silex-home" data-silex-id="silex-id-1454367000274-2" data-silex-href="https://github.com/silexlabs/Silex" style=""><img src="assets/forkme.png" class="silex-element-content"></div>
+
     </div>
-  </figure>
-  
-</div>
-<div id="id_1521327373712_69">
-  <!-- runtime -->
-  <!-- the whole slideshow -->
-  <ul class="prodotype-runtime">
-  
-    <li><figure class="slide-0">
-      
-      <a href="https://editor.silex.me/">
-      
-      <div class="slide-image">
-        
-      </div>
-      
-      </a>
-      
-    </figure></li>
-  
-    <li><figure class="slide-1">
-      
-      <a href="https://editor.silex.me/">
-      
-      <div class="slide-image">
-        
-      </div>
-      
-      </a>
-      
-    </figure></li>
-  
-    <li><figure class="slide-2">
-      
-      <a href="https://editor.silex.me/">
-      
-      <div class="slide-image">
-        
-      </div>
-      
-      </a>
-      
-    </figure></li>
-  
-    <li><figure class="slide-3">
-      
-      <a href="https://editor.silex.me/">
-      
-      <div class="slide-image">
-        
-      </div>
-      
-      </a>
-      
-    </figure></li>
-  
-  </ul>
-</div>
-</div>
-<style type="text/css">#parent_1521327373712_69 .prodotype-preview {list-style-type: none; margin: 0; padding: 0;}#parent_1521327373712_69 .prodotype-preview .preview-text {display: flex; align-items: center; justify-content: center;}#parent_1521327373712_69 .prodotype-preview .preview-text p {z-index: 1; background-color: black; color: white;}#parent_1521327373712_69 .slide-0 .slide-image {background-image: url('assets/silex-screenshot2.png');}#parent_1521327373712_69 .slide-1 .slide-image {background-image: url('assets/silex-screenshot.png');}#parent_1521327373712_69 .slide-2 .slide-image {background-image: url('assets/Silex-Website-Builder-template.jpg');}#parent_1521327373712_69 .slide-3 .slide-image {background-image: url('assets/silex-particules.jpg');}#parent_1521327373712_69 .slide-image {width: 100%; display: flex; justify-content: center; background-repeat: no-repeat; background-size: cover; background-position: 50%; align-items: flex-end;}#parent_1521327373712_69 figcaption {padding: 50px; color: white; background-color: rgba(0,0,0,0.5); width: 100%; text-align: center;}#parent_1521327373712_69 .unslider-nav {position: absolute; bottom: 10px; left: 0; right: 0; top: auto; margin: 0;}#parent_1521327373712_69 .unslider-nav ol {text-align: center;}#parent_1521327373712_69 .unslider-nav ol li.unslider-active {background: #fff; cursor: default; opacity: 1;}#parent_1521327373712_69 .unslider-nav ol li {display: inline-block; float: none; width: 6px; height: 6px; margin: 0 4px; padding: 3px; background: transparent; border-radius: 10px; overflow: hidden; text-indent: -999em; border: 2px solid #fff; cursor: pointer; opacity: .4;}#parent_1521327373712_69 .unslider-arrow {display: block; width: 32px; height: 32px; top: 50%; right: 16px; left: auto; margin-top: -16px; overflow: hidden; background: rgba(0,0,0,.2) no-repeat 50% 50%; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg=='); background-size: 7px 11px; border-radius: 32px; text-indent: -999em; opacity: .6; transition: opacity .2s;}#parent_1521327373712_69 .unslider-arrow.prev {left: 16px; right: auto; -ms-transform: rotate(-180deg); transform: rotate(-180deg);}</style>
-<script type="text/javascript" data-silex-no-publish-optim="">
-  (function() {
-    function initUnslider() {
-      // do not start in the editor (it would mess with the markup)
-      if(!$('body').hasClass('silex-runtime')) return;
-
-      var slider = $('#id_1521327373712_69').unslider({
-        'autoplay': false,
-        'speed': 300,
-        'delay': 4000,
-        'index': 0,
-        'nav': false,
-        'animation': 'horizontal',
-        'arrows': false
-      });
-      //  Listen to slide changes
-      
-      // apply element height to the images
-      var silexElement = $('#id_1521327373712_69').closest('.editable-style');
-      var elementMinHeight = silexElement.css('height');
-      var elementWidth = silexElement.css('width');
-      $('#id_1521327373712_69 li .slide-image').css({
-        'height': elementMinHeight
-      });
-      
-  }
-    initUnslider();
-  })();
-</script>
-</div></div></div>
-        <div data-silex-type="image" class="editable-style silex-id-1454367000274-2 image-element paged-element forkme hide-on-mobile page-silex-home paged-element-visible" data-silex-id="silex-id-1454367000274-2" data-silex-href="https://github.com/silexlabs/Silex" style=""><img src="assets/forkme.png" class="silex-element-content"></div>
-
-    </div>
 
 
 
@@ -579,7 +2837,7 @@ $(function() {
 
 
 
-    <div class="silex-pages"><img src="http://localhost:6805/static/2.7/hamburger.png" data-silex-static="" class="menu-button"><a id="page-silex-home" data-silex-type="page" class="page-element">Silex Home</a></div>
+    <div class="silex-pages"><img src="//editor.silex.me/static/2.7/hamburger.png" data-silex-static="" class="menu-button"><a id="page-silex-home" data-silex-type="page" class="page-element page-link-active">Silex Home</a></div>
 
 
 
@@ -1160,7 +3418,8 @@ $(function() {
                 </div>
 
 
-                <div data-silex-type="image" class="editable-style silex-id-1456341444370-3 image-element" data-silex-id="silex-id-1456341444370-3" data-silex-href="https://www.ulule.com/silex-websitebuilder/news/un-grand-merci-a-tous-a-very-big-thanks-to-all-the-111277/" style=""><img src="assets/02072009680-1024x768.jpg" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1456341444370-3 image-element" data-silex-id="silex-id-1456341444370-3" data-silex-href="https://www.ulule.com/silex-websitebuilder/news/un-grand-merci-a-tous-a-very-big-thanks-to-all-the-111277/"
+                    style=""><img src="assets/02072009680-1024x768.jpg" class="silex-element-content"></div>
                 <div class="editable-style text-element silex-id-1454371417474-4 element2" data-silex-type="text" data-silex-id="silex-id-1454371417474-4" style="">
                     <div class="silex-element-content">
                         <h2 class="heading2"><span style="font-weight: normal;"><font color="#0b5394"><font face="Oswald">ASK US TO INFORM YOU...&nbsp;</font></font></span></h2>
@@ -1178,12 +3437,12 @@ $(function() {
                         <ul class="share-buttons" id="id_1518128028014_991">
 
                             <li>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me/&amp;t=Silex website builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" data-silex-static="" src="http://localhost:6805/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Facebook.png"></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me/&amp;t=Silex website builder" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" data-silex-static="" src="//editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Facebook.png"></a>
                             </li>
 
 
                             <li>
-                                <a href="https://twitter.com/intent/tweet?source=https://www.silex.me/&amp;text=Silex website builder:%20https://www.silex.me/&amp;via=silexlabs" target="_blank" title="Share on Twitter"><img alt="Twitt" data-silex-static="" src="http://localhost:6805/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Twitter.png"></a>
+                                <a href="https://twitter.com/intent/tweet?source=https://www.silex.me/&amp;text=Silex website builder:%20https://www.silex.me/&amp;via=silexlabs" target="_blank" title="Share on Twitter"><img alt="Twitt" data-silex-static="" src="//editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/color/Twitter.png"></a>
                             </li>
 
 
@@ -1193,7 +3452,7 @@ $(function() {
 
 
                             <li>
-                                <a href="//www.linkedin.com/shareArticle?mini=true&amp;url=https://www.silex.me/&amp;title=Silex website builder&amp;summary=Silex is a static website builder in the cloud. &amp;source=https://www.silex.me/{ " target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" data-silex-static="" src="http://localhost:6805/static/2.7/simplesharingbuttons/flat_web_icon_set/color/LinkedIn.png"></a>
+                                <a href="//www.linkedin.com/shareArticle?mini=true&amp;url=https://www.silex.me/&amp;title=Silex website builder&amp;summary=Silex is a static website builder in the cloud. &amp;source=https://www.silex.me/{ " target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" data-silex-static="" src="//editor.silex.me/static/2.7/simplesharingbuttons/flat_web_icon_set/color/LinkedIn.png"></a>
                             </li>
 
 
@@ -1201,7 +3460,26 @@ $(function() {
 
                         </ul>
 
-                        <style type="text/css">#id_1518128028014_991.share-buttons {list-style: none; padding: 0;}#id_1518128028014_991.share-buttons li {display: inline;}#id_1518128028014_991.share-buttons .sr-only {position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;}</style>
+                        <style type="text/css">
+                            #id_1518128028014_991.share-buttons {
+                                list-style: none;
+                                padding: 0;
+                            }
+                            
+                            #id_1518128028014_991.share-buttons li {
+                                display: inline;
+                            }
+                            
+                            #id_1518128028014_991.share-buttons .sr-only {
+                                position: absolute;
+                                clip: rect(1px, 1px, 1px, 1px);
+                                padding: 0;
+                                border: 0;
+                                height: 1px;
+                                width: 1px;
+                                overflow: hidden;
+                            }
+                        </style>
                     </div>
                 </div>
                 <div data-silex-type="text" class="editable-style text-element animated fadeIn hide-on-mobile silex-id-1518128027987-30" data-silex-id="silex-id-1518128027987-30" style="">
@@ -1211,6 +3489,7 @@ $(function() {
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1518122500534-13 section-element" data-silex-id="silex-id-1518122500534-13">
@@ -1543,4 +3822,18 @@ $(function() {
 
 
 
-</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,5 +1,4 @@
 
-
         ////////////////////////////////////
                     // github issues
                     var widgetScriptUrl = 'js/widgets.js';
