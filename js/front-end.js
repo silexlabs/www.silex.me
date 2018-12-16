@@ -10,6 +10,8 @@
 //////////////////////////////////////////////////
 
 $(function() {
+  var win = $(window);
+
   // allow HTML5 tags used by Silex to be styled with CSS (polyfill)
   document.createElement('HEADER');
   document.createElement('VIDEO');
@@ -18,72 +20,40 @@ $(function() {
   // be careful since it will change after undo/redo or open file in Silex editor
   var bodyEl = $('body');
 
-   /**
-   * returns a function that will not be called more than every `wait` seconds
-   */
-  function debounce(func, wait) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        clearTimeout(timeout);
-        timeout = null;
-        func.apply(context, args);
-      };
-      if(!timeout) timeout = setTimeout(later, wait);
-    };
-  };
-
   /**
-   * compute the desired size of the body
-   * this will allways be as big as the viewport
-   * and the bounding box (0,0) (width, height) contains all the elements in the body
-   * even if the elements are absolute positioned
-   * @return {width, height}
+   * window resize event
    */
-  function getBodySize() {
-    var width = 0;
-    var height = 0;
-    $('body > *').each(function (index) {
-      var el = $(this);
-      // take elements visible on the current page
-      if(el.hasClass('editable-style') && (!el.hasClass('paged-element') || el.hasClass($('body').pageable('option').currentPage))) {
-        var position = el.position();
-        var right = position.left + el.width();
-        var bottom = position.top + el.height();
-        if (width < right) width = right;
-        if (height < bottom) height = bottom;
-      }
-    });
-    return {
-      'width': width,
-      'height': height
-    };
-  }
-
-  var initialViewportContent = $('meta[data-silex-viewport]').attr('content');
-  var win = $(window);
-  /**
-   * resize body to the size of its content
-   * this is needed since the content has absolute position
-   * so it is not automatic with css
-   */
-  var resizeBody = debounce(function (event){
+  var siteWidth = parseInt($('meta[name=website-width]').attr('content'));
+  var resizeBody = function (event){
     var bodyEl = $('body');
-    var boundingBox = getBodySize();
-    var width = boundingBox.width;
-    var height = boundingBox.height;
     // behavior which is not the same in Silex editor and outside the editor
     if(bodyEl.hasClass('silex-runtime')) {
+      // if the site has a defined width and the window is smaller than this width, then
+      // scale the website to fit the window
       var winWidth = win.width();
-      // handle the scroll bar manually
-      // prevent the scroll bar to appear when we are only a few pixels short
-      // this allows us to set width to 100% instead of 99%
-      // this will only take place on mobile with winWidth < 480 (not needed on desktop apparently)
-      if(width < winWidth + 10 && winWidth < 480)
-        bodyEl.css('overflow-x', 'hidden');
-      else
-        bodyEl.css('overflow-x', 'auto');
+      if(winWidth < 480) {
+        $('body').css({
+          'transform': 'scale(' + (winWidth / 480) + ')',
+          'transform-origin': '0 0',
+          'min-width': '480px',
+        })
+      }
+      else if(winWidth > 480 && winWidth < siteWidth) {
+          $('body').css({
+            'transform': 'scale(' + (winWidth / 1200) + ')',
+            'transform-origin': '0 0',
+            'min-width': '1200px',
+          })
+      }
+      else {
+        // case of winWidth === 480 || winWidth > siteWidth
+        // reset transform
+        $('body').css({
+            'transform': '',
+            'transform-origin': '',
+            'min-width': '',
+          })
+      }
     }
     else {
       // add space around the elements in the body
@@ -91,14 +61,11 @@ $(function() {
       //width += 50;
       //height += 50;
     }
-    // set the body size to contain all the elements
-    // this has to be done manually since the elements are absolutely positioned
-    bodyEl.css({
-      "min-width": width + "px",
-      "min-height": height + "px"
-    });
-  }, 500);
+    // dispatch an event so that components can update
+    $(document).trigger('silex:resize');
+  };
 
+  /* this doesn't work? at least not in google bot mobile
   // only outside silex editor when the window is small enough
   // change viewport to enable mobile view scale mode
   // for "pixel perfect" mobile version
@@ -106,11 +73,11 @@ $(function() {
   if(bodyEl.hasClass('silex-runtime')) {
     var winWidth = win.width();
     if(winWidth < 960) {
-      $('meta[data-silex-viewport]').attr('content', 'width=479, user-scalable=no, maximum-scale=5');
+      $('meta[data-silex-viewport]').attr('content', 'width=479, user-scalable=no, maximum-scale=1');
     }
   }
-
- /**
+  */
+  /**
    * list all pages from the head section
    * and open the 1st one by default
    */
@@ -126,8 +93,8 @@ $(function() {
    */
   bodyEl.on('pageChanged', function (event, pageName) {
     // mark links to the current page as active
-    $('[data-silex-href="#!'+pageName+'"]').addClass('page-link-active');
-    $('[id="'+pageName+'"]').addClass('page-link-active');
+    $('[data-silex-href*="#!'+pageName+'"]').addClass('page-link-active');
+    $('[id*="'+pageName+'"]').addClass('page-link-active');
     // prevent iframe content from staying in the dom
     // this prevent a youtube video to continue playing while on another page
     // this is useful in chrome and not firefox since display:none does not reset iframe dom in chrome
@@ -135,18 +102,22 @@ $(function() {
       this.setAttribute('src', this.getAttribute('data-silex-iframe-src'));
     });
     $('.paged-element-hidden iframe').each(function() {
-      this.setAttribute('data-silex-iframe-src', this.getAttribute('src'));
-      this.setAttribute('src', '');
+      var src = this.getAttribute('src');
+      if(src) {
+        this.setAttribute('data-silex-iframe-src', src);
+        this.setAttribute('src', '');
+      }
     });
     // resize on page change (size will vary)
     resizeBody();
   });
   /**
    * init page system
+   * Use deep links (hash) only when `body.silex-runtime` is defined, i.e. not while editing
    */
   bodyEl.pageable({
     currentPage: firstPageName,
-    useDeeplink:true,
+    useDeeplink: bodyEl.hasClass('silex-runtime'),
     pageClass: 'paged-element'
   });
   /**
@@ -166,12 +137,15 @@ $(function() {
   /**
    * mobile menu
    */
-  $('.silex-runtime .silex-pages .menu-button').click(function () {
+  $('.silex-runtime.enable-mobile .silex-pages .menu-button').click(function (e) {
+    e.stopPropagation();
     $(document.body).toggleClass('show-mobile-menu');
   });
-  $('.silex-runtime .silex-pages .page-element').click(function(e) {
-    window.location.hash = '#!' + this.id;
+  $('.silex-runtime.enable-mobile').click(function (e) {
     $(document.body).removeClass('show-mobile-menu');
+  });
+  $('.silex-runtime.enable-mobile .silex-pages .page-element').click(function(e) {
+    window.location.hash = '#!' + this.id;
     e.preventDefault();
   });
 
