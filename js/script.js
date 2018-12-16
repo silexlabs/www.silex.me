@@ -1,4 +1,5 @@
 
+
         ////////////////////////////////////
                     // github issues
                     var widgetScriptUrl = 'js/widgets.js';
@@ -40,6 +41,9 @@
 
                     ////////////////////////////////////
                     // google analytics
+
+                    ////////////////////////////////////
+                    // google analytics
                     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -68,32 +72,29 @@
                     });
     
     $(function() {
-  // this will be executed when the page is loaded
-  var current = $('body').pageable('option').currentPage;
-  $('body').addClass(current + '-opened');
-  $('body').on('pageChanged', function (event, pageName) {
-    // this will add a css class on the body, with the name of the page + '-opened'
-    // e.g. open the page `page-test1` will add the css class `page-test1-opened` to the body
-    $('body').addClass(pageName + '-opened');
-    // remove previous one
-    $('body').removeClass(current + '-opened');
-    current = pageName;
-  });
+        // this will be executed when the page is loaded
+        var current = $('body').pageable('option').currentPage;
+        $('body').addClass(current + '-opened');
+        $('body').on('pageChanged', function (event, pageName) {
+            // this will add a css class on the body, with the name of the page + '-opened'
+            // e.g. open the page `page-test1` will add the css class `page-test1-opened` to the body
+            $('body').addClass(pageName + '-opened');
+            // remove previous one
+            $('body').removeClass(current + '-opened');
+            current = pageName;
+        });
   
-  
-    // text font effect
-    // http://charliepark.org/hatchshow/how.html
-  $("#js-rotating").Morphext({
-    // The [in] animation type. Refer to Animate.css for a list of available animations.
-    animation: "fadeIn",
-    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-    separator: ",",
-    // The delay between the changing of each phrase in milliseconds.
-    speed: 3000,
-    complete: function () {
-        // Called after the entrance animation is executed.
-    }
-});
+    $("#js-rotating").Morphext({
+        // The [in] animation type. Refer to Animate.css for a list of available animations.
+        animation: "fadeIn",
+        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+        separator: ",",
+        // The delay between the changing of each phrase in milliseconds.
+        speed: 3000,
+        complete: function () {
+            // Called after the entrance animation is executed.
+        }
+    });
 });
 /*
  * active menu widget for Silex
