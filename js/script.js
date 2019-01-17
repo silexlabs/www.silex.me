@@ -1,5 +1,15 @@
 
-
+/////////////
+// info box
+$(function() {
+    setTimeout(function() {
+        $('body').addClass('show-info');
+    }, 15000)
+    $('.fixed-info .button').click(function() {
+        $('body').removeClass('show-info');
+    })
+})
+/////////////
         ////////////////////////////////////
                     // github issues
                     var widgetScriptUrl = 'js/widgets.js';
