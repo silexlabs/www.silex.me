@@ -122,6 +122,7 @@ $(function() {
     
     $(function() {
         if($('body').pageable) {
+            // only for not published sites
             // this will be executed when the page is loaded
             var current = $('body').pageable('option').currentPage;
             $('body').addClass(current + '-opened');
