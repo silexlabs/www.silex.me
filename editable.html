@@ -121,6 +121,7 @@ $(function() {
                     });
     
     $(function() {
+        if($('body').pageable) {
         // this will be executed when the page is loaded
         var current = $('body').pageable('option').currentPage;
         $('body').addClass(current + '-opened');
@@ -132,6 +133,7 @@ $(function() {
             $('body').removeClass(current + '-opened');
             current = pageName;
         });
+    }
   
     $("#js-rotating").Morphext({
         // The [in] animation type. Refer to Animate.css for a list of available animations.
