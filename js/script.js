@@ -4,7 +4,7 @@
 $(function() {
     setTimeout(function() {
         $('body').addClass('show-info');
-    }, 15000)
+    }, 10000)
     $('.fixed-info .button').click(function() {
         $('body').removeClass('show-info');
     })
