@@ -2,23 +2,27 @@
 
 ## Home
 
-Silex website builder
+Silex, the best drag and drop website builder
 
-* Create your free website now with silex editor
-* gif anim Silex demo
-* [Start now](https://www.silex.me)
-* [Create your site](https://www.silex.me)
 * [Facebook](https://www.facebook.com/sharer/sharer.php?u=https://www.silex.me&t=Silex%20website%20builder)
 * [Twitter](https://twitter.com/intent/tweet?source=https://www.silex.me&text=Silex%20website%20builder:%20https://www.silex.me&via=silexlabs)
 * [Reddit](https://www.reddit.com/submit?url=https://www.silex.me&title=Silex%20website%20builder)
 
-Free website builder as in:
+Create your free website now with Silex
+
+* [Use Silex online](https://www.silex.me) this instance is provided for free by Silex Labs
+* [Download Silex]() works offline on Windows and Linux - Mac Os coming soon
+* [Host your instance of Silex]() provide your users with a customized version of Silex
+
+Vidéo: Silex demo
+
+Silex is a free website builder, free as in
 
 * freedom
+* freedom of sharing
 * free speech
-* freestyle
-* freehand
-* DIY
+* free of charge
+* free to modify
 
 ## What is Silex ?
 
