@@ -8,11 +8,9 @@
 // Silex is available under the GPL license
 // http://www.silexlabs.org/silex/silex-licensing/
 //////////////////////////////////////////////////
+
 $(function() {
   var $win = $(window);
-
-  // expose data to components
-  window.silex = window.silex || {};
 
   // allow HTML5 tags used by Silex to be styled with CSS (polyfill)
   document.createElement('HEADER');
@@ -28,8 +26,6 @@ $(function() {
   var siteWidth = parseInt($('meta[name=website-width]').attr('content') || '480');
   var resizeBody = function (event){
     var $html = $('html');
-    window.silex.resizeRatio = 1;
-
     // behavior which is not the same in Silex editor and outside the editor
     if($body.hasClass('silex-runtime')) {
       // if the site has a defined width and the window is smaller than this width, then
@@ -48,7 +44,6 @@ $(function() {
 
       // handle resize when needed
       if(winWidth < siteWidth) {
-        var height = $html.height();
         // scale the site
         var breakPoint = winWidth < 480 ? 480 : siteWidth;
         var ratio = winWidth / breakPoint;
@@ -56,11 +51,7 @@ $(function() {
           'transform': 'scale(' + ratio + ')',
           'transform-origin': '0 0',
           'min-width': breakPoint + 'px',
-          'height': height * ratio,
         })
-        // expose the ratio to components
-        window.silex.resizeRatio = ratio;
-
         // keep the scroll position when resizing,
         // fixes a bug on mobile when reaching the bottom of page and the broser UI comes back and changes the viewport size
         var scrollTarget = scrollRatio * $body.prop("scrollHeight");
@@ -158,12 +149,12 @@ $(function() {
   $('.silex-runtime.enable-mobile').click(function (e) {
     $(document.body).removeClass('show-mobile-menu');
   });
-  // expose for use by the widgets and Silex editor
-  window.silex.resizeBody = resizeBody;
-
   // resize body at start
   resizeBody();
 
   // resize body on window resize
   $win.resize(resizeBody);
+
+  // expose for use by the widgets and Silex editor
+  window.resizeBody = resizeBody;
 });
