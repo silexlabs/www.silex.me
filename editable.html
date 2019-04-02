@@ -174,7 +174,6 @@ $(function() {
                 attr = $(this).attr("data-silex-href");
             });
             // the links to anchors are expected to start with #
-            console.log(attr)
             if(attr && attr.indexOf("#") === 0) {
                 var name = attr.substring(1);
                 var item = $("." + name);
