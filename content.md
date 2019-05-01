@@ -76,7 +76,7 @@ Join us as we are working on a road map to make Silex even better at white label
 creative common templates on github and  paid template on templamatic
 
 
-## MORE ABOUT FEEDOM
+## MORE ABOUT FREEDOM
 
 Silex is free and open source because free minds need to have free tools
 
