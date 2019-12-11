@@ -133,7 +133,7 @@ $(function() {
             });
             // case of an "external link" before publish
             $(this).find("[data-silex-href]").each(function() {
-                attr = $(this).attr("href");
+                attr = $(this).attr("data-silex-href");
             });
             // the links to anchors are expected to start with #
             if(attr && attr.indexOf("#") === 0) {
