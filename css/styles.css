@@ -20,7 +20,7 @@ h2 {text-align: center;}h3 {font-family: 'Oswald', sans-serif; font-weight: norm
 .website-width {width: 960px;}
 .info-card h2 {font-family: 'Oswald', sans-serif; font-variant: small-caps; font-weight: normal; font-size: 26px; text-align: left; line-height: 1;}.info-card p {font-size: 20px;}.info-card b {font-family: 'Oswald', sans-serif; font-weight: normal; font-size: 31px; color: #006CB2; line-height: 1;}.info-card i {font-style: normal;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.info-card h2 {font-size: 1em;}.info-card p {font-size: 1em;}}
 .titles h2 {font-weight: normal;}.titles h3 {font-family: 'Abel', sans-serif; font-weight: normal; color: #444444; text-transform: none;}.titles p {text-align: center; line-height: 1;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.titles h3 {font-size: 0.9em;}.titles.text-element > .silex-element-content {font-style: italic;}}
-.text-style-1.text-element > .silex-element-content {font-family: 'Abel', sans-serif; text-align: center; line-height: 2;}
+.text-style-1.text-element > .silex-element-content {font-family: 'Abel', sans-serif; color: #000000; text-align: center; line-height: 2;}
 .text-style-2.text-element > .silex-element-content {color: #000000;}
 .text-style-3.text-element > .silex-element-content {color: #000000;}
 .text-style-4.text-element > .silex-element-content {color: #000000;}
