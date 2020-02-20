@@ -41,9 +41,9 @@ th {border: 1px solid;}.text-element HEADER,
     <script type="text/javascript" class="silex-script">/////////////
 // info box
 $(function() {
+    $('html').append($('show-info'))
     setTimeout(function() {
         $('html').addClass('show-info');
-        $('html').append($('show-info'))
     }, 10000)
     $('.fixed-info .button').click(function() {
         $('html').removeClass('show-info');
