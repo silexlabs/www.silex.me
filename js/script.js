@@ -2,11 +2,12 @@
 /////////////
 // info box
 $(function() {
+    $('html').append($('.fixed-info, .forkme'))
     setTimeout(function() {
-        $('body').addClass('show-info');
+        $('html').addClass('show-info');
     }, 10000)
     $('.fixed-info .button').click(function() {
-        $('body').removeClass('show-info');
+        $('html').removeClass('show-info');
     })
 })
 /////////////
@@ -153,6 +154,9 @@ $(function() {
                     };
                 }
             }
+        })
+        .sort(function(item1, item2) {
+            return $(item1.item).offset().top - $(item2.item).offset().top;
         });
     // Bind click handler to menu items
     // so we can get a fancy scroll animation
