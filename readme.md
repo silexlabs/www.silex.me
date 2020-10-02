@@ -6,4 +6,4 @@ The HTML page ```editable.html``` is the "source" HTML file, editable in Silex i
 
 This Silex website has been designed by [Pol Goasdoué](http://www.superwup.me) and is licensed under a Creative Commons Attribution 3.0 Unported License.
 
-Animated text uses [morphext](http://morphext.fyianlai.com/)
+Animated text uses [morphext]!(http://morphext.fyianlai.com/)
