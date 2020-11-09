@@ -1,4 +1,7 @@
 
+
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":960},"pages":[{"id":"page-silex-home","displayName":"Silex Home","link":{"linkType":"LinkTypePage","href":"#!page-silex-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true}]}
 /////////////
 // info box
 $(function() {
