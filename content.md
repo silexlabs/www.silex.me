@@ -14,7 +14,7 @@ Create your free website now with Silex
 * [Download Silex]() works offline on Windows and Linux - Mac Os coming soon
 * [Host your instance of Silex]() provide your users with a customized version of Silex
 
-Vidéo: Silex demo
+Video: Silex demo
 
 Silex is a free website builder, free as in
 
@@ -47,7 +47,7 @@ And collaboration is straightforward thanks to Dropbox sharing capabilities.
 
 Only common settings are available in the visual editor. 
 
-When you need more, Silex helps you write CSS without leaving the browser. No complex dialogs and menus, just the open web standards. What you learn here will be useful to you.
+When you need more, Silex helps you write CSS without leaving the browser. No complex dialogs and menus, just the open web standards. What you learn here will be useful to you,
 Silex and the other website builders
 
 
@@ -73,7 +73,7 @@ Join us as we are working on a road map to make Silex even better at white label
 
 ## LATEST TEMPLATES
 
-creative common templates on github and  paid template on templamatic
+creative common templates on github and paid template on templamatic
 
 
 ## MORE ABOUT FREEDOM
@@ -84,7 +84,7 @@ Silex is free and open source because free minds need to have free tools
 
 As a non-profit, we’re free to innovate without any pressure to compromise. Silex is free / libre, without hidden costs or licensing hassle.
 
-You are welcome to contribute  and to offer services to the community.
+You are welcome to contribute and to offer services to the community.
 
 ### GETTING STARTED
 
