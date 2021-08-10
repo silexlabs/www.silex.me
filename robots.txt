@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /silex/
-Sitemap: http://www.silex.me/sitemap_index.xml
+Disallow: /
