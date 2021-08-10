@@ -1,4 +1,4 @@
-### Edit 2021: this repo is obsolete, [here is the new official Silex website](https://github.com/silexlabs/www.silex.me-2020)
+### Edit 2021: this repo is obsolete, [here is the new official Silex website](https://github.com/silexlabs/www.silex.me-2020). You can still [access this website here](https://projects.silexlabs.org/www.silex.me/)
 
 This repository is [Silex free website builder](http://www.silex.me) official website, available at http://www.silex.me and hosted for free by github with [gihub pages](https://pages.github.com/).
 
